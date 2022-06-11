@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>สำนักงานนานาชาติ </title> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> 
+        <link rel="icon" type="image/x-icon" href="images/rsu-logo.png">
+        <link rel="stylesheet" href="css/adminlte.min.css"> 
+        <link rel="stylesheet" href="css/main.css">   
+
+        <!-- TABLE -->
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css"> 
+        <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap4.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"/> 
+
+         
+    </head>
+    <body class="hold-transition sidebar-mini layout-fixed">
+        <div class="wrapper">
+            <!-- Preloader -->
+            <!-- <div class="preloader flex-column justify-content-center align-items-center">
+                <img class="animation__shake" src="images/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+            </div> -->
+            <!-- Navbar -->
+            <nav class="main-header navbar navbar-expand navbar-white navbar-light"> 
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                    </li> 
+                </ul> 
+                <ul class="navbar-nav ml-auto"> 
+                    <li class="nav-item">]
+
+
+                        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                        <i class="fas fa-search"></i>
+                        </a>
+                        <div class="navbar-search-block">
+                            <form class="form-inline">
+                                <div class="input-group input-group-sm">
+                                    <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-navbar" type="submit">
+                                        <i class="fas fa-search"></i>
+                                        </button>
+                                        <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                                        <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </li> 
+                </ul>
+            </nav> 
+            <aside class="main-sidebar sidebar-dark-primary elevation-4">
+                <!-- Brand Logo -->
+                <a href="#" class="brand-link">
+                    <img src="images/sm-logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"  >
+                    <p class="brand-text font-weight-light">สำนักงานนานาชาติ <br> มหาวิทยาลัยรังสิต</p>
+                </a> 
+                <div class="sidebar"> 
+                    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                        <div class="image">
+                            <img src="images/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                        </div>
+                        <div class="info">
+                            <a href="#" class="d-block">เอเจนท์</a>
+                        </div>
+                    </div>  
+                    <nav class="mt-2">
+                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">    
+                            <li class="nav-item">
+                                <a href="agent-profile.html" class="nav-link active">
+                                    <i class="nav-icon fas fa-user-tie"></i>
+                                    <p>โปรไฟล์</p>
+                                </a> 
+                                <a href="agent-plus.html" class="nav-link">
+                                    <i class="nav-icon fas fa-user-plus"></i>
+                                    <p>เพื่อนแนะนำเพื่อน</p>
+                                </a> 
+                            </li>  
+                        </ul>
+                    </nav> 
+                </div> 
+            </aside> 
+            <div class="content-wrapper"> 
+                <div class="content-header">
+                    <div class="container-fluid">
+                        <div class="row mb-2">
+                            <div class="col-sm-6">
+                                <h1 class="m-0">
+                                    <strong>โปรไฟล์</strong>  
+                                    <!-- <a href="#" class="btn btn-success pt-2 "><i class="fas fa-plus"></i> นำเข้าเลขกรมธรรม์</a> -->
+                                </h1> 
+                            </div>   
+
+
+                        </div> 
+                    </div> 
+                </div>  
+                <section class="content">
+                    <div class="container-fluid">
+                        <div class="div-box card-outline card-info p-4"> 
+                        
+
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#tab1" role="tab" data-toggle="tab">ข้อมูลส่วนตัว</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#tab2" role="tab" data-toggle="tab">Agreement</a>
+                            </li> 
+                        </ul> 
+
+                        <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade show active" id="tab1"> 
+                                    <div class="col p-4"> 
+                                        <h4 class="mt-3"><strong>ข้อมูลส่วนตัว</strong></h4>
+                                        <div class="row"> 
+                                            <div class="col-6"> 
+                                                
+                                                <div class="form-group row mb-0">
+                                                    <label class="col-xl-4">ชื่อ-นามสกุล :</label>
+                                                    <label class="col-xl-6">อดิศร ศรีสุธรรม</label>
+                                                </div>
+                                                <div class="form-group row mb-0">
+                                                    <label class="col-xl-4">รหัสนักศึกษา :</label>
+                                                    <label class="col-xl-6">651923993</label>
+                                                </div>
+                                                <div class="form-group row mb-0">
+                                                    <label class="col-xl-4">คณะ</label>
+                                                    <label class="col-xl-6">คณะศิลปศาสตร์</label>
+                                                </div> 
+                                                <div class="form-group row mb-0">
+                                                    <label class="col-xl-4">อีเมล :</label>
+                                                    <label class="col-xl-6">pimpae@hotmail.com</label>
+                                                </div>
+                                                <div class="form-group row mb-0">
+                                                    <label class="col-xl-4">โทรศัพท์ :</label>
+                                                    <label class="col-xl-6">098-939-3938</label>
+                                                </div> 
+                                                <div class="form-group row mb-0">
+                                                    <label class="col-xl-4">วันที่สมัคร :</label>
+                                                    <label class="col-xl-6">10/09/2565</label>
+                                                </div> 
+                                                <div class="form-group row mb-0">
+                                                    <label class="col-xl-4">วันที่อนุมัติเอเจนท์ :</label>
+                                                    <label class="col-xl-6">12/09/2565</label>
+                                                </div> 
+                                            </div> 
+                                            
+                                            <div class="col-12 pb-3">
+                                                
+                                                <h4 class="mt-3"><strong>เอกสารและผลงาน</strong></h4>
+                                                <hr> 
+                                                <div class="form-group row mb-0">
+                                                    <label class="col-xl-2">รูปถ่าย :</label>
+                                                    <label class="col-xl-6">
+                                                        <a href="#" class="text-pink"><i class="far fa-image"></i> img_020325650.jpg </a>
+                                                    </label>
+                                                </div> 
+                                                <div class="form-group row mb-0">
+                                                    <label class="col-xl-2">บัตรประชาชน :</label>
+                                                    <label class="col-xl-6">
+                                                        <a href="#" class="text-pink"><i class="far fa-file-pdf"></i> doc_001.pdf	 </a>
+                                                    </label>
+                                                </div> 
+                                                <div class="form-group row mb-0">
+                                                    <label class="col-xl-2">ผลงาน	 :</label>
+                                                    <label class="col-xl-6">
+                                                        <a href="#" class="text-pink"><i class="far fa-file-pdf"></i> doc_002.pdf </a>
+                                                    </label>
+                                                </div> 
+
+                                                <hr>  
+                                                
+                                            </div> 
+
+                                        </div>      
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="tab2"> 
+                                    <div class="col p-4">  
+                                        <div class="row">  
+                                            <div class="col-12 pb-3">
+                                                
+                                                <h4 class="mt-3"><strong>เงื่อนไข Agreement
+                                                    </strong></h4>
+                                                <hr> 
+                                                <div class="form-group row mb-0">
+                                                    <div class="col">
+                                                        <h5>ข้อกำหนดและเงื่อนไข / Terms and Conditions</h5>
+                                                         นโยบายความเป็นส่วนตัวของมหาวิทยาลัย และข้อกำหนดและเงื่อนไขอื่น รวมทั้งนโยบายต่างๆ ที่ท่านจะหาได้ทั่วเว็บไซต์ของมหาวิทยาลัยในส่วนที่เกี่ยวกับการใช้งาน รูปแบบ และการส่งเสริมการขายบางประการ รวมทั้งการบริการลูกค้า ซึ่งทั้งหมดถือเป็นส่วนหนึ่งและรวมอยู่ในข้อกำหนดและเงื่อนไขเหล่านี้ (รวมเรียกว่า “ข้อกำหนดและเงื่อนไข”) โดยการเข้าใช้เว็บไซต์ ท่านยอมรับว่าท่านได้อ่าน เข้าใจและตกลงที่จะผูกพันตามข้อกำหนดและเงื่อนไขเหล่านี้โดยไม่จำกัด
+
+                                                        <ol>
+                                                            <li>ความเป็นส่วนตัว
+
+                                                                โปรดทบทวน นโยบายความเป็นส่วนตัว ของมหาวิทยาลัย เพื่อท่านจะได้เข้าแนวใจปฏิบัติเกี่ยวกับความเป็นส่วนตัวของมหาวิทยาลัย</li>
+                                                            <li>
+                                                                ผลิตภัณฑ์และบริการสำหรับการใช้งานส่วนบุคคล
+
+                                                        ผลิตภัณฑ์และบริการบนเว็บไซต์พร้อมตัวอย่างที่มหาวิทยาลัยให้แก่ท่านก็เพื่อใช้ส่วนบุคคลเท่านั้น ท่านจะขาย ขายต่อผลิตภัณฑ์หรือบริการใดๆ หรือตัวอย่างของผลิตภัณฑ์และบริการที่ท่านซื้อหรือที่ท่านได้รับจากมหาวิทยาลัยไม่ได้ มหาวิทยาลัยสงวนสิทธิ์ที่จะยกเลิก หรือลดปริมาณของคำสั่งซื้อใดๆ ที่จะรับมาดำเนินการ หรือผลิตภัณฑ์หรือบริการที่จะให้แก่ท่านที่มหาวิทยาลัยเห็นด้วยดุลพินิจของมหาวิทยาลัยว่าจะเป็นการละเมิดข้อกำหนดและเงื่อนไขของมหาวิทยาลัย โดยจะแจ้งหรือไม่แจ้งให้ท่านทราบก็ได้
+                                                            </li>
+                                                            <li>
+                                                                นโยบายและขั้นตอนเกี่ยวกับการซื้อ
+
+                                                        ดูนโยบายและขั้นตอนเกี่ยวกับคำสั่งซื้อผ่านเว็บไซต์นี้ (เช่น การดำเนินการเกี่ยวกับคำสั่ง การขนส่ง และการจัดการ การคืนและการแลกเปลี่ยน)
+                                                            </li>
+                                                            <li>
+                                                                ความถูกต้องของข้อมูล
+
+                                                        รายละเอียดผลิตภัณฑ์บนเว็บไซต์ของมหาวิทยาลัยนั้น มหาวิทยาลัยพยายามให้ข้อมูลที่ถูกต้องที่สุดเท่าที่จะเป็นได้เท่าที่กฎหมายจะอนุญาตให้ได้ แต่ไม่รับประกันว่ารายละเอียดผลิตภัณฑ์ สี ข้อมูล หรือเนื้อหาอื่นที่มีอยู่บนเว็บไซต์ถูกต้อง ครบถ้วน เชื่อถือได้ เป็นปัจจุบัน หรือปราศจากข้อผิดพลาด
+                                                            </li>
+                                                            <li>
+                                                                ทรัพย์สินทางปัญญา
+
+                                                        ข้อมูลและเนื้อหาทั้งหมดบนเว็บไซต์และ “การออกแบบและส่วนประกอบ (look and feel)” รวมทั้งแต่ไม่จำกัดเฉพาะเครื่องหมายการค้า โลโก้ เครื่องหมายการบริการ ข้อความ กราฟฟิก โลโก้ รูปภาพปุ่มกด รูปภาพ คลิปเสียง การรวบรวมข้อมูลและซอฟท์แวร์ รวมทั้งการรวบรวมและการจัดการข้อมูลนั้น “รวมเรียกว่า “เนื้อหา”) เป็นทรัพย์สินของNoble Cosper Co., Ltd. มหาวิทยาลัยในเครือ หุ้นส่วน หรือผู้ให้สิทธิ และคุ้มครองโดยกฎหมายของประเทศสหรัฐอเมริกาและกฎหมายระหว่างประเทศ รวมทั้งกฎหมายต่างๆ ที่ใช้บังคับกับลิขสิทธิ์และเครื่องหมายการค้า
+
+                                                        ยกเว้นที่กำหนดไว้ในสิทธิให้ใช้อย่างจำกัดในข้อ 6 หรือตามที่กฎหมายกำหนด ห้ามมิให้ใช้ ผลิตซ้ำ ทำซ้ำ ลอกเลียน ขาย ขายต่อ เข้าใช้ ดัดแปลง หรือ ใช้ประโยชน์โดยประการอื่นซึ่งเนื้อหาหรือส่วนใดๆ ของเว็บไซต์ ไม่ว่าทั้งหมดหรือบางส่วน เพื่อวัตถุประสงค์ใดๆ โดยไม่ได้รับความยินยอมเป็นลายลักษณ์อักษรโดยชัดแจ้งจากมหาวิทยาลัยก่อน
+                                                            </li>
+                                                            <li>
+                                                                การให้สิทธิ์ใช้อย่างจำกัด
+
+                                                        มหาวิทยาลัยให้สิทธิอย่างจำกัด เพิกถอนได้ มิใช่สิทธิขาด ในการเข้าใช้เว็บไซต์นี้เป็นการส่วนตัว ซึ่งเป็นการให้สิทธิใช้อย่างจำกัดนี้ ไม่รวมสิทธิในการที่จะ (ก) สร้างเฟรม หรือใช้เทคนิคในการทำเฟรมเว็บไซต์ หรือส่วนใดๆ ของเว็บไซต์ (ข) ส่งต่อ จำหน่าย ถ่ายทอด ขาย ให้สิทธิใช้ หรือดาวโหลดเว็บไซต์ หรือเนื้อหาใดๆ และ/หรือทั้งหมด (เว้นแต่เป็นการทำแคชชิ่ง หรือการกระทำที่จำเป็นสำหรับการดูเว็บไซต์) (ค) ใช้ประโยชน์จากเว็บไซต์หรือข้อความใดๆ และ/หรือทั้งหมดของเนื้อหานอกจากใช้ส่วนบุคคล (ง) ดัดแปลง หรือทำวิศวกรรมย้อนกลับ หรือสร้างงานดัดแปลงใดๆ โดยอาศัยเว็บไซต์หรือเนื้อหาใดๆ และ/หรือทั้งหมด (จ) เก็บข้อมูลบัญชีเพื่อประโยชน์ตนหรือคนอื่น (ฉ) ใช้แท็กซ่อน หรือ “ข้อความซ่อน” อื่นใดซึ่งใช้ประโยชน์เนื้อหาใดๆ และ/หรือทั้งหมด หรือ (ช) ใช้ซอฟท์แวร์โรบอต สไปเดอร์ ครอเลอร์ หรือเครื่องมือในการเก็บและดึงข้อมูลที่คล้ายกัน หรือทำการใดๆ ที่อาจเพิ่มภาระหรืองานหนักให้แก่โครงสร้างพื้นฐานของมหาวิทยาลัยโดยไม่เหมาะสม ท่าน จะต้องมีคำแจ้งกรรมสิทธิ์ทั้งหมดที่เว็บไซต์หรือที่ติดไว้หรือบรรจุในเว็บไซต์ โดยไม่มีการดัดแปลงใดๆ
+                                                            </li>
+                                                            <li>
+                                                                มหาวิทยาลัยยังให้สิทธิใช้อย่างจำกัด เพิกถอนได้ และไม่เด็ดขาดแก่ท่าน เพื่อสร้างไฮเปอร์สิงก์ไปยังโฮมเพจของเว็บไซต์เพื่อใช้ส่วนบุคคลเท่านั้น มิใช่เพื่อการค้า เว็บไซต์ที่เชื่อมโยงกับไซต์ (i) อาจเชื่อมโยงกับเนื้อหาใดๆ และ/หรือทั้งหมดของมหาวิทยาลัยได้ แต่มิได้เป็นการลอกเลียนแบบ (ii) มิได้บ่งบอกว่ามหาวิทยาลัยรับรองเว็บไซต์ดังกล่าว หรือบริการหรือผลิตภัณฑ์ของเว็บไซต์นั้น (iii) มิได้บิดเบือนข้อเท็จจริงข้อเท็จจริงเกี่ยวกับความสัมพันธ์กับมหาวิทยาลัย (iv) ไม่มีเนื้อหาที่อาจตีความได้ว่าน่ารังเกียจ หยาบคาย อื้อฉาว ผิดกฎหมาย หรือไม่เหมาะสมสำหรับคนทุกวัย (v) ไม่พูดถึงมหาวิทยาลัยหรือผลิตภัณฑ์หรือบริการของมหาวิทยาลัยในลักษณะที่เป็นเท็จ ทำให้เข้าใจผิด เป็นการดูถูก หรือในลักษณะที่น่ารังเกียจโดยประการอื่น หรือเอามหาวิทยาลัยไปเกี่ยวข้องกับผลิตภัณฑ์ บริการ หรือความคิดเห็นที่ไม่พึงปรารถนา และ (vi) ไม่เชื่อมโยงไปยังหน้าใดๆ ของไซต์นอกจากโฮมเพจ มหาวิทยาลัยอาจขอให้ท่านเอาลิงก์ใดๆ ที่เชื่อมโยงไปยังไซต์ออกด้วยดุลพินิจของมหาวิทยาลัยเอง และเมื่อได้รับการร้องขอดังกล่าว ท่านจะนำลิงก์นั้นออกทันที และยุติการเชื่อมโยงใดๆ เว้นแต่จะได้รับอนุญาตจากมหาวิทยาลัยเป็นหนังสือต่างหากและโดยชัดแจ้งให้กลับมาใช้การเชื่อมโยงได้อีก
+                                                            </li>
+                                                        </ol> 
+                                                    </div>
+                                                </div>  
+                                                
+                                            </div> 
+    
+                                        </div>      
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div> 
+                </section> 
+            </div> 
+            <footer class="main-footer">
+                ระบบสมัครเรียน ออนไลน์ 
+                <div class="float-right d-none d-sm-inline-block">
+                    <b>Version</b> 1.1
+                </div>
+            </footer>  
+        </div> 
+
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+        <script src="js/adminlte.js"></script> 
+
+        <!-- TABLE -->
+        <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script> 
+        <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap4.min.js"></script> 
+        <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script> 
+        <script src="https://cdn.datatables.net/responsive/2.2.9/js/responsive.bootstrap4.min.js"></script> 
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js" integrity="sha512-cp+S0Bkyv7xKBSbmjJR0K7va0cor7vHYhETzm2Jy//ZTQDUvugH/byC4eWuTii9o5HN9msulx2zqhEXWau20Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+ 
+
+    </body>
+</html>

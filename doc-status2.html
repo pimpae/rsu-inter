@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>สำนักงานนานาชาติ </title> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> 
+        <link rel="icon" type="image/x-icon" href="images/rsu-logo.png">
+        <link rel="stylesheet" href="css/adminlte.min.css"> 
+        <link rel="stylesheet" href="css/main.css">   
+
+        <!-- TABLE -->
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css"> 
+        <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap4.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"/> 
+
+         
+    </head>
+    <body class="hold-transition sidebar-mini layout-fixed">
+        <div class="wrapper">
+            <!-- Preloader -->
+            <!-- <div class="preloader flex-column justify-content-center align-items-center">
+                <img class="animation__shake" src="images/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+            </div> -->
+            <!-- Navbar -->
+            <nav class="main-header navbar navbar-expand navbar-white navbar-light"> 
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                    </li> 
+                </ul> 
+                <ul class="navbar-nav ml-auto"> 
+                    <li class="nav-item">
+                        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                        <i class="fas fa-search"></i>
+                        </a>
+                        <div class="navbar-search-block">
+                            <form class="form-inline">
+                                <div class="input-group input-group-sm">
+                                    <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-navbar" type="submit">
+                                        <i class="fas fa-search"></i>
+                                        </button>
+                                        <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                                        <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </li> 
+                </ul>
+            </nav> 
+            <aside class="main-sidebar sidebar-dark-primary elevation-4">
+                <!-- Brand Logo -->
+                <a href="#" class="brand-link">
+                    <img src="images/sm-logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"  >
+                    <p class="brand-text font-weight-light">ระบบจองนัดทำเอกสาร  <br> สำนักงานนานาชาติ</p>
+                </a> 
+                <div class="sidebar"> 
+                    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                        <div class="image">
+                            <img src="images/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                        </div>
+                        <div class="info">
+                            <a href="#" class="d-block">นักศึกษา</a>
+                        </div>
+                    </div>  
+                    <nav class="mt-2">
+                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false"> 
+                            <li class="nav-item">
+                                <a href="doc.html" class="nav-link active">
+                                    <i class="nav-icon far fa-poll-people"></i> 
+                                    <p>คำร้องทำเอกสาร</p>
+                                </a> 
+                            </li>
+                        </ul>
+                    </nav> 
+                </div> 
+            </aside> 
+            <div class="content-wrapper"> 
+                <div class="content-header">
+                    <div class="container-fluid">
+                        <div class="row mb-2">
+                            <div class="col-sm-6">
+                                <h1 class="m-0">
+                                    <strong>เลือกวันนัดใหม่	  </strong>  
+                                    <!-- <a href="admission-list5.html" class="btn btn-success mr-2"  >
+                                        รับนัด <i class="fas fa-check-circle"></i>
+                                    </a> 
+                                    <button class="btn btn-danger mr-2" data-toggle="modal" data-target="#myModal">
+                                        แจ้งให้เลือกวันนัดใหม่ <i class="fas fa-times-circle"></i>
+                                    </button> -->
+
+                                </h1> 
+                            </div>  
+                        </div> 
+                    </div> 
+                </div>  
+                <section class="content">
+                    <div class="container-fluid">
+                        <div class="div-box card-outline card-info p-4"> 
+                            
+                        <div class="col p-4">
+                            <h3 class="border-bottom pb-2">
+                                <strong>ต่ออายุเอกสาร	</strong>    	
+                            </h3>
+                            <div class="row"> 
+                                <div class="col-6"> 
+                                    
+                                    <div class="form-group row mb-0">
+                                        <label class="col-xl-4">ชื่อ-นามสกุล :</label>
+                                        <label class="col-xl-6">อดิศร ศรีสุธรรม</label>
+                                    </div>
+                                    <div class="form-group row mb-0">
+                                        <label class="col-xl-4">รหัสนักศึกษา :</label>
+                                        <label class="col-xl-6">651923993</label>
+                                    </div>
+                                    <div class="form-group row mb-0">
+                                        <label class="col-xl-4">คณะ</label>
+                                        <label class="col-xl-6">คณะศิลปศาสตร์</label>
+                                    </div> 
+                                    <div class="form-group row mb-0">
+                                        <label class="col-xl-4">อีเมล :</label>
+                                        <label class="col-xl-6">pimpae@hotmail.com</label>
+                                    </div>
+                                    <div class="form-group row mb-0">
+                                        <label class="col-xl-4">โทรศัพท์ :</label>
+                                        <label class="col-xl-6">098-939-3938</label>
+                                    </div>  
+
+                                    <div class="form-group row"> 
+                                        <label class="col-xl-4">เลือกวันที่นัดหมายใหม่ :</label>   
+                                        <input type="text" class="form-control col-xl-5 date">  
+                                    </div>  
+                                    <div class="form-group row">
+                                        <label class="col-xl-4">เวลา :</label> 
+                                        <input type="text" class="form-control col-xl-5"  >
+                                    </div> 
+
+                                    <div class="col"><hr></div>
+                                    <div class="form-group row">
+                                        <label class="col-xl-4">&nbsp;</label> 
+                                        <a href="doc.html"  class="btn btn-success" >ยืนยัน นัดหมายใหม่่</a>
+                                    </div> 
+
+                                </div> 
+
+
+                            </div>      
+                        </div>
+                    </div> 
+                </section> 
+            </div> 
+            <footer class="main-footer">
+                ระบบสมัครเรียน ออนไลน์ 
+                <div class="float-right d-none d-sm-inline-block">
+                    <b>Version</b> 1.1
+                </div>
+            </footer>  
+        </div> 
+
+
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title"><b>สร้างคำขอต่ออายุเอกสาร</b></h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="col p-4">
+                            <form class="h5">
+                                <div class="form-group row">
+                                    <label class="col-xl-3">ชื่อ-นามสกุล :</label>
+                                    <input type="text" class="form-control col-xl-5" value="อดิศร ศรีสุธรรม">
+                                </div> 
+                                <div class="form-group row">
+                                    <label class="col-xl-3">อีเมล :</label> 
+                                    <input type="text" class="form-control col-xl-5" value="pimpae@hotmail.com">
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-xl-3">โทรศัพท์ :</label> 
+                                    <input type="text" class="form-control col-xl-5" value="098-939-3938">
+                                </div> 
+                                <div class="form-group row"> 
+                                    <label class="col-xl-3">วันที่นัดส่งเอกสาร :</label>   
+                                    <input type="text" class="form-control col-xl-5 date">  
+                                </div>  
+                                <div class="form-group row">
+                                    <label class="col-xl-3">เวลา :</label> 
+                                    <input type="text" class="form-control col-xl-5"  >
+                                </div> 
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer text-center">
+                        <button type="button" class="btn btn-success m-auto" data-dismiss="modal">บันทึก</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+        <script src="js/adminlte.js"></script> 
+
+        <!-- TABLE -->
+        <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script> 
+        <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap4.min.js"></script> 
+        <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script> 
+        <script src="https://cdn.datatables.net/responsive/2.2.9/js/responsive.bootstrap4.min.js"></script> 
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js" integrity="sha512-cp+S0Bkyv7xKBSbmjJR0K7va0cor7vHYhETzm2Jy//ZTQDUvugH/byC4eWuTii9o5HN9msulx2zqhEXWau20Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+        <script> 
+            $('input.date').datepicker({
+                clearBtn: true,
+                language: "th",
+                calendarWeeks: true,
+                autoclose: true,
+                todayHighlight: true,
+                toggleActive: true
+            });
+        </script>
+
+        
+    </body>
+</html>
