@@ -109,7 +109,38 @@
                                     <i class="nav-icon fas fa-user-tie"></i>
                                     <p>จัดการเอเจนท์</p>
                                 </a> 
-                            </li>   
+                            </li>  
+                            <!-- <li class="nav-item">
+                                <a href="admission-list2.html" class="nav-link">
+                                    <i class="nav-icon fas fa-user-check"></i>
+                                    <p>รายการการสมัครเรียน</p>
+                                </a> 
+                            </li>  
+                            <li class="nav-item">
+                                <a href="admission-list3.html" class="nav-link">
+                                    <i class="nav-icon fal fa-poll-people"></i> 
+                                    <p>รายการการสมัครเรียน</p>
+                                </a> 
+                            </li>    
+
+                            
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"> 
+                                    <i class="nav-icon far fa-cog"></i>
+                                    <p>
+                                        การตั้งค่า  
+                                        <i class="fas fa-angle-left right"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            <i class="far fa-user-chart"></i>
+                                            <p>การตั้งค่าเงื่อนไขการสอบ</p>
+                                        </a>
+                                    </li>   
+                                </ul>
+                            </li> -->
                         </ul>
                     </nav> 
                 </div> 
@@ -120,14 +151,8 @@
                         <div class="row mb-2">
                             <div class="col-sm-6">
                                 <h1 class="m-0">
-                                    <strong>ข้อมูลผู้สมัคร :</strong> <span class="text-success">รอหนังสือ Agreement </span>
-
-                                    <!-- <button class="btn btn-success" data-toggle="modal" data-target="#myModal2">
-                                        ผ่านการพิจารณา <i class="fas fa-check-circle"></i>
-                                    </button>
-                                    <button class="btn btn-danger mr-2" data-toggle="modal" data-target="#myModal">
-                                        ไม่ผ่านการพิจารณา <i class="fas fa-times-circle"></i>
-                                    </button> -->
+                                    <strong>ข้อมูลผู้สมัคร :</strong> <span class="text-danger">รอผู้สมัครแก้ไขเอกสาร   </span>
+ 
 
                                 </h1> 
                             </div>  
@@ -139,54 +164,6 @@
                         <div class="div-box card-outline card-info p-4"> 
                             
                         <div class="col p-4">
-
-                            <div class="col">
-                                <div class="row">
-                                    <div class="col-xl-10">
-                                        <form action=""> 
-                                            <div class="form-group row">
-                                                <label class="col-xl-12"><span class="h3"><b>กรอกข้อมูล</b></span> </label> 
-                                            </div>
-                                            <div class="box1">   
-                                                <div class="form-group row">
-                                                    <div class="col-xl-3">
-                                                        <label for="">หมายเหตุ <span class="text-danger">*</span></label>  
-                                                    </div>   
-                                                    <div class="col-xl-4"> 
-                                                        <textarea class="form-control" name="" id="" cols="30" rows="5"></textarea>
-                                                    </div>
-                                                </div>    
- 
-                                                <div class="form-group row">
-                                                    <div class="col-xl-3">
-                                                        <label for="">อัพโหลดเอกสารลงนาม <span class="text-danger">*</span></label>  
-                                                    </div>   
-                                                    <div class="col-xl-4">
-                                                        <button type="button" class="btn btn-pink-o">
-                                                            <i class="fas fa-file-upload"></i>
-                                                        </button>
-                                                    </div>
-                                                </div>      
-
-                                                <div class="col-12 p-0"> 
-                                                    <hr>
-                                                </div>
-                                            </div>  
-
-
-                                            
-                                            <div class="form-group row"> 
-                                                <div class="col-xl-6 col-12"> 
-                                                    <a href="admission-list.html" class="btn btn-success">บันทึก</a> 
-                                                </div>
-                                            </div>   
-                                            <br> <br>
-                                        </form> 
-                                    </div>
-                                </div>
-                            </div>
-
-
                             <h3 class="border-bottom pb-2">
                                 <strong>International Business	 </strong>    	
                             </h3>
@@ -345,13 +322,28 @@
                     <!-- Modal Header --> 
                     <!-- Modal body -->
                     <div class="modal-header">
-                        <h4 class="modal-title text-success"><b>ผ่านการพิจารณา</b></h4>
+                        <h4 class="modal-title text-success"><b>อนุมัติให้ผ่าน</b></h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div class="modal-body">
                         <div class="col pt-2"> 
 
-                             
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" id="customCheckbox1" checked>
+                                <label for="customCheckbox1" class="custom-control-label">รูปถ่าย</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" id="customCheckbox2" checked>
+                                <label for="customCheckbox2" class="custom-control-label">บัตรประชาชน </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" id="customCheckbox3" checked>
+                                <label for="customCheckbox3" class="custom-control-label">สำเนาวุฒิการศึกษา </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" id="customCheckbox4" checked>
+                                <label for="customCheckbox4" class="custom-control-label">เอกสารผลสอบภาษาอังกฤษ</label>
+                            </div>
                             <div class="col">
                                 <h4>หมายเหตุ</h4>
                                 <div class="form-group">
@@ -363,7 +355,7 @@
                     <!-- Modal footer -->
                     <div class="modal-footer">
                         <div class="col text-center">
-                            <a href="admission-list.html"  class="btn btn-success mr-3">ยืนยัน</a>
+                            <a href="admission-list.html"  class="btn btn-success mr-3">อนุมัติให้ผ่าน</a>
                             <button  class="btn btn-outline-secondary" data-dismiss="modal">ยกเลิก</ิ>
                         </div>
                     </div>
@@ -376,12 +368,28 @@
                 <div class="modal-content">
                     <!-- Modal Header -->
                     <div class="modal-header">
-                        <h4 class="modal-title text-danger"><b>ไม่ผ่านการพิจารณา</b></h4>
+                        <h4 class="modal-title text-danger"><b>เอกสารไม่ถูกต้อง</b></h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <!-- Modal body -->
                     <div class="modal-body">
-              
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="customCheckboxx1" value="option1">
+                            <label for="customCheckboxx1" class="custom-control-label">รูปถ่าย</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="customCheckboxx2" value="option1">
+                            <label for="customCheckboxx2" class="custom-control-label">บัตรประชาชน </label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="customCheckboxx3" value="option1">
+                            <label for="customCheckboxx3" class="custom-control-label">สำเนาวุฒิการศึกษา </label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="customCheckboxx4" value="option1">
+                            <label for="customCheckboxx4" class="custom-control-label">เอกสารผลสอบภาษาอังกฤษ</label>
+                        </div>
+
                         <div class="col">
                             <h4>หมายเหตุ</h4>
                             <div class="form-group">
@@ -392,7 +400,7 @@
                     <!-- Modal footer -->
                     <div class="modal-footer"> 
                         <div class="col text-center">
-                            <a href="admission-list.html"  class="btn btn-danger mr-3">ยืนยัน</a>
+                            <a href="admission-list.html"  class="btn btn-danger mr-3">ยืนยันแจ้งแก้ไขเอกสาร</a>
                             <button  class="btn btn-outline-secondary" data-dismiss="modal">ยกเลิก</ิ>
                         </div>
                     </div> 
