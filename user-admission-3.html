@@ -123,7 +123,7 @@
                                         สถานะ :
                                     </strong> 
                                     <span class="text-primary">
-                                        รอตรวจสอบเอกสาร	
+                                        รอบัณฑิตวิทยาลัยพิจารณา
 
                                     </span>
                                 </h1> 
@@ -138,13 +138,13 @@
                                         </div> 
                                     </a>
                                     <a href="user-admission-2.html">
-                                        <div class="step">
+                                        <div class="step active">
                                             <div class="number">2</div>
                                             <span>บัณฑิตวิทยาลัย</span>
                                         </div> 
                                     </a>
                                     <a href="user-admission-3.html">
-                                        <div class="step">
+                                        <div class="step active">
                                             <div class="number">3</div>
                                             <span>ชำระเงิน</span>
                                         </div> 
@@ -177,18 +177,16 @@
                                 </strong>    	
                             </h3>
                             <div class="row">
-                                <!-- <div class="col-12">
-                                    <h4 class="mt-3 text-success"><strong>ผลการสอบ</strong></h4>
+                                <div class="col-12">
+                                    <h4 class="mt-3 text-success"><strong>ใบชำระเงิน</strong></h4>
                                     <hr>
                                     <div class="form-group row mb-0">
-                                        <label class="col-xl-2">วันที่ :</label>
-                                        <label class="col-xl-6">10/05/2565  10:30</label>
-                                    </div>
-                                    <div class="form-group row mb-0">
-                                        <label class="col-xl-2">สถานที่ :</label>
-                                        <label class="col-xl-6">มหาวิทยาลัยรังสิต อาคารอาทิตย์ อุไรรัตน์(อาคาร 1) ชั้น 3 ห้อง 3305	</label>  
+                                        <label class="col-xl-2">Payment :</label>
+                                        <label class="col-xl-6">
+                                            <a href="#" class="text-pink"><i class="far fa-file-pdf"></i> Payment.pdf </a>
+                                        </label>
                                     </div> 
-                                </div> -->
+                                </div>
                                 <div class="col-12">
                                     <h4 class="mt-3"><strong>ข้อมูลการสมัคร</strong></h4>
                                     <hr>
@@ -208,8 +206,7 @@
                                 <div class="col-12 pb-3">
                                     
                                     <h4 class="mt-3"><strong>เอกสารประกอบการสมัครเรียน</strong></h4>
-                                    <hr> 
-                      
+                                    <hr>  
                                     <div class="form-group row mb-0">
                                         <label class="col-xl-2">บัตรประชาชน :</label>
                                         <label class="col-xl-6">
@@ -259,40 +256,7 @@
         <script src="js/adminlte.js"></script>  
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-        <script>
-            var ctx2 = document.getElementById('myChartTab21').getContext('2d');
-            var myChart = new Chart(ctx2, {
-                type: 'bar',
-                data: {
-                    labels: ['มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน' , 'พฤษภาคม' , 'มิถุนายน', 'กรกฎาคม', 'สิงหาคม' , 'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม'],
-                    datasets: [
-                    {
-                        label: "พักการศึกษา", 
-                        backgroundColor: 'rgba(255, 99, 132, 1)',
-                        data: [1,7,2,3,4,9,5,4,3,2,11,16]
-                    }, 
-                    {
-                        label: "จบการศึกษา",
-                        backgroundColor: 'rgba(75, 192, 192, 1)',
-                        data: [3,4,1,1,2,9,5,6,7,3,8,6]
-                    },
-                    {
-                        label: "สถานะการย้ายกลุ่ม",
-                        backgroundColor: 'rgba(255, 206, 86, 1)',
-                        data: [12,7,14,12,7,1,4,13,4,11,3]
-                    } 
-                ]
-
-                },
-                options: {
-                    scales: {
-                        y: {
-                            beginAtZero: true
-                        }
-                    }
-                }
-            });
-        </script>
+        
 
     </body>
 </html>
