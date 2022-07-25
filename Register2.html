@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)https://demo.aesystem.co.th/rsu_inter2/showPersonal?student=64&register_type= -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>
+            Register
+        </title>
+        <meta name="description" content="Login">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimal-ui">
+        <!-- Call App Mode on ios devices -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <!-- Remove Tap Highlight on Windows Phone IE -->
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- base css -->
+        <link rel="stylesheet" media="screen, print" href="./Register2_files/vendors.bundle.css">
+        <link rel="stylesheet" media="screen, print" href="./Register2_files/app.bundle.css">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="apple-touch-icon" sizes="180x180" href="https://demo.aesystem.co.th/rsu_inter2/assets/img/favicon/apple-touch-icon.png?v=0.0.06">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://demo.aesystem.co.th/rsu_inter2/assets/img/favicon/favicon-32x32.png?v=0.0.06">
+        <link rel="mask-icon" href="https://demo.aesystem.co.th/rsu_inter2/assets/img/favicon/safari-pinned-tab.svg?v=0.0.06" color="#5bbad5">
+        <link rel="stylesheet" media="screen, print" href="./Register2_files/page-login.css">
+        <link id="mytheme" rel="stylesheet" href="./Register2_files/cust-theme-7.css">
+        <link rel="stylesheet" media="screen, print" href="./Register2_files/sweetalert2.bundle.css">
+        <link rel="stylesheet" href="./Register2_files/validationEngine.jquery.css" type="text/css">
+        <link rel="stylesheet" media="screen, print" href="./Register2_files/datatables.bundle.css">
+        <link rel="stylesheet" media="screen, print" href="./Register2_files/bootstrap-datepicker.min.css">
+        <link rel="stylesheet" media="screen, print" href="./Register2_files/fa-solid.css">
+        <link rel="stylesheet" media="screen, print" href="./Register2_files/select2.bundle.css">
+        <style>
+            .hr-border {
+                border-width: 2px;
+                margin-top: 2%;
+            }
+
+            .m-t {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            #line-step {
+                position: relative;
+
+            }
+
+            #line-step .line-step {
+                cursor: default;
+                position: relative;
+                z-index: 2;
+                background: #EFEFF4;
+                color: #8A8A8F;
+                font-size: 16px;
+                line-height: 42px;
+                text-align: center;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 30px;
+                border: 3px solid white;
+            }
+
+            #line-step .line-step:after,
+            #line-step .line-step:before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 2px;
+                background-color: #8A8A8F;
+                top: 50%;
+                margin-top: -1px;
+            }
+
+            #line-step .col-6:first-child .line-step:before {
+                display: none;
+            }
+
+            #line-step .col-6:last-child .line-step:after {
+                display: none;
+            }
+
+            #line-step .line-step:after {
+                right: -18px;
+            }
+
+            #line-step .line-step:before {
+                left: -18px;
+            }
+
+            /*#line-step .line-step.line-step-active {*/
+            /*    background: #4CD964;*/
+            /*    color: white;*/
+            /*    text-shadow: 0 1px 1px rgba(21, 62, 31, 0.47);*/
+            /*}*/
+            #line-step .line-step.line-step-active {
+                background: #EA4C92;
+                color: white;
+                text-shadow: 0 1px 1px rgba(21, 62, 31, 0.47);
+            }
+            #line-step .line-step.line-step-success {
+                background: #EA4C92;
+                color: white;
+                text-shadow: 0 1px 1px rgba(21, 62, 31, 0.47);
+            }
+
+            #input_container {
+                position:relative;
+                /* width: 200px; */
+            }
+            .date_search {
+                margin:0;
+                padding-right: 30px;
+                width: 100%;
+            }
+            #img_icon {
+                position:absolute;
+                bottom:2px;
+                right:2px;
+                width:24px;
+                height:27px;
+            }
+
+        </style>
+    </head>
+    <body style="background-color: #bdbdbd;" class="desktop chrome webkit pace-done blur" cz-shortcut-listen="true"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+        
+        <form id="formfield" action="https://demo.aesystem.co.th/rsu_inter2/saveUpdateNoAuth?XH?a4sFYDjTCNRPG1wKnNClYAQa5YOsBWL5hK2gG8jq" class="needs-validation" novalidate=""><div class="loader"><i class="fal fa-spinner-third fa-spin-4x fs-xxl"></i></div>
+            <input type="hidden" name="_token" value="a4sFYDjTCNRPG1wKnNClYAQa5YOsBWL5hK2gG8jq">            <input type="hidden" name="token" id="token" value="X5BNVEL">
+            <input type="hidden" id="student_id" name="student_id" value="64">
+            <input type="hidden" name="exchange_step" id="exchange_step" value="2">
+            <input type="hidden" name="step" id="step" value="2">
+            <input type="hidden" name="register_type" id="register_type" value="">
+            <input type="hidden" name="get_type_custom" id="get_type_custom" value="nonthai">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="panel">
+                        <div class="panel-container show">
+                            <div class="panel-content">
+                                <div class="frame-wrap">
+                               <div class="text-center">
+                                        <label style="color:black;font-size: 30px;">Registration 
+                                                            Application online for full time student
+                                                    </label>
+                                    </div>     <div class="row">
+                                        <div class="col-lg-12">
+                                                                                            <div id="line-step" class="mt-2 mb-4">
+        <div class="row">
+                <div class="col-6 col-sm mt-2">
+                        <div class="line-step line-step-active">Program Selection</div>
+                    </div>
+                
+                    <div class="col-6 col-sm mt-2">
+                        <div class="line-step line-step-active">Personal Details</div>
+                    </div><div class="col-6 col-sm mt-2">
+                        <div class="line-step line-step-">Education Information
+
+</div>
+                    </div>
+                <div class="col-6 col-sm mt-2">
+                        <div class="line-step ">Attachment and Application Confirmation</div>
+                    </div>
+            </div>
+</div>
+                                                                                    </div>
+                                    </div>
+                                    <h2 style="color:black;">Personal Infromation:</h2>
+                                    <div class="row">
+                                        <div class="form-group col-6">
+                                                                                            <div class="form-group row">
+                                                    <label for="input_passport_number" class="col-sm-4 col-form-label text-right">Passport number</label>
+                                                    <div class="col-sm-8">
+                                                        <input id="input_passport_number" name="input_card_number" class="form-control validate[required]" type="text" maxlength="10">
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                    <div class="row m-t">
+                                        <div class="col-12">
+                                            <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label text-right">Title *</label>
+                                                <div class="col-sm-10">
+                                                    <div class="row">
+                                                        <div class="col-2" style="margin-right: unset;">
+                                                            <select name="prefix" id="prefix" class="browser-default custom-select form-control validate[required]" style="font-size: inherit;" required="">
+                                                                <option value="0" selected="" disabled="">---Please Select---
+                                                                </option>
+                                                                                                                                    <option value="1">
+                                                                        Mr.
+                                                                    </option>
+                                                                                                                                    <option value="2">
+                                                                        Ms.
+                                                                    </option>
+                                                                                                                                    <option value="3">
+                                                                        Miss
+                                                                    </option>
+                                                                                                                                    <option value="4">
+                                                                        Other (please specify in the box below)
+                                                                    </option>
+                                                                                                                            </select>
+                                                        </div>
+                                                        <div class="col-3" style="margin-right: unset;">
+                                                            <input type="text" class="form-control validate[required]" id="input_first_name" name="input_first_name" required="">
+                                                            <span style="font-size: 16px;padding-left: 25px;">First
+                                                                Name*</span>
+                                                        </div>
+                                                        <div class="col-3" style="margin-right: unset;">
+                                                            <input type="text" class="form-control" id="input_middle_name" name="input_middle_name" required="">
+                                                            <span style="font-size: 16px;padding-left: 25px;">Middle
+                                                                Name</span>
+                                                        </div>
+                                                        <div class="col-3" style="margin-right: unset;">
+                                                            <input type="text" class="form-control validate[required]" id="input_last_name" name="input_last_name" required="">
+                                                            <span style="font-size: 16px;padding-left: 25px;">Last
+                                                                Name*</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        <div class="row m-t">
+                                        <div class="form-group col-6">
+                                            <div class="form-group row">
+                                                <label for="input_lastname_personal" class="col-sm-4 col-form-label text-right">Gender *</label>
+                                                <div class="col-sm-4">
+                                                    <p style="background-color: #f3f3f3" id="option-selected" class="col-form-label form-control"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-6">
+                                            <div class="form-group row">
+                                                <label for="input_nationality" class="col-sm-4 col-form-label text-right">Nationality *</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control validate[required]" id="input_nationality" name="input_nationality" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-t">
+                                        <div class="col-6">
+                                            <div class="form-group row">
+                                                <label for="input_date_birth" class="col-sm-4 col-form-label text-right">Date of birth
+                                                    (DD/MM/YYYY) *</label>
+                                                <div class="col-sm-8">
+                                                    <div id="input_container">
+                                                        <input type="text" class="form-control date_search validate[required]" id="input_date_birth" name="input_date_birth" placeholder="dd/mm/yyyy" onchange="ageCount()">
+                                                        <i class="fal fa-calendar-alt" id="img_icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group row">
+                                                <label for="input_age" class="col-sm-4 col-form-label text-right">Age</label>
+                                                <div class="col-sm-4">
+                                                    <input type="hidden" id="input_age_hidden" name="input_age_hidden" value="19">
+                                                    <input type="text" class="form-control" id="input_age" name="input_age" readonly="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-t">
+                                        <div class="col-6">
+                                            <div class="form-group row">
+                                                <label for="input_email" class="col-sm-4 col-form-label text-right">Email *</label>
+                                                <div class="col-sm-8">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <input class="form-control validate[custom[email]]" type="text" id="input_email" name="input_email">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group row">
+                                                <label for="input_home_number" class="col-sm-4 col-form-label text-right">Mobile Number *</label>
+                                                <div class="col-sm-8">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <input class="form-control" type="text" id="input_home_number validate[required]" name="input_home_number" maxlength="10" placeholder="0999999999">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-t">
+                                        <div class="col-6">
+                                            <div class="form-group row">
+                                                <label for="input_line" class="col-sm-4 col-form-label text-right">Line ID</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control" id="input_line" name="input_line">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group row">
+                                                <label for="input_wechat" class="col-sm-4 col-form-label text-right">WeChat ID</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control" id="input_wechat" name="input_wechat">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-t">
+                                        <div class="col-6">
+                                            <div class="form-group row">
+                                                <label for="input_whatapp" class="col-sm-4 col-form-label text-right">Whatsapp ID</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control" id="input_whatapp" name="input_whatapp">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr class="hr-border">
+                                    
+                                    
+                                                                        
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+
+                                                                            
+                                        
+                                        
+                                        
+                                        
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <div class="text-center d-none" id="div1">
+                                        <label class="col-sm-12 col-form-label" style="color: red">Remark : If English
+                                            Proficiency is not available, you may require to take internal English Placement
+                                            Test at RSU.<label>
+                                    </label></label></div>
+
+                                    <hr class="hr-border">
+                                    <div class="row" style="justify-content: center;width:100%;margin-bottom: 10px;">
+                                        <a href="email.html"  class="btn btn-success btn-md waves-effect waves-themed">Next Step</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div class="modal fade bd-example-modal-lg confirm-submit" id="confirm-submit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: darkgrey;color: white;">
+                        <h2 class="modal-title text-center d-block">Review Program Selection</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" style="font-size: 24px;">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="font-size: 16px;">
+                        <h2 style="color:black;">Personal Information</h2>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">ID Card number</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_card_number"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Name :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_fullname_en"></span>
+                            </div>
+
+                        </div>
+                                                <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Gender :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_gender"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Nationality :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_nationality"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Date of birth :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_date_birth"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Age :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_age"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Email :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_email_personal"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Mobile Number :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_home_number"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Line ID :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_line"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">WeChat ID :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_wechat"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Whatsapp ID :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_whatsapp"></span>
+                            </div>
+                        </div>
+                        <hr class="hr-border">
+                        <h2 style="color:black;">Postal Address</h2>
+                        <div class="row mt-1">
+                            <div class="col-2 text-left font-size">Address :</div>
+                            <div class="col-8 text-left font-size">
+                                <span id="show_address_postal"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-3 text-left font-size">District :</div>
+                                    <div class="col-8 text-left font-size">
+                                        <span id="show_district_postal"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                 <div class="row">
+                                    <div class="col-5 text-left font-size">City/Province :</div>
+                                    <div class="col-7 text-left font-size">
+                                        <span id="show_city_postal"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-6">
+                                 <div class="row">
+                                    <div class="col-3 text-left font-size">Country :</div>
+                                    <div class="col-8 text-left font-size">
+                                        <span id="show_country_postal"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                 <div class="row">
+                                    <div class="col-4 text-left font-size">Postal Code :</div>
+                                    <div class="col-8 text-left font-size">
+                                        <span id="show_postal_postal"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Home Telephone number :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_home_phone_number_postal"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-5 text-left font-size">Mobile Telephone number :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_mobile_phone_number_postal"></span>
+                            </div>
+                        </div>
+                        <hr class="hr-border">
+                        <div class="row mt-1">
+                            <div class="col-5 text-left font-size">
+                                                                    VISA Submission Place :
+                                                            </div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_visa"></span>
+                            </div>
+                        </div>
+                                                    <hr class="hr-border">
+                            <h2 style="color:black;">Education Information</h2>
+                            <div class="row mt-1">
+                                <div class="col-3 text-left font-size">Highest Education :</div>
+                                <div class="col-8 text-left font-size">
+                                    <span id="show_high_education"></span>
+                                </div>
+                            </div>
+                            <div class="row mt-1">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-4 text-left font-size">Insitiute Name :</div>
+                                            <div class="col-6 text-left font-size">
+                                                <span id="show_insitiute_name"></span>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-3 text-left font-size">City :</div>
+                                        <div class="col-8 text-left font-size">
+                                            <span id="show_highschool_city"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="row mt-1">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-4 text-left font-size">Year
+                                                    of graduate :</div>
+                                            <div class="col-6 text-left font-size">
+                                                <span id="show_year_graduate"></span>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-6 text-left font-size">GPA / Average Percentage :</div>
+                                        <div class="col-6 text-left font-size">
+                                            <span id="show_gpa"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        <hr class="hr-border">
+                        <h2 style="color:black;">English Proficiency</h2>
+                        <div class="row mt-1">
+                            <div class="col-10">
+                                <div class="row">
+                                    <div class="col-6 text-left font-size">Do you have English Proficiency ? :</div>
+                                    <div class="col-4 text-left font-size">
+                                        <span id="show_have_eng_proficiency"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="hr-border">
+
+                        <div class="row mb-3 mt-4">
+                            <div id="save_data" style="display: none;"></div>
+                            <div class="col-6 text-center button-hide">
+                                <button type="button" class="btn btn-default waves-effect waves-themed" data-dismiss="modal" style="width: auto;">Edit</button>
+                            </div>
+                            <div class="col-6 text-center button-hide">
+                                <a href="https://demo.aesystem.co.th/rsu_inter2/showPersonal?student=64&amp;register_type=#" id="submit" class="btn btn-success success waves-effect waves-themed">Save</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p id="js-color-profile" class="d-none">
+            <span class="color-primary-50"></span>
+            <span class="color-primary-100"></span>
+            <span class="color-primary-200"></span>
+            <span class="color-primary-300"></span>
+            <span class="color-primary-400"></span>
+            <span class="color-primary-500"></span>
+            <span class="color-primary-600"></span>
+            <span class="color-primary-700"></span>
+            <span class="color-primary-800"></span>
+            <span class="color-primary-900"></span>
+            <span class="color-info-50"></span>
+            <span class="color-info-100"></span>
+            <span class="color-info-200"></span>
+            <span class="color-info-300"></span>
+            <span class="color-info-400"></span>
+            <span class="color-info-500"></span>
+            <span class="color-info-600"></span>
+            <span class="color-info-700"></span>
+            <span class="color-info-800"></span>
+            <span class="color-info-900"></span>
+            <span class="color-danger-50"></span>
+            <span class="color-danger-100"></span>
+            <span class="color-danger-200"></span>
+            <span class="color-danger-300"></span>
+            <span class="color-danger-400"></span>
+            <span class="color-danger-500"></span>
+            <span class="color-danger-600"></span>
+            <span class="color-danger-700"></span>
+            <span class="color-danger-800"></span>
+            <span class="color-danger-900"></span>
+            <span class="color-warning-50"></span>
+            <span class="color-warning-100"></span>
+            <span class="color-warning-200"></span>
+            <span class="color-warning-300"></span>
+            <span class="color-warning-400"></span>
+            <span class="color-warning-500"></span>
+            <span class="color-warning-600"></span>
+            <span class="color-warning-700"></span>
+            <span class="color-warning-800"></span>
+            <span class="color-warning-900"></span>
+            <span class="color-success-50"></span>
+            <span class="color-success-100"></span>
+            <span class="color-success-200"></span>
+            <span class="color-success-300"></span>
+            <span class="color-success-400"></span>
+            <span class="color-success-500"></span>
+            <span class="color-success-600"></span>
+            <span class="color-success-700"></span>
+            <span class="color-success-800"></span>
+            <span class="color-success-900"></span>
+            <span class="color-fusion-50"></span>
+            <span class="color-fusion-100"></span>
+            <span class="color-fusion-200"></span>
+            <span class="color-fusion-300"></span>
+            <span class="color-fusion-400"></span>
+            <span class="color-fusion-500"></span>
+            <span class="color-fusion-600"></span>
+            <span class="color-fusion-700"></span>
+            <span class="color-fusion-800"></span>
+            <span class="color-fusion-900"></span>
+        </p>
+
+        <script src="./Register2_files/vendors.bundle.js.download"></script>
+        <script src="./Register2_files/jquery.validationEngine-en.js.download"></script>
+        <script src="./Register2_files/jquery.validationEngine.js.download"></script>
+        <script src="./Register2_files/sweetalert2.bundle.js.download"></script>
+        <script src="./Register2_files/app.bundle.js.download"></script>
+        <script src="./Register2_files/bootstrap-password-toggler.min.js.download"></script>
+        <script src="./Register2_files/inputmask.bundle.js.download"></script>
+        
+        <script src="./Register2_files/bootstrap-datepicker-thai.js.download"></script>
+        <script src="./Register2_files/bootstrap-datepicker.js.download"></script>
+        <script src="./Register2_files/select2.bundle.js.download"></script>
+        <script>
+            window.history.forward();
+            function noBack() {
+                window.history.forward();
+            }
+
+            $( document ).ready(function() {
+                $("#countryId,#stateId,#cityId,#input_home_university,#input_highschool_city").select2();
+                $("#countryId").change(function(){
+                    $.ajax({
+                    url: "https://demo.aesystem.co.th/rsu_inter2/getState?country_id=" + $(this).val(),
+                    method: 'GET',
+                    success: function(data) {
+                        $('#stateId').html(data.html);
+                        $('#cityId').html('<option value="">---Select City---</option>');
+                        }
+                    });
+                });
+                $("#stateId,#stateId_s").change(function(){
+                    $.ajax({
+                    url: "https://demo.aesystem.co.th/rsu_inter2/getCity?state_id=" + $(this).val(),
+                    method: 'GET',
+                    success: function(data) {
+                        $('#cityId').html(data.html);
+                        }
+                    });
+                });
+                $("#input_contry_code_postal,#input_contry_code_mobile_postal").select2();
+                var type_s = $('#register_type').val();
+                if(type_s != 'exchange'){
+                    function FormatGPA(gPAElementID) {
+                        re = /\D/g; // remove any characters that are not numbers
+                        gPAVal = document.getElementById(gPAElementID).value.replace(re,"");
+                        gPAValFirstCharacter = gPAVal.charAt(0);
+                        if ( ( gPAVal >= 0 ) &&  ( gPAValFirstCharacter < 5 ) ){
+                            console.log('gPAVal',gPAVal,gPAElementID)
+                                gPALen = gPAVal.length;
+                                if( gPALen > 1){
+                                        gPAa=gPAVal.slice(0,1);
+                                        gPAb=gPAVal.slice(1);
+                                        if(gPAVal.slice(0,1) == 4){
+                                            $('#'+gPAElementID).val(gPAa + "." + "00");
+                                        } else{
+                                            $('#'+gPAElementID).val(gPAa + "." + gPAb);
+                                        }
+                                }else{
+                                    $('#'+gPAElementID).val(gPAVal);
+                                };
+                                // $('#input_gpa_hidden').val(gPAElementID);
+                        }else{
+                            $('#'+gPAElementID).val("");
+                        };
+                    };
+
+                    document.getElementById('input_gpa').onblur = function (e) { FormatGPA(this.id); };
+                    document.getElementById('input_gpa').onfocus = function (e) { FormatGPA(this.id); };
+                    document.getElementById('input_gpa').onkeypress = function (e) { FormatGPA(this.id); };
+                    document.getElementById('input_gpa').oninput = function (e) { FormatGPA(this.id);  };
+                    document.getElementById('input_gpa').onchange = function (e) { FormatGPA(this.id); };
+                }
+
+                $("#input_listed_above").attr('disabled', 'disabled');
+                $("#is_listed_above").click(function () {
+                    if ($(this).is(":checked")) {
+                        $("#input_listed_above").removeAttr('disabled', 'disabled');
+                    } else {
+                        $("#input_listed_above").attr('disabled', 'disabled');
+                        $('#input_listed_above').val('');
+                    }
+                });
+
+                $("#input_explain_d1").attr("disabled", "disabled");
+                $("#input_explain_d2").attr("disabled", "disabled");
+                $("#input_explain_d3").attr("disabled", "disabled");
+
+                $("input[name='is_medical']").click(function () {
+                    if ($("#is_medical_y").is(":checked")) {
+                        $("#input_explain_d1").removeAttr("disabled");
+                    } else {
+                        $("#input_explain_d1").attr("disabled", "disabled");
+                        $('#input_explain_d1').val('');
+                    }
+                });
+                $("input[name='is_criminal']").click(function () {
+                    if ($("#is_criminal_y").is(":checked")) {
+                        $("#input_explain_d2").removeAttr("disabled");
+                    } else {
+                        $("#input_explain_d2").attr("disabled", "disabled");
+                        $('#input_explain_d2').val('');
+                    }
+                });
+                $("input[name='is_difficulty']").click(function () {
+                    if ($("#is_difficulty_y").is(":checked")) {
+                        $("#input_explain_d3").removeAttr("disabled");
+                    } else {
+                        $("#input_explain_d3").attr("disabled", "disabled");
+                        $('#input_explain_d3').val('');
+                    }
+                });
+            });
+        $(function(){
+            $("input[name='input_card_number'],input[name='input_postal_code_postal'],input[name='input_postal_code_exchange'],input[name='input_home_number'],input[name='input_moo_postal']").on('input', function (e) {
+                $(this).val($(this).val().replace(/[^0-9]/g, ''));
+            });
+        });
+
+        $("#is_in_thailand").click(function() {
+            if($(this).is(":checked")) {
+                $(".country_visa").hide();
+            } else {
+                $(".country_visa").show();
+                $("#countryId,#stateId,#cityId").val('');
+            }
+        });
+
+        var select = document.getElementById("prefix"),
+            showOption = document.querySelector('#option-selected');
+        select.addEventListener('change', function() {
+            var str_gender = "";
+            if (this.value == 1) {
+                str_gender = 'male';
+            } else {
+                str_gender = 'female';
+            }
+            showOption.textContent = str_gender;
+        });
+
+        function myFunction($e) {
+            if ($e == 0) {
+                $('#div1').removeClass("d-none");
+                $('.eng_proficiency').addClass("d-none");
+                $('#TextBoxContainer_new_row_eng tr').remove();
+            } else if ($e == 1) {
+                $('#div1').removeClass("d-none");
+                $('#div1').addClass("d-none");
+                $('.eng_proficiency').removeClass("d-none");
+            }
+        }
+
+        function add_new_row_eng() {
+            document.getElementById('table_add_eng_cer').style.display = 'block';
+            var numOfRows = document.querySelectorAll('#TextBoxContainer_new_row_eng > tr').length
+            var div = $("<tr />")
+            var type_exam_eng = $('#type_exam_eng').val();
+            var score_eng = $('#input_score_eng').val();
+            var date_exam = $('#input_date_exam').val();
+            var place_exam = $('#input_place_exam').val();
+
+            if(type_exam_eng != 0 && score_eng && date_exam && place_exam){
+                div.html(GetDynamicTextBox_new_row_eng(numOfRows, type_exam_eng, score_eng, date_exam, place_exam))
+                $("#TextBoxContainer_new_row_eng").append(div)
+            } else{
+                return alert('Please Set English Proficiency');
+            }
+
+            $('#type_exam_eng').val(0);
+            $('#input_score_eng').val('');
+            $('#input_date_exam').val('');
+            $('#input_place_exam').val('');
+        }
+
+        function GetDynamicTextBox_new_row_eng(value, type_exam_eng, score_eng, date_exam, place_exam) {
+            var s_type_exam_eng = "";
+            if (type_exam_eng == 1) {
+                s_type_exam_eng = "Toefl iBT";
+            } else if (type_exam_eng == 2) {
+                s_type_exam_eng = "Toefl pBT";
+            } else if (type_exam_eng == 3) {
+                s_type_exam_eng = "Toefl cBT";
+            } else if (type_exam_eng == 4) {
+                s_type_exam_eng = "IELTS";
+            } else if (type_exam_eng == 5) {
+                s_type_exam_eng = "CEFR";
+            }
+
+            return '' +
+                '<table>' +
+                '<tr class="tr_table">' +
+                '<td style="width:10px;">' +
+                '<input style="border: unset;" type="text" class="text-center" id="value_' + (value+1) + '"' +
+                'name="value[]' + '" value="' + (value+1) + '" readonly>' +
+                '</td>' +
+                '<td style="">' +
+                '<input style="border: unset;" type="text" class="" id="type_exam_eng_' + value + '"' +
+                'name="type_exam_eng[]' + '" value="' + s_type_exam_eng + '" readonly>' +
+                '</td>' +
+                '<td style="">' +
+                '<input style="border: unset;" type="text" class="" id="input_score_eng_' + value + '"' +
+                'name="input_score_eng[]' + '" value="' + score_eng + '" readonly>' +
+                '</td>' +
+                '<td style="">' +
+                '<input style="border: unset;" type="text" class="" id="input_date_exam_' + value + '"' +
+                'name="input_date_exam[]' + '" value="' + date_exam + '" readonly>' +
+                '</td>' +
+                '<td>' +
+                '<input style="border: unset;" type="text" class="" id="input_place_exam_' + value + '"' +
+                'name="input_place_exam[]' + '" value="' + place_exam + '" readonly>' +
+                '</td>' +
+                '<td class="remove_icon" id="remove_icon">' +
+                '<span class="remove"><i class="fa fa-trash" aria-hidden="true" style="color: red;margin-top: 15px;"></i></span>' +
+                '</td>' +
+                '</tr>' +
+                '</table>' +
+                ''
+        }
+
+        var form_data = new FormData()
+        let dateInput = document.getElementById('input_date_birth');
+        var d = new Date();
+        d.setFullYear(d.getFullYear() - 19);
+        $('#input_date_birth').val(d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear());
+
+        $('.input-daterange').datepicker({
+            format: 'yyyy',
+            startView: 2,
+            minViewMode: 2,
+            endDate: "2565",
+            defaultViewDate: {
+                year: '2565'
+            },
+            autoclose: true
+        });
+        $('#input_date_exam').datepicker({
+            format: 'dd/mm/yyyy',
+            autoclose: true,
+        });
+        $('#input_date_birth').datepicker({
+            format: 'dd/mm/yyyy',
+            endDate: "now",
+            autoclose: true,
+            defaultViewDate: {
+                year: d.getFullYear()
+            },
+        });
+        $( document ).ready(function() {
+            var d = new Date();
+            d.setFullYear(d.getFullYear() - 19);
+
+            var now = new Date(); //getting current date
+            var currentY = now.getFullYear(); //extracting year from the date
+            var currentM = now.getMonth(); //extracting month from the date
+            var prevY = d.getFullYear(); //extracting year from input date
+            var prevM = d.getMonth(); //extracting month from input date
+            var ageY = currentY - prevY;
+            var ageM = Math.abs(currentM - prevM);
+
+            $('#input_age').val(ageY);
+            $('#input_age_hidden').val(ageY);
+        });
+
+        function ageCount() {
+            var d = new Date();
+                d.setFullYear(d.getFullYear() - 19);
+
+            var now = new Date(); //getting current date
+            var currentY = now.getFullYear(); //extracting year from the date
+            var currentM = now.getMonth(); //extracting month from the date
+            var date_birth = $('#input_date_birth').val(); //formatting input as date
+            var aa = date_birth.split('/');
+            var prevY = d.getFullYear(); //extracting year from input date
+            var prevM = d.getMonth(); //extracting month from input date
+            var ageY = currentY-Number(aa[2]);
+            var ageM = Math.abs(currentM - prevM);
+
+            $('#input_age').val(ageY);
+            $('#input_age_hidden').val(ageY);
+        }
+
+    $(function() {
+        // $("#input_highschool_city").select2({
+        //     ajax: {
+        //         url: "https://demo.aesystem.co.th/rsu_inter2/getLocationEducation", //
+        //         dataType: 'json',
+        //         delay: 250,
+        //         data: function(params) {
+        //             q = params.term;
+        //             return {
+        //                 q: params.term,
+        //                 page: params.page
+        //             };
+        //         },
+        //         processResults: function(data, params) {
+        //             return {
+        //                 results: data.items
+        //             };
+        //         },
+        //         cache: true
+        //     },
+
+        //     escapeMarkup: function(markup) {
+        //         return markup;
+        //     },
+        //     allowClear: true,
+        //     minimumInputLength: 1,
+        //     templateResult: function(data) {
+        //         if (data.loading) return data.text;
+        //         return data.text.split(q).join("<b>" + q + "</b>");
+        //     },
+        //     templateSelection: function(data) {
+        //         if (data.selected) return data.text;
+        //         $('#input_highschool_city_hidden').val(data.text);
+        //         return data.text;
+        //     }
+        // });
+    });
+
+    $(function() {
+        $("#SelectSubdistrictprovince").select2({
+            ajax: {
+                url: "https://demo.aesystem.co.th/rsu_inter2/getLocation", //
+                dataType: 'json',
+                delay: 250,
+                data: function(params) {
+                    q = params.term;
+                    return {
+                        q: params.term,
+                        page: params.page
+                    };
+                },
+                processResults: function(data, params) {
+                    return {
+                        results: data.items
+                    };
+                },
+                cache: true
+            },
+
+            escapeMarkup: function(markup) {
+                return markup;
+            },
+            allowClear: true,
+            minimumInputLength: 3,
+            templateResult: function(data) {
+                if (data.loading) return data.text;
+                return data.text.split(q).join("<b>" + q + "</b>");
+            },
+            templateSelection: function(data) {
+                if (data.selected) return data.text;
+                $('#location_id').val(data.id);
+                $('#input_subdistrict').val(data.subdis);
+                $('#input_district_postal').val(data.dis);
+                $('#input_province_postal').val(data.pro);
+                $('#input_country_postal').val($('#input_district_postal').val() == '' ? '' : 'ประเทศไทย');
+                $('#input_postal_code_postal').val(data.zipcode);
+                return data.value_text;
+            }
+        });
+    });
+    $(function() {
+        $("#SelectSubdistrictprovince2").select2({
+            ajax: {
+                url: "https://demo.aesystem.co.th/rsu_inter2/getLocation", //
+                dataType: 'json',
+                delay: 250,
+                data: function(params) {
+                    q = params.term;
+                    return {
+                        q: params.term,
+                        page: params.page
+                    };
+                },
+                processResults: function(data, params) {
+                    return {
+                        results: data.items
+                    };
+                },
+                cache: true
+            },
+
+            escapeMarkup: function(markup) {
+                return markup;
+            },
+            allowClear: true,
+            minimumInputLength: 3,
+            templateResult: function(data) {
+                if (data.loading) return data.text;
+                return data.text.split(q).join("<b>" + q + "</b>");
+            },
+            templateSelection: function(data) {
+                if (data.selected) return data.text;
+                $('#location_id').val(data.id);
+                $('#input_subdistrict_exchange').val(data.subdis);
+                $('#input_district_exchange').val(data.dis);
+                $('#input_province_exchange').val(data.pro);
+                $('#input_country_exchange').val($('#input_district_exchange').val() == '' ? '' : 'ประเทศไทย');
+                $('#input_postal_code_exchange').val(data.zipcode);
+                return data.value_text;
+            }
+        });
+    });
+
+    $('#submitBtn').click(function() {
+        var prefix = $('select[name=prefix] option:selected');
+        var prefixTh = $('select[name=prefix] option:selected');
+        var d_birth = ($('input[name=input_date_birth]').val()) != null ? ($('input[name=input_date_birth]').val()).split('-') : '-';
+        var isSamePersonal = $('input[name=is_same_address]:checked').val();
+        var issueDate = ($('input[name=input_issue_date]').val()) != null ? ($('input[name=input_issue_date]').val()).split('-') : '-';
+        var expireDate = ($('input[name=input_expire_date]').val()) != null ? ($('input[name=input_expire_date]').val()).split('-') : '-';
+        var isSendDocLaterPassport = $('input[name=is_send_doc_later_passport]:checked').val();
+        var country = $('select[name=input_country] option:selected').text();
+        var state = $('select[name=input_state] option:selected').text();
+        var city = $('select[name=input_city] option:selected').text();
+        var isSendDocLaterTranscript = $('input[name=is_send_doc_later_transcript]:checked').val();
+        var isSendDocLaterOriginalCertificate = $('input[name=is_send_doc_later_original_certificate]:checked').val();
+        var isEngProficiency = $('input[name=is_eng_proficiency]:checked').val();
+        var isSendDocLaterCertificateEng = $('input[name=is_send_doc_later_certificate_eng]:checked').val();
+        var isSamePersonalAddressEmergency = $('input[name=is_same_personal_address]:checked').val();
+        var isSamePostalAddressEmergency = $('input[name=is_same_postal_address]:checked').val();
+        var relationship = $('select[name=input_relationship] option:selected').text();
+        var isCertify = $('input[name=is_certify]:checked').val();
+        var is_in_thailand = $('input[name=is_in_thailand]:checked').val();
+        var input_gpa = $('input[name=input_gpa]').val();
+console.log('input_gpa',input_gpa)
+        var input_home_university = $('select[name=input_home_university] option:selected');
+        var input_listed_above = $('textarea[name=input_listed_above]').val();
+        var input_year = $('select[name=input_year] option:selected');
+        var phone_number = $('select[name=input_contry_code_postal_exchange] option:selected');
+        var input_address_exchange = $('textarea[name=input_address_exchange]').val();
+        var is_medical = $('input[name=is_medical]:checked').val();
+        var is_criminal = $('input[name=is_criminal]:checked').val();
+        var is_difficulty = $('input[name=is_difficulty]:checked').val();
+        var input_explain_d1 = $('textarea[name=input_explain_d1]').val();
+        var input_explain_d2 = $('textarea[name=input_explain_d2]').val();
+        var input_explain_d3 = $('textarea[name=input_explain_d3]').val();
+
+            // Personal Infromation
+            $('#show_card_number').text($('input[name=input_card_number]').val());
+            $('#show_fullname_en').text(prefix.text() + ''+$('input[name=input_first_name]').val()+' '+$('input[name=input_middle_name]').val()+' '+$('input[name=input_last_name]').val());
+            $('#show_fullname_th').text(prefixTh.text()+''+$('input[name=input_first_name_th]').val()+' '+$('input[name=input_middle_name_th]').val()+' '+$('input[name=input_last_name_th]').val());
+            $('#show_gender').text(prefix.val() == 1 ? 'Male' : 'Female');
+            $('#show_nationality').text($('input[name=input_nationality]').val());
+            $('#show_date_birth').text($('input[name=input_date_birth]').val());
+            $('#show_age').text($('input[name=input_age_hidden]').val());
+            $('#show_email_personal').text($('input[name=input_email]').val());
+            $('#show_home_number').text($('input[name=input_home_number]').val());
+            $('#show_line').text($('input[name=input_line]').val());
+            $('#show_wechat').text($('input[name=input_wechat]').val());
+            $('#show_whatsapp').text($('input[name=input_whatapp]').val());
+            $('#show_address_personal').text($('textarea[name=input_address]').val());
+            $('#show_district_personal').text($('input[name=input_district]').val());
+            $('#show_city_personal').text($('input[name=input_province]').val());
+            $('#show_country_personal').text($('input[name=input_country]').val());
+            $('#show_postal_personal').text($('input[name=input_postal_code]').val());
+            $('#show_mobile_phone_number_postal').text($('select[name=input_contry_code_postal] option:selected').text()+'-'+$('input[name=input_cell_phone_number_postal]').val());
+            $('#show_home_phone_number_postal').text($('select[name=input_contry_code_mobile_postal] option:selected').text()+'-'+$('input[name=input_mobile_number_postal]').val());
+
+            // Postal Address
+            $('#show_same_personal_address').text(isSamePersonal == 'on' ? 'Yes' : 'No');
+            $('#show_address_postal').text($('textarea[name=input_address_postal]').val());
+            $('#show_district_postal').text($('input[name=input_district_postal]').val());
+            $('#show_city_postal').text($('input[name=input_province_postal]').val());
+            $('#show_country_postal').text($('input[name=input_country_postal]').val());
+            $('#show_postal_postal').text($('input[name=input_postal_code_postal]').val());
+
+            // Passport Information
+            $('#show_passport').text($('input[name=input_passport_no]').val());
+            $('#show_issue_date').text(issueDate == '' ? '-' : issueDate[2] + '-' + issueDate[1] + '-' + issueDate[0]);
+            $('#show_expiree_date').text(expireDate == '' ? '-' : expireDate[2] + '-' + expireDate[1] + '-' + expireDate[0]);
+            $('#show_visa').text(is_in_thailand == 'on' ? 'I am in Thailand' : ('Country' + ', ' + country + ' ' + 'State' + ', ' + state + ' ' + 'City' + ' ' + city));
+
+            // Education Information
+            $('#show_high_education').text($('input[name=input_high_education]').val());
+            $('#show_insitiute_name').text($('input[name=input_highschool_name]').val());
+            $('#show_highschool_city').text($('input[name=input_highschool_city_hidden]').val());
+            $('#show_year_graduate').text($('input[name=input_year_graduate]').val());
+            $('#show_gpa').text($('input[name=input_gpa]').val());
+
+            // Home institution information
+            $('#show_home_university_exchange').text(input_home_university == '' ? '-': input_home_university.text());
+            $('#show_specify_exchange').text(input_listed_above == null ? '-' : input_listed_above);
+            $('#show_year_exchange').text(input_year.text());
+            $('#show_name_exchange').text($('input[name=input_prefix_exchange]').val()+' '+$('input[name=input_firstname_exchange]').val()+' '+$('input[name=input_lastname_exchange]').val());
+            $('#show_title_exchange').text($('input[name=input_title_exchange]').val());
+            $('#show_fac_exchange').text($('input[name=input_office_exchange]').val());
+            $('#show_phone_number_exchange').text(phone_number.text()+'-'+$('input[name=input_cell_phone_number_postal_exchange]').val());
+            $('#show_email_exchange').text($('input[name=input_email_exchange]').val());
+            $('#show_address_exchange').text(input_address_exchange == null ? '-' : input_address_exchange);
+            $('#show_district_exchange').text($('input[name=input_title_exchange]').val());
+            $('#show_state_exchange').text($('input[name=input_province_exchange]').val());
+            $('#show_country_exchange').text($('input[name=input_country_exchange]').val());
+            $('#show_postal_exchange').text($('input[name=input_postal_code_exchange]').val());
+
+            // Medical and further information
+            $('#show_d1').text(is_medical == 'y' ? 'Yes' : 'No');
+            $('#show_explain_d1').text(input_explain_d1 == null ? '-' : input_explain_d1);
+            $('#show_d2').text(is_criminal == 'y' ? 'Yes' : 'No');
+            $('#show_explain_d2').text(input_explain_d2 == null ? '-' : input_explain_d2);
+            $('#show_d3').text(is_difficulty == 'y' ? 'Yes' : 'No');
+            $('#show_explain_d3').text(input_explain_d3 == null ? '-' : input_explain_d3);
+
+            // English Proficiency
+            $('#show_have_eng_proficiency').text(isEngProficiency == 'yes' ? 'Yes' : 'No');
+            $('#show_certify').text(isCertify == 'on' ? 'Yes' : 'No');
+        });
+
+        $('#submit').click(function(){
+            $('#formfield').submit();
+        });
+
+        $(document).on('click', '.remove', function() {
+            $(this).closest("tr").remove();
+            // check_remove_icon()
+        });
+
+        </script>
+    
+
+
+</body></html>

@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)https://demo.aesystem.co.th/rsu_inter2/admission_register -->
+<html lang="en" data-select2-id="18"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>
+            Register
+        </title>
+        <meta name="description" content="Login">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimal-ui">
+        <!-- Call App Mode on ios devices -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <!-- Remove Tap Highlight on Windows Phone IE -->
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- base css -->
+        <link rel="stylesheet" media="screen, print" href="./Register_files/vendors.bundle.css">
+        <link rel="stylesheet" media="screen, print" href="./Register_files/app.bundle.css">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="apple-touch-icon" sizes="180x180" href="https://demo.aesystem.co.th/rsu_inter2/assets/img/favicon/apple-touch-icon.png?v=0.0.06">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://demo.aesystem.co.th/rsu_inter2/assets/img/favicon/favicon-32x32.png?v=0.0.06">
+        <link rel="mask-icon" href="https://demo.aesystem.co.th/rsu_inter2/assets/img/favicon/safari-pinned-tab.svg?v=0.0.06" color="#5bbad5">
+        <link rel="stylesheet" media="screen, print" href="./Register_files/page-login.css">
+        <link id="mytheme" rel="stylesheet" href="./Register_files/cust-theme-7.css">
+        <link rel="stylesheet" media="screen, print" href="./Register_files/sweetalert2.bundle.css">
+        <link rel="stylesheet" href="./Register_files/validationEngine.jquery.css" type="text/css">
+        <link rel="stylesheet" media="screen, print" href="./Register_files/datatables.bundle.css">
+        <link rel="stylesheet" media="screen, print" href="./Register_files/select2.bundle.css">
+    <style>
+        .hr-border {
+            border-width: 2px;
+            margin-top: 2%;
+        }
+
+        .m-t {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        #line-step {
+            position: relative;
+
+        }
+
+        #line-step .line-step {
+            cursor: default;
+            position: relative;
+            z-index: 2;
+            background: #EFEFF4;
+            color: #8A8A8F;
+            font-size: 16px;
+            line-height: 42px;
+            text-align: center;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 30px;
+            border: 3px solid white;
+        }
+
+        #line-step .line-step:after,
+        #line-step .line-step:before {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 2px;
+            background-color: #8A8A8F;
+            top: 50%;
+            margin-top: -1px;
+        }
+
+        #line-step .col-6:first-child .line-step:before {
+            display: none;
+        }
+
+        #line-step .col-6:last-child .line-step:after {
+            display: none;
+        }
+
+        #line-step .line-step:after {
+            right: -18px;
+        }
+
+        #line-step .line-step:before {
+            left: -18px;
+        }
+
+        /*#line-step .line-step.line-step-active {*/
+        /*    background: #4CD964;*/
+        /*    color: white;*/
+        /*    text-shadow: 0 1px 1px rgba(21, 62, 31, 0.47);*/
+        /*}*/
+        #line-step .line-step.line-step-active {
+            background: #EA4C92;
+            color: white;
+            text-shadow: 0 1px 1px rgba(21, 62, 31, 0.47);
+        }
+        #line-step .line-step.line-step-success {
+            background: #EA4C92;
+            color: white;
+            text-shadow: 0 1px 1px rgba(21, 62, 31, 0.47);
+        }
+        /* label,.col-form-label,select{
+            font-size: 16px;
+        } */
+
+    </style>
+    </head>
+    <body style="background-color: #bdbdbd;" class="desktop chrome webkit pace-done" cz-shortcut-listen="true" data-select2-id="17"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+                <form id="formfield" action="https://demo.aesystem.co.th/rsu_inter2/saveStudent?a4sFYDjTCNRPG1wKnNClYAQa5YOsBWL5hK2gG8jq" class="needs-validation" novalidate="" data-select2-id="formfield"><div class="loader"><i class="fal fa-spinner-third fa-spin-4x fs-xxl"></i></div>
+            <input type="hidden" name="_token" value="a4sFYDjTCNRPG1wKnNClYAQa5YOsBWL5hK2gG8jq">                        <div class="row justify-content-center mt-5" data-select2-id="16">
+                <div class="col-10" data-select2-id="15">
+                    <div class="panel" data-select2-id="14">
+                        <div class="panel-container show" data-select2-id="13">
+                            <div class="panel-content" data-select2-id="12">
+                                <div class="frame-wrap" data-select2-id="11">
+                                    <div class="text-center">
+                                        <label style="color:black;font-size: 30px;">Registration 
+                                                            Application online for full time student
+                                                    </label>
+                                    </div>
+                                    
+                                    <hr class="hr-border">
+                                    <div class="" id="fulltime" data-select2-id="fulltime">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div id="line-step" class="mt-2 mb-4">
+        <div class="row">
+                <div class="col-6 col-sm mt-2">
+                        <div class="line-step line-step-active">Program Selection</div>
+                    </div>
+                <div class="col-6 col-sm mt-2">
+                        <div class="line-step ">Personal Details</div>
+                    </div><div class="col-6 col-sm mt-2">
+                        <div class="line-step ">Education Information:
+
+</div>
+                    </div>
+                <div class="col-6 col-sm mt-2">
+                        <div class="line-step ">Attachment and Application Confirmation</div>
+                    </div>
+            </div>
+</div>
+                                            </div>
+                                        </div>
+                                        <div class="row m-t">
+                                            <div class="form-group col-12">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label">Nationality *</label>
+                                                    <div class="col-sm-10">
+                                                        <div class="row">
+                                                            <div class="col-12" style="padding-left: 5%">
+                                                                <div class="form-group row">
+                                                                    <div class="form-check form-check-inline col-4">
+                                                                        <input type="radio" id="nonthai" name="input_nationality" value="nonthai" checked="">
+                                                                        <label class="form-check-label" for="nonthai" style="padding-left: 10%">Non-Thai</label>
+                                                                    </div>
+                                                                    <div class="form-check form-check-inline col-3">
+                                                                        <input type="radio" id="thai" name="input_nationality" value="thai">
+                                                                        <label class="form-check-label" for="thai" style="padding-left: 10%">Thai</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row m-t">
+                                            <div class="form-group col-6">
+                                                <div class="form-group row">
+                                                    <label for="input_degree" class="col-sm-4 col-form-label">Degree
+                                                        *</label>
+                                                    <div class="col-sm-8">
+                                                        <select class="form-control validate[required]" id="input_degree" name="input_degree" required="">
+                                                            <option value="" selected="" disabled="">---Pleace Select---</option>
+                                                                                                                            <option value="1">
+                                                                    Bachelor's degree
+                                                                </option>
+                                                                                                                            <option value="2">
+                                                                    Master 's degree
+                                                                </option>
+                                                                                                                            <option value="3">
+                                                                    Doctor's degree
+                                                                </option>
+                                                                                                                            <option value="4">
+                                                                    Non degree
+                                                                </option>
+                                                                                                                    </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row m-t select_doc" data-select2-id="10">
+                                            <div class="col-6" data-select2-id="9">
+                                                <div class="form-group row" data-select2-id="8">
+                                                    <label for="input_major" class="col-sm-4 col-form-label">Major
+                                                        *</label>
+                                                    <div class="col-sm-8" data-select2-id="7">
+                                                        <select class="form-control select2_major select2-hidden-accessible" name="input_major" id="input_major" style="width: 100%" data-select2-id="input_major" tabindex="-1" aria-hidden="true"><option value="" selected="" disabled="" data-select2-id="5">---PleaseSelect---</option><option value="1" data-select2-id="19">Faculty of Liberal Arts</option><option value="2" data-select2-id="20">Secretarial Science</option><option value="4" data-select2-id="21">Thai Language for Communication</option></select><span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" data-select2-id="1" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-input_major-container"><span class="select2-selection__rendered" id="select2-input_major-container" role="textbox" aria-readonly="true" title="Faculty of Liberal Arts">Faculty of Liberal Arts</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group row">
+                                                     <label for="input_faculty" class="col-sm-4 col-form-label text-right">Faculties
+                                                        *</label>
+                                                    <div class="col-sm-8">
+                                                        <input type="hidden" class="form-control" name="input_faculty" id="input_faculty" value="1">
+                                                        <input type="text" class="form-control" name="input_faculty_name" id="input_faculty_name" disabled="">
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="row m-t" id="div_select_project" style="display: none;">
+                                            <div class="col-6">
+                                                <div class="form-group row">
+                                                    <label for="get_id_project" class="col-sm-4 col-form-label">Project</label>
+                                                    <div class="col-sm-8">
+                                                        <select name="get_id_project" id="get_id_project" class="browser-default form-control" style="font-size: inherit;">
+                                                            <option value="" selected="" disabled="">---Pleace Select---</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row m-t" id="div_input_project" style="">
+                                            <div class="col-6">
+                                                <div class="form-group row">
+                                                    <label for="get_id_project" class="col-sm-4 col-form-label">Project</label>
+                                                    <div class="col-sm-8">
+                                                        <input type="hidden" class="form-control" name="get_id_project" id="get_id_project_input" value="1">
+                                                        <input type="text" class="form-control" name="get_name_project" id="get_name_project" disabled="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row m-t">
+                                            <div class="form-group col-12">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label">Student Type *</label>
+                                                    <div class="col-sm-10">
+                                                        <div class="row">
+                                                            <div class="col-12" style="padding-left: 5%">
+                                                                <div class="form-group row">
+                                                                    <div class="form-check form-check-inline col-4">
+                                                                        <input type="radio" id="new_student" name="student_type" value="new_student" checked="">
+                                                                        <label class="form-check-label" for="new_student" style="padding-left: 10%">New Student</label>
+                                                                    </div>
+                                                                    <div class="form-check form-check-inline col-3">
+                                                                        <input type="radio" id="transfer_student" name="student_type" value="transfer_student">
+                                                                        <label class="form-check-label" for="transfer_student" style="padding-left: 10%">Transfer Student</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row m-t" id="div_select_project" >
+                                            <div class="col-6">
+                                                <div class="form-group row">
+                                                    <label for="get_id_project" class="col-sm-4 col-form-label">Agent</label>
+                                                    <div class="col-sm-8">
+                                                        <select name="get_id_project" id="get_id_project" class="browser-default form-control" style="font-size: inherit;">
+                                                            <option value="" selected="" disabled="">---Pleace Select---</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="hr-border">
+                                        <div class="row" style="justify-content: center;width:100%;margin-bottom: 10px;">
+                                            
+                                            <a href="Register2.html"  class="btn btn-success btn-md waves-effect waves-themed">Next Step</a>
+                                        </div>
+                                    </div>
+                                    <div id="exchange" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div id="line-step" class="mt-2 mb-4">
+        <div class="row">
+                    <div class="col-6 col-sm mt-2">
+                                    <div class="line-step line-step-active">Program Selection</div>
+                            </div>
+                    <div class="col-6 col-sm mt-2">
+                                    <div class="line-step ">
+                        Personal Details</div>
+                            </div>
+                    <div class="col-6 col-sm mt-2">
+                                    <div class="line-step ">
+                        Describe your purpose</div>
+                            </div>
+                    <div class="col-6 col-sm mt-2">
+                                    <div class="line-step ">
+                        Attachment and Application Confirmation</div>
+                            </div>
+            </div>
+</div>
+                                            </div>
+                                        </div>
+                                        <div class="row m-t">
+                                            <div class="form-group col-12">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label">Nationality *</label>
+                                                    <div class="col-sm-10">
+                                                    <div class="row">
+                                                        <div class="col-12" style="padding-left: 5%">
+                                                            <div class="form-group row">
+                                                                <div class="form-check form-check-inline col-4">
+                                                                    <input type="radio" id="nonthai_exchange" name="input_nationality_exchange" value="nonthai" checked="">
+                                                                    <label class="form-check-label" for="nonthai_exchange" style="padding-left: 10%">Non-Thai</label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline col-3">
+                                                                    <input type="radio" id="thai_exchange" name="input_nationality_exchange" value="thai">
+                                                                    <label class="form-check-label" for="thai_exchange" style="padding-left: 10%">Thai</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row m-t">
+                                            <div class="form-group col-6">
+                                                <div class="form-group row">
+                                                    <label for="input_degree" class="col-sm-4 col-form-label">Degree
+                                                        *</label>
+                                                    <div class="col-sm-8">
+                                                        <select class="form-control" id="input_degree_exchange" name="input_degree_exchange" required="">
+                                                            <option value="" selected="" disabled="">---Pleace Select---</option>
+                                                                                                                            <option value="1">
+                                                                    Bachelor's degree
+                                                                </option>
+                                                                                                                            <option value="2">
+                                                                    Master 's degree
+                                                                </option>
+                                                                                                                            <option value="3">
+                                                                    Doctor's degree
+                                                                </option>
+                                                                                                                            <option value="4">
+                                                                    Non degree
+                                                                </option>
+                                                                                                                    </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row m-t select_doc">
+                                            <div class="col-6">
+                                                <div class="form-group row">
+                                                    <label for="input_major_exchange" class="col-sm-4 col-form-label">Major
+                                                        *</label>
+                                                    <div class="col-sm-8">
+                                                        <select class="form-control select2_major select2-hidden-accessible" name="input_major_exchange" id="input_major_exchange" style="width: 100%" data-select2-id="input_major_exchange" tabindex="-1" aria-hidden="true">
+                                                            <option value="" selected="" disabled="" data-select2-id="4">---Please Select---</option>
+                                                                                                                            <option value="1">คณะศิลปศาสตร์</option>
+                                                                                                                            <option value="2">การเลขานุการ</option>
+                                                                                                                            <option value="4">ภาษาไทยเพื่อการสื่อสาร</option>
+                                                                                                                    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="3" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-input_major_exchange-container"><span class="select2-selection__rendered" id="select2-input_major_exchange-container" role="textbox" aria-readonly="true" title="---Please Select---">---Please Select---</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group row">
+                                                     <label for="input_faculty_exchange" class="col-sm-4 col-form-label text-right">Faculties
+                                                        *</label>
+                                                    <div class="col-sm-8">
+                                                        <input type="hidden" class="form-control" name="input_faculty_exchange" id="input_faculty_exchange">
+                                                        <input type="text" class="form-control" name="input_faculty_exchange_name" id="input_faculty_exchange_name" disabled="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row m-t" id="div_select_project_exchange" style="display: none;">
+                                            <div class="col-6">
+                                                <div class="form-group row">
+                                                    <label for="get_id_project_exchange" class="col-sm-4 col-form-label">Project</label>
+                                                    <div class="col-sm-8">
+                                                        <select name="get_id_project_exchange" id="get_id_project_exchange" class="browser-default form-control" style="font-size: inherit;">
+                                                            <option value="" selected="" disabled="">---Pleace Select---</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row m-t" id="div_input_project_exchange" style="display: none;">
+                                            <div class="col-6">
+                                                <div class="form-group row">
+                                                    <label for="get_id_project_exchange" class="col-sm-4 col-form-label">Project</label>
+                                                    <div class="col-sm-8">
+                                                        <input type="hidden" class="form-control" name="get_id_project_exchange" id="get_id_project_input_exchange">
+                                                        <input type="text" class="form-control" name="get_name_project_exchange" id="get_name_project_exchange" disabled="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row m-t">
+                                            <div class="form-group col-12">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label">Student Type *</label>
+                                                    <div class="col-sm-10">
+                                                        <div class="row">
+                                                            <div class="col-12" style="padding-left: 5%">
+                                                                <div class="form-group row">
+                                                                    <div class="form-check form-check-inline col-4">
+                                                                        <input type="radio" id="exchange_program" name="student_type_exchange" value="exchange_program" checked="">
+                                                                        <label class="form-check-label" for="exchange_program" style="padding-left: 10%">Exchange program</label>
+                                                                    </div>
+                                                                    <div class="form-check form-check-inline col-3">
+                                                                        <input type="radio" id="study_abord_program" name="student_type_exchange" value="study_abord_program">
+                                                                        <label class="form-check-label" for="study_abord_program" style="padding-left: 10%">Study abord program</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row m-t">
+                                            <div class="form-group col-6">
+                                                <div class="form-group row">
+                                                    <label for="input_period_program" class="col-sm-4 col-form-label">Period of Program</label>
+                                                    <div class="col-sm-8">
+                                                        <select class="form-control" id="input_period_program" name="input_period_program" required="">
+                                                            <option value="" selected="" disabled="">---Pleace Select---</option>
+                                                            <option value="1">1 Semeter</option>
+                                                            <option value="2">2 Semeter</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="hr-border">
+                                        <div class="row" style="justify-content: center;width:100%;margin-bottom: 10px;">
+                                            <a href="javascript:history.go(-1); " class="btn btn-default float-left waves-effect waves-themed">Back</a>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                            <button type="button" id="submitBtnExchange" data-toggle="modal" data-target="#confirm-submit-exchange" class="btn btn-success btn-md waves-effect waves-themed">Next Step</button>
+                                        </div>
+                                    </div>
+                                    <div class="" id="non_degree" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div id="line-step" class="mt-2 mb-4">
+        <div class="row">
+                <div class="col-6 col-sm mt-2">
+                        <div class="line-step line-step-active">Program Selection</div>
+                    </div>
+                <div class="col-6 col-sm mt-2">
+                        <div class="line-step ">Personal Details</div>
+                    </div>
+                <div class="col-6 col-sm mt-2">
+                        <div class="line-step ">Attachment and Application Confirmation</div>
+                    </div>
+            </div>
+</div>
+                                            </div>
+                                        </div>
+                                        <div class="row m-t">
+                                            <div class="form-group col-12">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label">Nationality *</label>
+                                                    <div class="col-sm-10">
+                                                        <div class="row">
+                                                            <div class="col-12" style="padding-left: 5%">
+                                                                <div class="form-group row">
+                                                                    <div class="form-check form-check-inline col-4">
+                                                                        <input type="radio" id="nonthai" name="input_nationality_non" value="nonthai" checked="">
+                                                                        <label class="form-check-label" for="nonthai" style="padding-left: 10%">Non-Thai</label>
+                                                                    </div><div class="form-check form-check-inline col-3">
+                                                                        <input type="radio" id="thai" name="input_nationality_non" value="thai">
+                                                                        <label class="form-check-label" for="thai" style="padding-left: 10%">Thai</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row m-t">
+                                            <div class="form-group col-6">
+                                                <div class="form-group row">
+                                                    <label for="input_degree_non" class="col-sm-4 col-form-label">Degree
+                                                        *</label>
+                                                    <div class="col-sm-8">
+                                                        <select class="form-control validate[required]" id="input_degree_non" name="input_degree_non" required="">
+                                                            <option value="" selected="" disabled="">---Pleace Select---</option>
+                                                                                                                            <option value="1">
+                                                                    Bachelor's degree
+                                                                </option>
+                                                                                                                            <option value="2">
+                                                                    Master 's degree
+                                                                </option>
+                                                                                                                            <option value="3">
+                                                                    Doctor's degree
+                                                                </option>
+                                                                                                                            <option value="4">
+                                                                    Non degree
+                                                                </option>
+                                                                                                                    </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row m-t">
+                                            <div class="form-group col-6">
+                                                <div class="form-group row">
+                                                    <label for="input_faculty_non" class="col-sm-4 col-form-label">Program
+                                                        *</label>
+                                                    <div class="col-sm-8">
+                                                        <select id="input_faculty_non" name="input_faculty_non" class="form-control ">
+                                                            <option value="" selected="" disabled="">---Please Select---</option>
+                                                            <option value="1">Basic Adjustment to study in College</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="hr-border">
+                                        <div class="row" style="justify-content: center;width:100%;margin-bottom: 10px;">
+                                            
+                                            <button type="button" id="submitBtnNonDegree" data-toggle="modal" data-target="#confirm-submit-non-degree" class="btn btn-success btn-md waves-effect waves-themed">Next Step</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <!-- The Modal Submit-->
+        <div class="modal fade bd-example-modal-lg confirm-submit" id="confirm-submit" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: darkgrey;color: white;">
+                        <h2 class="modal-title text-center d-block">Review Program Selection</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" style="font-size: 24px;">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center" style="font-size: 16px;">
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Nationality :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_nationality" name="input_nationality"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Degree :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_degree" name="input_degree"></span>
+                                <div id="save_degree" style="display: none;"></div>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Faculties :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_faculty"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Major :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_major"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Student Type :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_student_type"></span>
+                            </div>
+                        </div>
+                        <div class="row mb-3 mt-4">
+                            <div class="col-6 text-center button-hide">
+                                <button type="button" class="btn btn-default waves-effect waves-themed" data-dismiss="modal" style="width: 50%;">Edit</button>
+                            </div>
+                            <div class="col-6 text-center button-hide">
+                                <button id="submit" class="btn btn-success btn-md waves-effect waves-themed" style="width: 50%;color: #ffffff;">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade bd-example-modal-lg confirm-submit-exchange" id="confirm-submit-exchange" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: darkgrey;color: white;">
+                        <h2 class="modal-title text-center d-block">Review Program Selection</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" style="font-size: 24px;">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center" style="font-size: 16px;">
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Nationality :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_nationality_exchange" name="input_nationality"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Degree :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_degree_exchange" name="input_degree"></span>
+                                <div id="save_degree" style="display: none;"></div>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Faculties :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_faculty_exchange"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Major :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_major_exchange"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Student Type :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_student_type_exchange"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Period of Program :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_period_program_exchange"></span>
+                            </div>
+                        </div>
+                        <div class="row mb-3 mt-4">
+                            <div class="col-6 text-center button-hide">
+                                <button type="button" class="btn btn-default waves-effect waves-themed" data-dismiss="modal" style="width: 50%;">Edit</button>
+                            </div>
+                            <div class="col-6 text-center button-hide">
+                                <button id="submit_exchange" class="btn btn-success btn-md waves-effect waves-themed" style="width: 50%;color: #ffffff;">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade bd-example-modal-lg confirm-submit-non-degree" id="confirm-submit-non-degree" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: darkgrey;color: white;">
+                        <h2 class="modal-title text-center d-block">Review Program Selection</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" style="font-size: 24px;">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center" style="font-size: 16px;">
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Nationality :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_nationality_non" name="input_nationality"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Degree :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_degree_non" name="input_degree"></span>
+                                <div id="save_degree" style="display: none;"></div>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Program :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_faculty_non"></span>
+                            </div>
+                        </div>
+                        <div class="row mb-3 mt-4">
+                            <div class="col-6 text-center button-hide">
+                                <button type="button" class="btn btn-default waves-effect waves-themed" data-dismiss="modal" style="width: 50%;">Edit</button>
+                            </div>
+                            <div class="col-6 text-center button-hide">
+                                <button id="submit_non_degree" class="btn btn-success btn-md waves-effect waves-themed" style="width: 50%;color: #ffffff;">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p id="js-color-profile" class="d-none">
+            <span class="color-primary-50"></span>
+            <span class="color-primary-100"></span>
+            <span class="color-primary-200"></span>
+            <span class="color-primary-300"></span>
+            <span class="color-primary-400"></span>
+            <span class="color-primary-500"></span>
+            <span class="color-primary-600"></span>
+            <span class="color-primary-700"></span>
+            <span class="color-primary-800"></span>
+            <span class="color-primary-900"></span>
+            <span class="color-info-50"></span>
+            <span class="color-info-100"></span>
+            <span class="color-info-200"></span>
+            <span class="color-info-300"></span>
+            <span class="color-info-400"></span>
+            <span class="color-info-500"></span>
+            <span class="color-info-600"></span>
+            <span class="color-info-700"></span>
+            <span class="color-info-800"></span>
+            <span class="color-info-900"></span>
+            <span class="color-danger-50"></span>
+            <span class="color-danger-100"></span>
+            <span class="color-danger-200"></span>
+            <span class="color-danger-300"></span>
+            <span class="color-danger-400"></span>
+            <span class="color-danger-500"></span>
+            <span class="color-danger-600"></span>
+            <span class="color-danger-700"></span>
+            <span class="color-danger-800"></span>
+            <span class="color-danger-900"></span>
+            <span class="color-warning-50"></span>
+            <span class="color-warning-100"></span>
+            <span class="color-warning-200"></span>
+            <span class="color-warning-300"></span>
+            <span class="color-warning-400"></span>
+            <span class="color-warning-500"></span>
+            <span class="color-warning-600"></span>
+            <span class="color-warning-700"></span>
+            <span class="color-warning-800"></span>
+            <span class="color-warning-900"></span>
+            <span class="color-success-50"></span>
+            <span class="color-success-100"></span>
+            <span class="color-success-200"></span>
+            <span class="color-success-300"></span>
+            <span class="color-success-400"></span>
+            <span class="color-success-500"></span>
+            <span class="color-success-600"></span>
+            <span class="color-success-700"></span>
+            <span class="color-success-800"></span>
+            <span class="color-success-900"></span>
+            <span class="color-fusion-50"></span>
+            <span class="color-fusion-100"></span>
+            <span class="color-fusion-200"></span>
+            <span class="color-fusion-300"></span>
+            <span class="color-fusion-400"></span>
+            <span class="color-fusion-500"></span>
+            <span class="color-fusion-600"></span>
+            <span class="color-fusion-700"></span>
+            <span class="color-fusion-800"></span>
+            <span class="color-fusion-900"></span>
+        </p>
+
+        <script src="./Register_files/vendors.bundle.js.download"></script>
+        <script src="./Register_files/jquery.validationEngine-en.js.download"></script>
+        <script src="./Register_files/jquery.validationEngine.js.download"></script>
+        <script src="./Register_files/sweetalert2.bundle.js.download"></script>
+        <script src="./Register_files/app.bundle.js.download"></script>
+        <script src="./Register_files/bootstrap-password-toggler.min.js.download"></script>
+        <script src="./Register_files/inputmask.bundle.js.download"></script>
+        <script src="./Register_files/select2.bundle.js.download"></script>
+        <script>
+            window.history.forward();
+            function noBack() {
+                window.history.forward();
+            }
+            $("#input_major,#input_major_exchange").select2();
+            $(document).ready(function() {
+                $('#fulltime').show();
+                $('#exchange').hide();
+                $('#non_degree').hide();
+                $('#div_select_project').hide();
+                $('#div_input_project').hide();
+                $('#div_select_project_exchange').hide();
+                $('#div_input_project_exchange').hide();
+                $("input[name$='is_type']").click(function() {
+                    var is_fulltime = $(this).val();
+                    if(is_fulltime == 'fulltime'){
+                        $('#fulltime').show();
+                        $('#exchange').hide();
+                        $('#non_degree').hide();
+                        $('#input_degree_exchange,#input_faculty_exchange,#input_major_exchange,#input_period_program').val('');
+                        $('#input_degree_non,#input_faculty_non').val('');
+                        $('#type_select').val('1');
+                        $.ajax({
+                        url: "https://demo.aesystem.co.th/rsu_inter2/getMajorByProject?type_select=" + $('#type_select').val(),
+                        method: 'GET',
+                        success: function(data) {
+                            console.log('semester',data.html)
+                            $('#input_major').html(data.html);
+                            }
+                        });
+                    } else if(is_fulltime == 'exchange') {
+                        $('#exchange').show();
+                        $('#fulltime').hide();
+                        $('#non_degree').hide();
+                        $('#input_degree,#input_faculty,#input_major').val('');
+                        $('#input_degree_non,#input_faculty_non').val('');
+                        $('#type_select').val('2');
+                        $.ajax({
+                        url: "https://demo.aesystem.co.th/rsu_inter2/getMajorByProject?type_select=" + $('#type_select').val(),
+                        method: 'GET',
+                        success: function(data) {
+                            console.log('semester',data.html)
+                            $('#input_major_exchange').html(data.html);
+                            }
+                        });
+                    } else{
+                        $('#non_degree').show();
+                        $('#exchange').hide();
+                        $('#fulltime').hide();
+                        $('#input_degree,#input_faculty,#input_major').val('');
+                        $('#input_degree_exchange','#input_faculty_exchange','#input_major_exchange','#input_period_program').val('');
+                        $('#type_select').val('3');
+                    }
+                });
+                $.ajax({
+                url: "https://demo.aesystem.co.th/rsu_inter2/getMajorByProject?type_select=" + $('#type_select').val(),
+                method: 'GET',
+                success: function(data) {
+                    console.log('semester',data.html)
+                    $('#type_select').val() == 1 ? $('#input_major').html(data.html) :$('#input_major_exchange').html(data.html);
+                    }
+                });
+            });
+
+            // $('.select2_major').select2().on('select2:select', function (e) {
+            //     console.log('ll',e.params.data)
+            //     var data = e.params.data;
+            //     var select2_doc = $(this).closest('.select_doc').find(".select2_doc");
+            //     select2_doc.val('').trigger('change');
+            //     console.log('data',data,select2_doc)
+
+            //     select2_doc.select2({
+            //         ajax: {
+            //             url: "https://demo.aesystem.co.th/rsu_inter2/getMajorsByFaculty",
+            //             dataType: 'json',
+            //             delay: 250,
+            //             data: function (params) {
+            //                 console.log('dataparams', params)
+            //                 return { q: params.term,fac_id:data.id };
+            //             },
+            //             processResults: function (response) {
+            //                 console.log('processResults', response)
+            //                 return { results: response.items};
+            //             },
+            //             cache: true
+            //         }
+            //     });
+            // });
+
+            $("#input_major").change(function(){
+                $.ajax({
+                url: "https://demo.aesystem.co.th/rsu_inter2/getMajorsByFaculty?fac_id=" + $(this).val(),
+                method: 'GET',
+                success: function(data) {
+                    console.log('input_faculty_name',data)
+                    $('#input_faculty_name').val(data.items[0].text_en);
+                    $('#input_faculty').val(data.items[0].id);
+                    }
+                });
+                $.ajax({
+                    url: "https://demo.aesystem.co.th/rsu_inter2/getProjectSelect?major_id=" + $(this).val(),
+                    method: 'GET',
+                    success: function(data) {
+
+                        if(data.count > 1){
+                            $('#div_select_project').show();
+                            $('#div_input_project').hide();
+                            $('#get_id_project').html(data.html);
+                            $('#get_id_project').addClass('validate[required]');
+                        } else{
+                            $('#get_id_project').removeClass('validate[required]');
+                            $('#div_select_project').hide();
+                            $('#div_input_project').show();
+                            $('#get_name_project').val(data.items[0].text);
+                            $('#get_id_project_input').val(data.items[0].id);
+                        }
+                    }
+                });
+            });
+            $("#input_major_exchange").change(function(){
+                $.ajax({
+                url: "https://demo.aesystem.co.th/rsu_inter2/getMajorsByFaculty?fac_id=" + $(this).val(),
+                method: 'GET',
+                success: function(data) {
+                    $('#input_faculty_exchange_name').val(data.items[0].text_en);
+                    $('#input_faculty_exchange').val(data.items[0].id);
+                    }
+                });
+                $.ajax({
+                    url: "https://demo.aesystem.co.th/rsu_inter2/getProjectSelect?major_id=" + $(this).val(),
+                    method: 'GET',
+                    success: function(data) {
+                        if(data.count > 1){
+                            $('#div_select_project_exchange').show();
+                            $('#div_input_project_exchange').hide();
+                            $('#get_id_project_exchange').html(data.html);
+                            $('#get_id_project_exchange').addClass('validate[required]');
+                        } else{
+                            $('#get_id_project_exchange').removeClass('validate[required]');
+                            $('#div_select_project_exchange').hide();
+                            $('#div_input_project_exchange').show();
+                            $('#get_name_project_exchange').val(data.items[0].text);
+                            $('#get_id_project_input_exchange').val(data.items[0].id);
+                        }
+                    }
+                });
+            });
+
+            var form_data = new FormData()
+            $('#submitBtnFull').click(function() {
+                var input_degree = $('select[name=input_degree] option:selected');
+                var input_faculty = $('select[name=input_faculty] option:selected');
+                var get_faculty = $('input[name=input_faculty_name]').val();
+                var input_major = $('select[name=input_major] option:selected');
+                var $s_type = $('input[name=student_type]:checked').val();
+                var $s_nationality = $('input[name=input_nationality]:checked').val();
+
+                $('#show_degree').text(input_degree.val() == '' ? '-' : input_degree.text());
+                $('#show_faculty').text(get_faculty);
+                $('#show_major').text(input_major.val() == '' ? '-' : input_major.text());
+                $('#show_student_type').text($s_type == 'new_student' ? 'New Student' : 'Transfer Student');
+                $('#show_nationality').text($s_nationality == 'thai' ? 'Thai' : 'Non-Thai');
+
+                $('#confirm-submit').modal('show')
+            });
+            $('#submitBtnExchange').click(function() {
+                var input_degree_exchange = $('select[name=input_degree_exchange] option:selected');
+                var input_faculty_exchange = $('select[name=input_faculty_exchange] option:selected');
+                var get_faculty_exchange = $('input[name=input_faculty_exchange_name]').val();
+                var input_major_exchange = $('select[name=input_major_exchange] option:selected');
+                var input_period_program = $('select[name=input_period_program] option:selected');
+                var $s_type = $('input[name=student_type_exchange]:checked').val();
+                var $s_nationality = $('input[name=input_nationality_exchange]:checked').val();
+
+                $('#show_degree_exchange').text(input_degree_exchange.val() == '' ? '-' : input_degree_exchange.text());
+                $('#show_faculty_exchange').text(gget_faculty_exchange == '' ? '-' : get_faculty_exchange);
+                $('#show_major_exchange').text(input_major_exchange.val() == '' ? '-' : input_major_exchange.text());
+                $('#show_student_type_exchange').text($s_type == 'exchange_program' ? 'Exchange program' : 'Study abord program');
+                $('#show_nationality_exchange').text($s_nationality == 'thai' ? 'Thai' : 'Non-Thai');
+                $('#show_period_program_exchange').text(input_period_program.val() == '' ? '-' : input_period_program.text());
+
+                $('#confirm-submit-exchange').modal('show')
+            });
+            $('#submitBtnNonDegree').click(function() {
+                var input_degree_non = $('select[name=input_degree_non] option:selected');
+                var input_faculty_non = $('select[name=input_faculty_non] option:selected');
+                var $s_nationality_non = $('input[name=input_nationality_non]:checked').val();
+                $('#show_degree_non').text(input_degree_non.val() == '' ? '-' : input_degree_non.text());
+                $('#show_faculty_non').text(input_faculty_non.val() == '' ? '-' : input_faculty_non.text());
+                $('#show_nationality_non').text($s_nationality_non == 'thai' ? 'Thai' : 'Non-Thai');
+
+                $('#confirm-submit-non-degree').modal('show')
+            });
+
+            $('#submit').click(function(){
+                $('#formfield').submit();
+            });
+            $('#submit_exchange').click(function(){
+                $('#formfield').submit();
+            });
+            $('#submit_non_degree').click(function(){
+                $('#formfield').submit();
+            });
+
+        </script>
+    
+
+
+</body></html>

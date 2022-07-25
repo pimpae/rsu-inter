@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>สำนักงานนานาชาติ </title> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> 
+        <link rel="icon" type="image/x-icon" href="images/rsu-logo.png">
+        <link rel="stylesheet" href="css/adminlte.min.css"> 
+        <link rel="stylesheet" href="css/main.css">   
+
+        <!-- TABLE -->
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css"> 
+        <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap4.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"/> 
+
+         
+    </head>
+    <body class="hold-transition sidebar-mini layout-fixed">
+        <div class="wrapper">
+            <!-- Preloader -->
+            <!-- <div class="preloader flex-column justify-content-center align-items-center">
+                <img class="animation__shake" src="images/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+            </div> -->
+            <!-- Navbar -->
+            <nav class="main-header navbar navbar-expand navbar-white navbar-light"> 
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                    </li> 
+                </ul> 
+                <ul class="navbar-nav ml-auto"> 
+                    <li class="nav-item">]
+
+
+                        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                        <i class="fas fa-search"></i>
+                        </a>
+                        <div class="navbar-search-block">
+                            <form class="form-inline">
+                                <div class="input-group input-group-sm">
+                                    <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-navbar" type="submit">
+                                        <i class="fas fa-search"></i>
+                                        </button>
+                                        <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                                        <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </li> 
+                </ul>
+            </nav> 
+            <aside class="main-sidebar sidebar-dark-primary elevation-4">
+                <!-- Brand Logo -->
+                <a href="#" class="brand-link">
+                    <img src="images/sm-logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"  >
+                    <p class="brand-text font-weight-light">สำนักงานนานาชาติ <br> มหาวิทยาลัยรังสิต</p>
+                </a> 
+                <div class="sidebar"> 
+                    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                        <div class="image">
+                            <img src="images/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                        </div>
+                        <div class="info">
+                            <a href="#" class="d-block">เอเจนท์</a>
+                        </div>
+                    </div>  
+                    <nav class="mt-2">
+                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">    
+                            <li class="nav-item">
+                                <a href="agent-profile.html" class="nav-link">
+                                    <i class="nav-icon fas fa-user-tie"></i>
+                                    <p>โปรไฟล์</p>
+                                </a> 
+                                <a href="agent-add-list.html" class="nav-link active">
+                                    <i class="nav-icon far fa-users"></i>
+                                    <p>ลงทะเบียนนักศึกษา</p>
+                                </a> 
+                                <a href="agent-plus.html" class="nav-link">
+                                    <i class="nav-icon fas fa-user-plus"></i>
+                                    <p>เพื่อนแนะนำเพื่อน</p>
+                                </a> 
+                            </li>  
+                        </ul>
+                    </nav> 
+                </div> 
+            </aside> 
+            <div class="content-wrapper"> 
+                <div class="content-header">
+                    <div class="container-fluid">
+                        <div class="row mb-2">
+                            <div class="col-sm-6">
+                                <h1 class="m-0">
+                                    <strong>ลงทะเบียนนักศึกษา</strong>  
+                                    <!-- <a href="#" class="btn btn-success pt-2 "><i class="fas fa-plus"></i> นำเข้าเลขกรมธรรม์</a> -->
+                                </h1> 
+                            </div>    
+                        </div> 
+                    </div> 
+                </div>  
+                <section class="content">
+                    <div class="container-fluid">
+                        <div class="div-box card-outline card-info p-4">
+                  
+                            <div class="col">
+                                <div class="row justify-content-center"> 
+                                    <div class="col-xl-6 col-12">
+                                        <form action=""> 
+
+                                            <div class="form-group row">
+                                                <label class="col-xl-3">หลักสูตร</label>
+                                                <div class="col-xl-6"> 
+                                                    <select class="selectpicker form-control" title="หลักสูตร" data-show-subtext="true" data-live-search="true" name="sel1" id="sel1" width="100%"> 
+                                                        <option> สาขาคณะศิลปศาสตร์ คณะศิลปศาสตร์ ปริญญาตรี  (ไทย) </option>
+                                                        <option> สาขาภาษาญี่ปุ่น คณะศิลปศาสตร์ ปริญญาตรี  (ไทย) </option>
+                                                        <option> สาขาภาษาไทยเพื่อการสื่อสาร คณะศิลปศาสตร์ ปริญญาตรี  (ไทย) </option> 
+                                                        <option> สาขาภาษาอังกฤษ คณะศิลปศาสตร์ ปริญญาตรี  (ไทย) </option> 
+                                                        <option> สาขาภาษาจีน  คณะศิลปศาสตร์ ปริญญาตรี  (ไทย) </option> 
+                                                        <option> สาขาคณะบริหารธุรกิจ คณะบริหารธุรกิจ ปริญญาตรี  (ไทย) </option> 
+                                                        <option> สาขาการจัดการอุตสาหกรรม คณะบริหารธุรกิจ ปริญญาตรี  (ไทย) </option> 
+                                                        <option> สาขาธุรกิจดิจิทัล คณะบริหารธุรกิจ ปริญญาตรี  (ไทย) </option> 
+                                                        <option> สาขารังสีเทคนิค คณะรังสีเทคนิค ปริญญาตรี  (ไทย) </option> 
+                                                    </select>
+                                                </div>
+                                            </div> 
+                                            <div class="form-group row">
+                                                <div class="col-xl-3">
+                                                    <label for="">ปีการศึกษา</label> 
+                                                </div>  
+                                                <div class="col-xl-6"> 
+                                                    <input type="text" class="form-control"   >
+                                                </div> 
+                                            </div>  
+                                            <div class="form-group row">
+                                                <div class="col-xl-3">
+                                                    <label for="">ภาคการศึกษา</label> 
+                                                </div>  
+                                                <div class="col-xl-6"> 
+                                                    <input type="text" class="form-control"   >
+                                                </div> 
+                                            </div> 
+                                            <div class="form-group row">
+                                                <label class="col-xl-3">บัตรประชาชน/พาสปอร์ต</label>
+                                                <div class="col-xl-6"> 
+                                                    <input type="text" class="form-control"   >
+                                                </div> 
+                                            </div>  
+                                            <div class="form-group row">
+                                                <label class="col-xl-3">คำนำหน้าชื่อ</label>
+                                                <div class="col-xl-6"> 
+                                                    <input type="text" class="form-control"   >
+                                                </div> 
+                                            </div>  
+                                            <div class="form-group row">
+                                                <label class="col-xl-3">ชื่อ-นามสกุล</label>
+                                                <div class="col-xl-6"> 
+                                                    <input type="text" class="form-control"   >
+                                                </div> 
+                                            </div>  
+                                            <div class="form-group row">
+                                                <label class="col-xl-3">วัน เดือน ปีเกิด</label>
+                                                <div class="col-xl-6"> 
+                                                    <input type="text" class="form-control"   >
+                                                </div> 
+                                            </div>  
+                                            <div class="form-group row">
+                                                <label class="col-xl-3">เพศ</label>
+                                                <div class="col-xl-6">
+                                                    <div class="form-group">
+                                                        <div class="custom-control custom-radio">
+                                                            <input class="custom-control-input" type="radio" id="customRadio1" name="customRadio" value="radio1">
+                                                            <label for="customRadio1" class="custom-control-label">ชาย</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio" value="radio2">
+                                                            <label for="customRadio2" class="custom-control-label">หญิง</label>
+                                                        </div> 
+                                                    </div> 
+                                                </div>
+                                            </div> 
+                                            <div class="form-group row">
+                                                <label class="col-xl-3">อีเมล</label>
+                                                <div class="col-xl-6"> 
+                                                    <input type="text" class="form-control"   >
+                                                </div> 
+                                            </div>  
+                                            <div class="form-group row">
+                                                <label class="col-xl-3">เบอร์โทร</label>
+                                                <div class="col-xl-6"> 
+                                                    <input type="text" class="form-control"   >
+                                                </div> 
+                                            </div>    
+                                            <div class="form-group row">
+                                                <div class="col-xl-3">
+                                                    <label for="">บัตรประชาชน</label> 
+                                                </div>  
+                                                <div class="col-xl-6"> 
+                                                    <button class="btn btn-danger"><i class="far fa-file-upload"></i> อัพโหลดไฟล์</button>
+                                                </div> 
+                                            </div>    
+                                            <div class="form-group row">
+                                                <div class="col-xl-3">
+                                                    <label for="">สำเนาวุฒิการศึกษา</label> 
+                                                </div>  
+                                                <div class="col-xl-6"> 
+                                                    <button class="btn btn-danger"><i class="far fa-file-upload"></i> อัพโหลดไฟล์</button>
+                                                </div> 
+                                            </div>    
+                                            <div class="form-group row">
+                                                <div class="col-xl-3">
+                                                    <label for="">เอกสารผลสอบภาษาอังกฤษ	</label> 
+                                                </div>  
+                                                <div class="col-xl-6"> 
+                                                    <button class="btn btn-danger"><i class="far fa-file-upload"></i> อัพโหลดไฟล์</button>
+                                                </div> 
+                                            </div> 
+
+
+
+
+                                            <div class="col-12 p-0 mt-3"> 
+                                                <hr>
+                                            </div>
+                                            
+                                            <div class="form-group row">
+                                                <div class="col-xl-3 col-12"></div> 
+                                                <div class="col-xl-6 col-12"> 
+                                                    <a href="agent-add-list.html" class="btn btn-info pl-4 pr-4">ยืนยัน</a>
+                                                    <button type="button" class="btn btn-secondary"  >ยกเลิก</button>
+                                                </div>
+                                            </div>   
+
+
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+ 
+                        </div>
+                    </div> 
+                </section> 
+            </div> 
+            <footer class="main-footer">
+                ระบบสมัครเรียน ออนไลน์ 
+                <div class="float-right d-none d-sm-inline-block">
+                    <b>Version</b> 1.1
+                </div>
+            </footer>  
+        </div> 
+
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+        <script src="js/adminlte.js"></script> 
+
+        <!-- TABLE -->
+        <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script> 
+        <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap4.min.js"></script> 
+        <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script> 
+        <script src="https://cdn.datatables.net/responsive/2.2.9/js/responsive.bootstrap4.min.js"></script> 
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js" integrity="sha512-cp+S0Bkyv7xKBSbmjJR0K7va0cor7vHYhETzm2Jy//ZTQDUvugH/byC4eWuTii9o5HN9msulx2zqhEXWau20Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+ 
+
+    </body>
+</html>

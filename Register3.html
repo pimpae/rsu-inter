@@ -1,0 +1,1892 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)https://demo.aesystem.co.th/rsu_inter2/showPersonal?student=64&register_type= -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>
+            Register
+        </title>
+        <meta name="description" content="Login">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimal-ui">
+        <!-- Call App Mode on ios devices -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <!-- Remove Tap Highlight on Windows Phone IE -->
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- base css -->
+        <link rel="stylesheet" media="screen, print" href="./Register3_files/vendors.bundle.css">
+        <link rel="stylesheet" media="screen, print" href="./Register3_files/app.bundle.css">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="apple-touch-icon" sizes="180x180" href="https://demo.aesystem.co.th/rsu_inter2/assets/img/favicon/apple-touch-icon.png?v=0.0.06">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://demo.aesystem.co.th/rsu_inter2/assets/img/favicon/favicon-32x32.png?v=0.0.06">
+        <link rel="mask-icon" href="https://demo.aesystem.co.th/rsu_inter2/assets/img/favicon/safari-pinned-tab.svg?v=0.0.06" color="#5bbad5">
+        <link rel="stylesheet" media="screen, print" href="./Register3_files/page-login.css">
+        <link id="mytheme" rel="stylesheet" href="./Register3_files/cust-theme-7.css">
+        <link rel="stylesheet" media="screen, print" href="./Register3_files/sweetalert2.bundle.css">
+        <link rel="stylesheet" href="./Register3_files/validationEngine.jquery.css" type="text/css">
+        <link rel="stylesheet" media="screen, print" href="./Register3_files/datatables.bundle.css">
+        <link rel="stylesheet" media="screen, print" href="./Register3_files/bootstrap-datepicker.min.css">
+        <link rel="stylesheet" media="screen, print" href="./Register3_files/fa-solid.css">
+        <link rel="stylesheet" media="screen, print" href="./Register3_files/select2.bundle.css">
+        <style>
+            .hr-border {
+                border-width: 2px;
+                margin-top: 2%;
+            }
+
+            .m-t {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            #line-step {
+                position: relative;
+
+            }
+
+            #line-step .line-step {
+                cursor: default;
+                position: relative;
+                z-index: 2;
+                background: #EFEFF4;
+                color: #8A8A8F;
+                font-size: 16px;
+                line-height: 42px;
+                text-align: center;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 30px;
+                border: 3px solid white;
+            }
+
+            #line-step .line-step:after,
+            #line-step .line-step:before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 2px;
+                background-color: #8A8A8F;
+                top: 50%;
+                margin-top: -1px;
+            }
+
+            #line-step .col-6:first-child .line-step:before {
+                display: none;
+            }
+
+            #line-step .col-6:last-child .line-step:after {
+                display: none;
+            }
+
+            #line-step .line-step:after {
+                right: -18px;
+            }
+
+            #line-step .line-step:before {
+                left: -18px;
+            }
+
+            /*#line-step .line-step.line-step-active {*/
+            /*    background: #4CD964;*/
+            /*    color: white;*/
+            /*    text-shadow: 0 1px 1px rgba(21, 62, 31, 0.47);*/
+            /*}*/
+            #line-step .line-step.line-step-active {
+                background: #EA4C92;
+                color: white;
+                text-shadow: 0 1px 1px rgba(21, 62, 31, 0.47);
+            }
+            #line-step .line-step.line-step-success {
+                background: #EA4C92;
+                color: white;
+                text-shadow: 0 1px 1px rgba(21, 62, 31, 0.47);
+            }
+
+            #input_container {
+                position:relative;
+                /* width: 200px; */
+            }
+            .date_search {
+                margin:0;
+                padding-right: 30px;
+                width: 100%;
+            }
+            #img_icon {
+                position:absolute;
+                bottom:2px;
+                right:2px;
+                width:24px;
+                height:27px;
+            }
+
+        </style>
+    </head>
+    <body style="background-color: #bdbdbd;" class="desktop chrome webkit pace-done" cz-shortcut-listen="true"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+        
+        <form id="formfield" action="https://demo.aesystem.co.th/rsu_inter2/saveUpdateNoAuth?XH?a4sFYDjTCNRPG1wKnNClYAQa5YOsBWL5hK2gG8jq" class="needs-validation" novalidate=""><div class="loader"><i class="fal fa-spinner-third fa-spin-4x fs-xxl"></i></div>
+            <input type="hidden" name="_token" value="a4sFYDjTCNRPG1wKnNClYAQa5YOsBWL5hK2gG8jq">            <input type="hidden" name="token" id="token" value="X5BNWNR">
+            <input type="hidden" id="student_id" name="student_id" value="64">
+            <input type="hidden" name="exchange_step" id="exchange_step" value="2">
+            <input type="hidden" name="step" id="step" value="2">
+            <input type="hidden" name="register_type" id="register_type" value="">
+            <input type="hidden" name="get_type_custom" id="get_type_custom" value="nonthai">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="panel">
+                        <div class="panel-container show">
+                            <div class="panel-content">
+                                <div class="frame-wrap"><div class="text-center">
+                                    <label style="color:black;font-size: 30px;">Registration 
+                                                        Application online for full time student
+                                                </label>
+                                </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                                                                            <div id="line-step" class="mt-2 mb-4">
+        <div class="row">
+                <div class="col-6 col-sm mt-2">
+                        <div class="line-step line-step-active">Program Selection</div>
+                    </div>
+                <div class="col-6 col-sm mt-2">
+                        <div class="line-step line-step-active">Personal Details</div>
+                    </div><div class="col-6 col-sm mt-2">
+                        <div class="line-step line-step-active">Education Information
+
+</div>
+                    </div>
+                <div class="col-6 col-sm mt-2">
+                        <div class="line-step ">Attachment and Application Confirmation</div>
+                    </div>
+            </div>
+</div>
+                                                                                    </div>
+                                    </div>
+                                    <h2 style="color:black;">Personal Infromation:</h2>
+                                    <div class="row">
+                                        <div class="form-group col-6">
+                                                                                            <div class="form-group row">
+                                                    <label for="input_passport_number" class="col-sm-4 col-form-label text-right">Passport number</label>
+                                                    <div class="col-sm-8">
+                                                        <input id="input_passport_number" value="1233433313" name="input_card_number" class="form-control validate[required]" type="text" maxlength="10">
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+                                    <div class="row m-t">
+                                        <div class="col-12">
+                                            <div class="form-group row">
+                                                <label class="col-sm-2 col-form-label text-right">Title *</label>
+                                                <div class="col-sm-10">
+                                                    <div class="row">
+                                                        <div class="col-2" style="margin-right: unset;">
+                                                            <select name="prefix" id="prefix" class="browser-default custom-select form-control validate[required]" style="font-size: inherit;" required="">
+                                                                <option value="0" selected="" disabled="">---Please Select---
+                                                                </option>
+                                                                                                                                    <option value="1" selected>
+                                                                        Mr.
+                                                                    </option>
+                                                                                                                                    <option value="2">
+                                                                        Ms.
+                                                                    </option>
+                                                                                                                                    <option value="3">
+                                                                        Miss
+                                                                    </option>
+                                                                                                                                    <option value="4">
+                                                                        Other (please specify in the box below)
+                                                                    </option>
+                                                                                                                            </select>
+                                                        </div>
+                                                        <div class="col-3" style="margin-right: unset;">
+                                                            <input type="text" class="form-control validate[required]" id="input_first_name" name="input_first_name" required="" value="Prayad">
+                                                            <span style="font-size: 16px;padding-left: 25px;">First
+                                                                Name*</span>
+                                                        </div>
+                                                        <div class="col-3" style="margin-right: unset;">
+                                                            <input type="text" class="form-control" id="input_middle_name" name="input_middle_name" required="" value="Three">
+                                                            <span style="font-size: 16px;padding-left: 25px;">Middle
+                                                                Name</span>
+                                                        </div>
+                                                        <div class="col-3" style="margin-right: unset;">
+                                                            <input type="text" class="form-control validate[required]" id="input_last_name" name="input_last_name" required="" value="Puth-O-Cha">
+                                                            <span style="font-size: 16px;padding-left: 25px;">Last
+                                                                Name*</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        <div class="row m-t">
+                                        <div class="form-group col-6">
+                                            <div class="form-group row">
+                                                <label for="input_lastname_personal" class="col-sm-4 col-form-label text-right">Gender *</label>
+                                                <div class="col-sm-4">
+                                                    <p style="background-color: #f3f3f3" id="option-selected" class="col-form-label form-control"> Male</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-6">
+                                            <div class="form-group row">
+                                                <label for="input_nationality" class="col-sm-4 col-form-label text-right">Nationality *</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control validate[required]" id="input_nationality" name="input_nationality" value="Thailand">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-t">
+                                        <div class="col-6">
+                                            <div class="form-group row">
+                                                <label for="input_date_birth" class="col-sm-4 col-form-label text-right">Date of birth
+                                                    (DD/MM/YYYY) *</label>
+                                                <div class="col-sm-8">
+                                                    <div id="input_container">
+                                                        <input type="text" class="form-control date_search validate[required]" id="input_date_birth" name="input_date_birth" placeholder="dd/mm/yyyy" onchange="ageCount()">
+                                                        <i class="fal fa-calendar-alt" id="img_icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group row">
+                                                <label for="input_age" class="col-sm-4 col-form-label text-right">Age</label>
+                                                <div class="col-sm-4">
+                                                    <input type="hidden" id="input_age_hidden" name="input_age_hidden" value="19">
+                                                    <input type="text" class="form-control" id="input_age" name="input_age" readonly="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-t">
+                                        <div class="col-6">
+                                            <div class="form-group row">
+                                                <label for="input_email" class="col-sm-4 col-form-label text-right">Email *</label>
+                                                <div class="col-sm-8">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <input class="form-control validate[custom[email]]" type="text" id="input_email" name="input_email" value="Prayad@armymail.com">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group row">
+                                                <label for="input_home_number" class="col-sm-4 col-form-label text-right">Mobile Number *</label>
+                                                <div class="col-sm-8">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <input class="form-control" type="text" id="input_home_number validate[required]" name="input_home_number" maxlength="10" placeholder="0999999999">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-t">
+                                        <div class="col-6">
+                                            <div class="form-group row">
+                                                <label for="input_line" class="col-sm-4 col-form-label text-right">Line ID</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control" id="input_line" name="input_line">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group row">
+                                                <label for="input_wechat" class="col-sm-4 col-form-label text-right">WeChat ID</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control" id="input_wechat" name="input_wechat">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-t">
+                                        <div class="col-6">
+                                            <div class="form-group row">
+                                                <label for="input_whatapp" class="col-sm-4 col-form-label text-right">Whatsapp ID</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control" id="input_whatapp" name="input_whatapp">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr class="hr-border">
+                                    <h2 style="color:black;">Postal Address:</h2>
+                                    <div class="row m-t">
+                                        <div class="col-12">
+                                            <div class="form-group row">
+                                                <label for="input_address_postal" class="col-sm-2 col-form-label text-right">Address</label>
+                                                <div class="col-sm-10">
+                                                    <textarea type="text" class="form-control validate[required]" id="input_address_postal" name="input_address_postal"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        <div class="row m-t">
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="form-group row">
+                                                <label for="input_subdistrict" class="col-sm-4 col-form-label text-sm-right">Subdistrict</label>
+                                                <div class="col-sm-8">
+                                                    
+                                                    <input type="text" class="form-control validate[required]" id="input_subdistrict" name="input_subdistrict" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group row">
+                                                <label for="input_district_postal" class="col-sm-4 col-form-label text-right">District</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control validate[required]" id="input_district_postal" name="input_district_postal">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-t">
+                                        <div class="col-6">
+                                            <div class="form-group row">
+                                                <label for="input_province_postal" class="col-sm-4 col-form-label text-right">City/Province</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control validate[required]" id="input_province_postal" name="input_province_postal">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group row">
+                                                <label for="input_country_postal" class="col-sm-4 col-form-label text-right">Country</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control validate[required]" id="input_country_postal" name="input_country_postal">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-t">
+                                        <div class="col-6">
+                                            <div class="form-group row">
+                                                <label for="input_postal_code_postal" class="col-sm-4 col-form-label text-right">Postal
+                                                    Code</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control validate[required]" id="input_postal_code_postal" name="input_postal_code_postal">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-t">
+                                        <div class="col-6">
+                                            <div class="form-group row">
+                                                <label for="input_contry_code_postal" class="col-sm-4 col-form-label text-right">
+                                                    Home Telephone number </label>
+                                                <div class="col-sm-8">
+                                                    <div class="row">
+                                                        <div class="col-5" style="margin-right: unset;">
+                                                            <select class="form-control select2-hidden-accessible" name="input_contry_code_postal" id="input_contry_code_postal" data-select2-id="input_contry_code_postal" tabindex="-1" aria-hidden="true">
+                                                                <option value="" selected="" disabled="" data-select2-id="8">---Please Select---
+                                                                </option>
+                                                                <!-- country codes (ISO 3166) and Dial codes. -->
+
+    
+        
+        <option data-countrycode="DZ" value="+213">Algeria (+213)</option>
+        <option data-countrycode="AD" value="+376">Andorra (+376)</option>
+        <option data-countrycode="AO" value="+244">Angola (+244)</option>
+        <option data-countrycode="AI" value="+1264">Anguilla (+1264)</option>
+        <option data-countrycode="AG" value="+1268">Antigua &amp; Barbuda (+1268)</option>
+        <option data-countrycode="AR" value="+54">Argentina (+54)</option>
+        <option data-countrycode="AM" value="+374">Armenia (+374)</option>
+        <option data-countrycode="AW" value="+297">Aruba (+297)</option>
+        <option data-countrycode="AU" value="+61">Australia (+61)</option>
+        <option data-countrycode="AT" value="+43">Austria (+43)</option>
+        <option data-countrycode="AZ" value="+994">Azerbaijan (+994)</option>
+        <option data-countrycode="BS" value="+1242">Bahamas (+1242)</option>
+        <option data-countrycode="BH" value="+973">Bahrain (+973)</option>
+        <option data-countrycode="BD" value="+880">Bangladesh (+880)</option>
+        <option data-countrycode="BB" value="+1246">Barbados (+1246)</option>
+        <option data-countrycode="BY" value="+375">Belarus (+375)</option>
+        <option data-countrycode="BE" value="+32">Belgium (+32)</option>
+        <option data-countrycode="BZ" value="+501">Belize (+501)</option>
+        <option data-countrycode="BJ" value="+229">Benin (+229)</option>
+        <option data-countrycode="BM" value="+1441">Bermuda (+1441)</option>
+        <option data-countrycode="BT" value="+975">Bhutan (+975)</option>
+        <option data-countrycode="BO" value="+591">Bolivia (+591)</option>
+        <option data-countrycode="BA" value="+387">Bosnia Herzegovina (+387)</option>
+        <option data-countrycode="BW" value="+267">Botswana (+267)</option>
+        <option data-countrycode="BR" value="+55">Brazil (+55)</option>
+        <option data-countrycode="BN" value="+673">Brunei (+673)</option>
+        <option data-countrycode="BG" value="+359">Bulgaria (+359)</option>
+        <option data-countrycode="BF" value="+226">Burkina Faso (+226)</option>
+        <option data-countrycode="BI" value="+257">Burundi (+257)</option>
+        <option data-countrycode="KH" value="+855">Cambodia (+855)</option>
+        <option data-countrycode="CM" value="+237">Cameroon (+237)</option>
+        <option data-countrycode="CA" value="+1">Canada (+1)</option>
+        <option data-countrycode="CV" value="+238">Cape Verde Islands (+238)</option>
+        <option data-countrycode="KY" value="+1345">Cayman Islands (+1345)</option>
+        <option data-countrycode="CF" value="+236">Central African Republic (+236)</option>
+        <option data-countrycode="CL" value="+56">Chile (+56)</option>
+        <option data-countrycode="CN" value="+86">China (+86)</option>
+        <option data-countrycode="CO" value="+57">Colombia (+57)</option>
+        <option data-countrycode="KM" value="+269">Comoros (+269)</option>
+        <option data-countrycode="CG" value="+242">Congo (+242)</option>
+        <option data-countrycode="CK" value="+682">Cook Islands (+682)</option>
+        <option data-countrycode="CR" value="+506">Costa Rica (+506)</option>
+        <option data-countrycode="HR" value="+385">Croatia (+385)</option>
+        <option data-countrycode="CU" value="+53">Cuba (+53)</option>
+        <option data-countrycode="CY" value="+90392">Cyprus North (+90392)</option>
+        <option data-countrycode="CY" value="+357">Cyprus South (+357)</option>
+        <option data-countrycode="CZ" value="+42">Czech Republic (+42)</option>
+        <option data-countrycode="DK" value="+45">Denmark (+45)</option>
+        <option data-countrycode="DJ" value="+253">Djibouti (+253)</option>
+        <option data-countrycode="DM" value="+1809">Dominica (+1809)</option>
+        <option data-countrycode="DO" value="+1809">Dominican Republic (+1809)</option>
+        <option data-countrycode="EC" value="+593">Ecuador (+593)</option>
+        <option data-countrycode="EG" value="+20">Egypt (+20)</option>
+        <option data-countrycode="SV" value="+503">El Salvador (+503)</option>
+        <option data-countrycode="GQ" value="+240">Equatorial Guinea (+240)</option>
+        <option data-countrycode="ER" value="+291">Eritrea (+291)</option>
+        <option data-countrycode="EE" value="+372">Estonia (+372)</option>
+        <option data-countrycode="ET" value="+251">Ethiopia (+251)</option>
+        <option data-countrycode="FK" value="+500">Falkland Islands (+500)</option>
+        <option data-countrycode="FO" value="+298">Faroe Islands (+298)</option>
+        <option data-countrycode="FJ" value="+679">Fiji (+679)</option>
+        <option data-countrycode="FI" value="+358">Finland (+358)</option>
+        <option data-countrycode="FR" value="+33">France (+33)</option>
+        <option data-countrycode="GF" value="+594">French Guiana (+594)</option>
+        <option data-countrycode="PF" value="+689">French Polynesia (+689)</option>
+        <option data-countrycode="GA" value="+241">Gabon (+241)</option>
+        <option data-countrycode="GM" value="+220">Gambia (+220)</option>
+        <option data-countrycode="GE" value="+7880">Georgia (+7880)</option>
+        <option data-countrycode="DE" value="+49">Germany (+49)</option>
+        <option data-countrycode="GH" value="+233">Ghana (+233)</option>
+        <option data-countrycode="GI" value="+350">Gibraltar (+350)</option>
+        <option data-countrycode="GR" value="+30">Greece (+30)</option>
+        <option data-countrycode="GL" value="+299">Greenland (+299)</option>
+        <option data-countrycode="GD" value="+1473">Grenada (+1473)</option>
+        <option data-countrycode="GP" value="+590">Guadeloupe (+590)</option>
+        <option data-countrycode="GU" value="+671">Guam (+671)</option>
+        <option data-countrycode="GT" value="+502">Guatemala (+502)</option>
+        <option data-countrycode="GN" value="+224">Guinea (+224)</option>
+        <option data-countrycode="GW" value="+245">Guinea - Bissau (+245)</option>
+        <option data-countrycode="GY" value="+592">Guyana (+592)</option>
+        <option data-countrycode="HT" value="+509">Haiti (+509)</option>
+        <option data-countrycode="HN" value="+504">Honduras (+504)</option>
+        <option data-countrycode="HK" value="+852">Hong Kong (+852)</option>
+        <option data-countrycode="HU" value="+36">Hungary (+36)</option>
+        <option data-countrycode="IS" value="+354">Iceland (+354)</option>
+        <option data-countrycode="IN" value="+91">India (+91)</option>
+        <option data-countrycode="ID" value="+62">Indonesia (+62)</option>
+        <option data-countrycode="IR" value="+98">Iran (+98)</option>
+        <option data-countrycode="IQ" value="+964">Iraq (+964)</option>
+        <option data-countrycode="IE" value="+353">Ireland (+353)</option>
+        <option data-countrycode="IL" value="+972">Israel (+972)</option>
+        <option data-countrycode="IT" value="+39">Italy (+39)</option>
+        <option data-countrycode="JM" value="+1876">Jamaica (+1876)</option>
+        <option data-countrycode="JP" value="+81">Japan (+81)</option>
+        <option data-countrycode="JO" value="+962">Jordan (+962)</option>
+        <option data-countrycode="KZ" value="+7">Kazakhstan (+7)</option>
+        <option data-countrycode="KE" value="+254">Kenya (+254)</option>
+        <option data-countrycode="KI" value="+686">Kiribati (+686)</option>
+        <option data-countrycode="KP" value="+850">Korea North (+850)</option>
+        <option data-countrycode="KR" value="+82">Korea South (+82)</option>
+        <option data-countrycode="KW" value="+965">Kuwait (+965)</option>
+        <option data-countrycode="KG" value="+996">Kyrgyzstan (+996)</option>
+        <option data-countrycode="LA" value="+856">Laos (+856)</option>
+        <option data-countrycode="LV" value="+371">Latvia (+371)</option>
+        <option data-countrycode="LB" value="+961">Lebanon (+961)</option>
+        <option data-countrycode="LS" value="+266">Lesotho (+266)</option>
+        <option data-countrycode="LR" value="+231">Liberia (+231)</option>
+        <option data-countrycode="LY" value="+218">Libya (+218)</option>
+        <option data-countrycode="LI" value="+417">Liechtenstein (+417)</option>
+        <option data-countrycode="LT" value="+370">Lithuania (+370)</option>
+        <option data-countrycode="LU" value="+352">Luxembourg (+352)</option>
+        <option data-countrycode="MO" value="+853">Macao (+853)</option>
+        <option data-countrycode="MK" value="+389">Macedonia (+389)</option>
+        <option data-countrycode="MG" value="+261">Madagascar (+261)</option>
+        <option data-countrycode="MW" value="+265">Malawi (+265)</option>
+        <option data-countrycode="MY" value="+60">Malaysia (+60)</option>
+        <option data-countrycode="MV" value="+960">Maldives (+960)</option>
+        <option data-countrycode="ML" value="+223">Mali (+223)</option>
+        <option data-countrycode="MT" value="+356">Malta (+356)</option>
+        <option data-countrycode="MH" value="+692">Marshall Islands (+692)</option>
+        <option data-countrycode="MQ" value="+596">Martinique (+596)</option>
+        <option data-countrycode="MR" value="+222">Mauritania (+222)</option>
+        <option data-countrycode="YT" value="+269">Mayotte (+269)</option>
+        <option data-countrycode="MX" value="+52">Mexico (+52)</option>
+        <option data-countrycode="FM" value="+691">Micronesia (+691)</option>
+        <option data-countrycode="MD" value="+373">Moldova (+373)</option>
+        <option data-countrycode="MC" value="+377">Monaco (+377)</option>
+        <option data-countrycode="MN" value="+976">Mongolia (+976)</option>
+        <option data-countrycode="MS" value="+1664">Montserrat (+1664)</option>
+        <option data-countrycode="MA" value="+212">Morocco (+212)</option>
+        <option data-countrycode="MZ" value="+258">Mozambique (+258)</option>
+        <option data-countrycode="MN" value="+95">Myanmar (+95)</option>
+        <option data-countrycode="NA" value="+264">Namibia (+264)</option>
+        <option data-countrycode="NR" value="+674">Nauru (+674)</option>
+        <option data-countrycode="NP" value="+977">Nepal (+977)</option>
+        <option data-countrycode="NL" value="+31">Netherlands (+31)</option>
+        <option data-countrycode="NC" value="+687">New Caledonia (+687)</option>
+        <option data-countrycode="NZ" value="+64">New Zealand (+64)</option>
+        <option data-countrycode="NI" value="+505">Nicaragua (+505)</option>
+        <option data-countrycode="NE" value="+227">Niger (+227)</option>
+        <option data-countrycode="NG" value="+234">Nigeria (+234)</option>
+        <option data-countrycode="NU" value="+683">Niue (+683)</option>
+        <option data-countrycode="NF" value="+672">Norfolk Islands (+672)</option>
+        <option data-countrycode="NP" value="+670">Northern Marianas (+670)</option>
+        <option data-countrycode="NO" value="+47">Norway (+47)</option>
+        <option data-countrycode="OM" value="+968">Oman (+968)</option>
+        <option data-countrycode="PW" value="+680">Palau (+680)</option>
+        <option data-countrycode="PA" value="+507">Panama (+507)</option>
+        <option data-countrycode="PG" value="+675">Papua New Guinea (+675)</option>
+        <option data-countrycode="PY" value="+595">Paraguay (+595)</option>
+        <option data-countrycode="PE" value="+51">Peru (+51)</option>
+        <option data-countrycode="PH" value="+63">Philippines (+63)</option>
+        <option data-countrycode="PL" value="+48">Poland (+48)</option>
+        <option data-countrycode="PT" value="+351">Portugal (+351)</option>
+        <option data-countrycode="PR" value="+1787">Puerto Rico (+1787)</option>
+        <option data-countrycode="QA" value="+974">Qatar (+974)</option>
+        <option data-countrycode="RE" value="+262">Reunion (+262)</option>
+        <option data-countrycode="RO" value="+40">Romania (+40)</option>
+        <option data-countrycode="RU" value="+7">Russia (+7)</option>
+        <option data-countrycode="RW" value="+250">Rwanda (+250)</option>
+        <option data-countrycode="SM" value="+378">San Marino (+378)</option>
+        <option data-countrycode="ST" value="+239">Sao Tome &amp; Principe (+239)</option>
+        <option data-countrycode="SA" value="+966">Saudi Arabia (+966)</option>
+        <option data-countrycode="SN" value="+221">Senegal (+221)</option>
+        <option data-countrycode="CS" value="+381">Serbia (+381)</option>
+        <option data-countrycode="SC" value="+248">Seychelles (+248)</option>
+        <option data-countrycode="SL" value="+232">Sierra Leone (+232)</option>
+        <option data-countrycode="SG" value="+65">Singapore (+65)</option>
+        <option data-countrycode="SK" value="+421">Slovak Republic (+421)</option>
+        <option data-countrycode="SI" value="+386">Slovenia (+386)</option>
+        <option data-countrycode="SB" value="+677">Solomon Islands (+677)</option>
+        <option data-countrycode="SO" value="+252">Somalia (+252)</option>
+        <option data-countrycode="ZA" value="+27">South Africa (+27)</option>
+        <option data-countrycode="ES" value="+34">Spain (+34)</option>
+        <option data-countrycode="LK" value="+94">Sri Lanka (+94)</option>
+        <option data-countrycode="SH" value="+290">St. Helena (+290)</option>
+        <option data-countrycode="KN" value="+1869">St. Kitts (+1869)</option>
+        <option data-countrycode="SC" value="+1758">St. Lucia (+1758)</option>
+        <option data-countrycode="SD" value="+249">Sudan (+249)</option>
+        <option data-countrycode="SR" value="+597">Suriname (+597)</option>
+        <option data-countrycode="SZ" value="+268">Swaziland (+268)</option>
+        <option data-countrycode="SE" value="+46">Sweden (+46)</option>
+        <option data-countrycode="CH" value="+41">Switzerland (+41)</option>
+        <option data-countrycode="SI" value="+963">Syria (+963)</option>
+        <option data-countrycode="TW" value="+886">Taiwan (+886)</option>
+        <option data-countrycode="TJ" value="+7">Tajikstan (+7)</option>
+        <option data-countrycode="TH" value="+66">Thailand (+66)</option>
+        <option data-countrycode="TG" value="+228">Togo (+228)</option>
+        <option data-countrycode="TO" value="+676">Tonga (+676)</option>
+        <option data-countrycode="TT" value="+1868">Trinidad &amp; Tobago (+1868)</option>
+        <option data-countrycode="TN" value="+216">Tunisia (+216)</option>
+        <option data-countrycode="TR" value="+90">Turkey (+90)</option>
+        <option data-countrycode="TM" value="+7">Turkmenistan (+7)</option>
+        <option data-countrycode="TM" value="+993">Turkmenistan (+993)</option>
+        <option data-countrycode="TC" value="+1649">Turks &amp; Caicos Islands (+1649)</option>
+        <option data-countrycode="TV" value="+688">Tuvalu (+688)</option>
+        <option data-countrycode="UG" value="+256">Uganda (+256)</option>
+        <!-- <option data-countryCode="GB" value="+44">UK (+44)</option> -->
+        <option data-countrycode="UA" value="+380">Ukraine (+380)</option>
+        <option data-countrycode="AE" value="+971">United Arab Emirates (+971)</option>
+        <option data-countrycode="UY" value="+598">Uruguay (+598)</option>
+        <!-- <option data-countryCode="US" value="+1">USA (+1)</option> -->
+        <option data-countrycode="UZ" value="+7">Uzbekistan (+7)</option>
+        <option data-countrycode="VU" value="+678">Vanuatu (+678)</option>
+        <option data-countrycode="VA" value="+379">Vatican City (+379)</option>
+        <option data-countrycode="VE" value="+58">Venezuela (+58)</option>
+        <option data-countrycode="VN" value="+84">Vietnam (+84)</option>
+        <option data-countrycode="VG" value="+84">Virgin Islands - British (+1284)</option>
+        <option data-countrycode="VI" value="+84">Virgin Islands - US (+1340)</option>
+        <option data-countrycode="WF" value="+681">Wallis &amp; Futuna (+681)</option>
+        <option data-countrycode="YE" value="+969">Yemen (North)(+969)</option>
+        <option data-countrycode="YE" value="+967">Yemen (South)(+967)</option>
+        <option data-countrycode="ZM" value="+260">Zambia (+260)</option>
+        <option data-countrycode="ZW" value="+263">Zimbabwe (+263)</option>
+        
+    
+                                                            </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="7" style="width: 195.344px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-input_contry_code_postal-container"><span class="select2-selection__rendered" id="select2-input_contry_code_postal-container" role="textbox" aria-readonly="true" title="---Please Select---
+                                                                ">---Please Select---
+                                                                </span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                            <span style="font-size: 16px;">Country Code</span>
+                                                        </div>
+                                                        <div class="col-6" style="margin: unset;padding: unset;">
+                                                            <input type="text" class="form-control" id="input_cell_phone_number_postal" name="input_cell_phone_number_postal">
+                                                            <span style="font-size: 16px;">Cell phone
+                                                                Number</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group row">
+                                                <label for="input_contry_code_mobile_postal" class="col-sm-4 col-form-label text-right">
+                                                    Mobile Telephone number </label>
+                                                <div class="col-sm-8">
+                                                    <div class="row">
+                                                        <div class="col-5" style="margin-right: unset;">
+                                                            <select class="form-control select2-hidden-accessible" name="input_contry_code_mobile_postal" id="input_contry_code_mobile_postal" data-select2-id="input_contry_code_mobile_postal" tabindex="-1" aria-hidden="true">
+                                                                <option value="" selected="" disabled="" data-select2-id="10">---Please Select---
+                                                                </option>
+                                                                <!-- country codes (ISO 3166) and Dial codes. -->
+
+    
+        
+        <option data-countrycode="DZ" value="+213">Algeria (+213)</option>
+        <option data-countrycode="AD" value="+376">Andorra (+376)</option>
+        <option data-countrycode="AO" value="+244">Angola (+244)</option>
+        <option data-countrycode="AI" value="+1264">Anguilla (+1264)</option>
+        <option data-countrycode="AG" value="+1268">Antigua &amp; Barbuda (+1268)</option>
+        <option data-countrycode="AR" value="+54">Argentina (+54)</option>
+        <option data-countrycode="AM" value="+374">Armenia (+374)</option>
+        <option data-countrycode="AW" value="+297">Aruba (+297)</option>
+        <option data-countrycode="AU" value="+61">Australia (+61)</option>
+        <option data-countrycode="AT" value="+43">Austria (+43)</option>
+        <option data-countrycode="AZ" value="+994">Azerbaijan (+994)</option>
+        <option data-countrycode="BS" value="+1242">Bahamas (+1242)</option>
+        <option data-countrycode="BH" value="+973">Bahrain (+973)</option>
+        <option data-countrycode="BD" value="+880">Bangladesh (+880)</option>
+        <option data-countrycode="BB" value="+1246">Barbados (+1246)</option>
+        <option data-countrycode="BY" value="+375">Belarus (+375)</option>
+        <option data-countrycode="BE" value="+32">Belgium (+32)</option>
+        <option data-countrycode="BZ" value="+501">Belize (+501)</option>
+        <option data-countrycode="BJ" value="+229">Benin (+229)</option>
+        <option data-countrycode="BM" value="+1441">Bermuda (+1441)</option>
+        <option data-countrycode="BT" value="+975">Bhutan (+975)</option>
+        <option data-countrycode="BO" value="+591">Bolivia (+591)</option>
+        <option data-countrycode="BA" value="+387">Bosnia Herzegovina (+387)</option>
+        <option data-countrycode="BW" value="+267">Botswana (+267)</option>
+        <option data-countrycode="BR" value="+55">Brazil (+55)</option>
+        <option data-countrycode="BN" value="+673">Brunei (+673)</option>
+        <option data-countrycode="BG" value="+359">Bulgaria (+359)</option>
+        <option data-countrycode="BF" value="+226">Burkina Faso (+226)</option>
+        <option data-countrycode="BI" value="+257">Burundi (+257)</option>
+        <option data-countrycode="KH" value="+855">Cambodia (+855)</option>
+        <option data-countrycode="CM" value="+237">Cameroon (+237)</option>
+        <option data-countrycode="CA" value="+1">Canada (+1)</option>
+        <option data-countrycode="CV" value="+238">Cape Verde Islands (+238)</option>
+        <option data-countrycode="KY" value="+1345">Cayman Islands (+1345)</option>
+        <option data-countrycode="CF" value="+236">Central African Republic (+236)</option>
+        <option data-countrycode="CL" value="+56">Chile (+56)</option>
+        <option data-countrycode="CN" value="+86">China (+86)</option>
+        <option data-countrycode="CO" value="+57">Colombia (+57)</option>
+        <option data-countrycode="KM" value="+269">Comoros (+269)</option>
+        <option data-countrycode="CG" value="+242">Congo (+242)</option>
+        <option data-countrycode="CK" value="+682">Cook Islands (+682)</option>
+        <option data-countrycode="CR" value="+506">Costa Rica (+506)</option>
+        <option data-countrycode="HR" value="+385">Croatia (+385)</option>
+        <option data-countrycode="CU" value="+53">Cuba (+53)</option>
+        <option data-countrycode="CY" value="+90392">Cyprus North (+90392)</option>
+        <option data-countrycode="CY" value="+357">Cyprus South (+357)</option>
+        <option data-countrycode="CZ" value="+42">Czech Republic (+42)</option>
+        <option data-countrycode="DK" value="+45">Denmark (+45)</option>
+        <option data-countrycode="DJ" value="+253">Djibouti (+253)</option>
+        <option data-countrycode="DM" value="+1809">Dominica (+1809)</option>
+        <option data-countrycode="DO" value="+1809">Dominican Republic (+1809)</option>
+        <option data-countrycode="EC" value="+593">Ecuador (+593)</option>
+        <option data-countrycode="EG" value="+20">Egypt (+20)</option>
+        <option data-countrycode="SV" value="+503">El Salvador (+503)</option>
+        <option data-countrycode="GQ" value="+240">Equatorial Guinea (+240)</option>
+        <option data-countrycode="ER" value="+291">Eritrea (+291)</option>
+        <option data-countrycode="EE" value="+372">Estonia (+372)</option>
+        <option data-countrycode="ET" value="+251">Ethiopia (+251)</option>
+        <option data-countrycode="FK" value="+500">Falkland Islands (+500)</option>
+        <option data-countrycode="FO" value="+298">Faroe Islands (+298)</option>
+        <option data-countrycode="FJ" value="+679">Fiji (+679)</option>
+        <option data-countrycode="FI" value="+358">Finland (+358)</option>
+        <option data-countrycode="FR" value="+33">France (+33)</option>
+        <option data-countrycode="GF" value="+594">French Guiana (+594)</option>
+        <option data-countrycode="PF" value="+689">French Polynesia (+689)</option>
+        <option data-countrycode="GA" value="+241">Gabon (+241)</option>
+        <option data-countrycode="GM" value="+220">Gambia (+220)</option>
+        <option data-countrycode="GE" value="+7880">Georgia (+7880)</option>
+        <option data-countrycode="DE" value="+49">Germany (+49)</option>
+        <option data-countrycode="GH" value="+233">Ghana (+233)</option>
+        <option data-countrycode="GI" value="+350">Gibraltar (+350)</option>
+        <option data-countrycode="GR" value="+30">Greece (+30)</option>
+        <option data-countrycode="GL" value="+299">Greenland (+299)</option>
+        <option data-countrycode="GD" value="+1473">Grenada (+1473)</option>
+        <option data-countrycode="GP" value="+590">Guadeloupe (+590)</option>
+        <option data-countrycode="GU" value="+671">Guam (+671)</option>
+        <option data-countrycode="GT" value="+502">Guatemala (+502)</option>
+        <option data-countrycode="GN" value="+224">Guinea (+224)</option>
+        <option data-countrycode="GW" value="+245">Guinea - Bissau (+245)</option>
+        <option data-countrycode="GY" value="+592">Guyana (+592)</option>
+        <option data-countrycode="HT" value="+509">Haiti (+509)</option>
+        <option data-countrycode="HN" value="+504">Honduras (+504)</option>
+        <option data-countrycode="HK" value="+852">Hong Kong (+852)</option>
+        <option data-countrycode="HU" value="+36">Hungary (+36)</option>
+        <option data-countrycode="IS" value="+354">Iceland (+354)</option>
+        <option data-countrycode="IN" value="+91">India (+91)</option>
+        <option data-countrycode="ID" value="+62">Indonesia (+62)</option>
+        <option data-countrycode="IR" value="+98">Iran (+98)</option>
+        <option data-countrycode="IQ" value="+964">Iraq (+964)</option>
+        <option data-countrycode="IE" value="+353">Ireland (+353)</option>
+        <option data-countrycode="IL" value="+972">Israel (+972)</option>
+        <option data-countrycode="IT" value="+39">Italy (+39)</option>
+        <option data-countrycode="JM" value="+1876">Jamaica (+1876)</option>
+        <option data-countrycode="JP" value="+81">Japan (+81)</option>
+        <option data-countrycode="JO" value="+962">Jordan (+962)</option>
+        <option data-countrycode="KZ" value="+7">Kazakhstan (+7)</option>
+        <option data-countrycode="KE" value="+254">Kenya (+254)</option>
+        <option data-countrycode="KI" value="+686">Kiribati (+686)</option>
+        <option data-countrycode="KP" value="+850">Korea North (+850)</option>
+        <option data-countrycode="KR" value="+82">Korea South (+82)</option>
+        <option data-countrycode="KW" value="+965">Kuwait (+965)</option>
+        <option data-countrycode="KG" value="+996">Kyrgyzstan (+996)</option>
+        <option data-countrycode="LA" value="+856">Laos (+856)</option>
+        <option data-countrycode="LV" value="+371">Latvia (+371)</option>
+        <option data-countrycode="LB" value="+961">Lebanon (+961)</option>
+        <option data-countrycode="LS" value="+266">Lesotho (+266)</option>
+        <option data-countrycode="LR" value="+231">Liberia (+231)</option>
+        <option data-countrycode="LY" value="+218">Libya (+218)</option>
+        <option data-countrycode="LI" value="+417">Liechtenstein (+417)</option>
+        <option data-countrycode="LT" value="+370">Lithuania (+370)</option>
+        <option data-countrycode="LU" value="+352">Luxembourg (+352)</option>
+        <option data-countrycode="MO" value="+853">Macao (+853)</option>
+        <option data-countrycode="MK" value="+389">Macedonia (+389)</option>
+        <option data-countrycode="MG" value="+261">Madagascar (+261)</option>
+        <option data-countrycode="MW" value="+265">Malawi (+265)</option>
+        <option data-countrycode="MY" value="+60">Malaysia (+60)</option>
+        <option data-countrycode="MV" value="+960">Maldives (+960)</option>
+        <option data-countrycode="ML" value="+223">Mali (+223)</option>
+        <option data-countrycode="MT" value="+356">Malta (+356)</option>
+        <option data-countrycode="MH" value="+692">Marshall Islands (+692)</option>
+        <option data-countrycode="MQ" value="+596">Martinique (+596)</option>
+        <option data-countrycode="MR" value="+222">Mauritania (+222)</option>
+        <option data-countrycode="YT" value="+269">Mayotte (+269)</option>
+        <option data-countrycode="MX" value="+52">Mexico (+52)</option>
+        <option data-countrycode="FM" value="+691">Micronesia (+691)</option>
+        <option data-countrycode="MD" value="+373">Moldova (+373)</option>
+        <option data-countrycode="MC" value="+377">Monaco (+377)</option>
+        <option data-countrycode="MN" value="+976">Mongolia (+976)</option>
+        <option data-countrycode="MS" value="+1664">Montserrat (+1664)</option>
+        <option data-countrycode="MA" value="+212">Morocco (+212)</option>
+        <option data-countrycode="MZ" value="+258">Mozambique (+258)</option>
+        <option data-countrycode="MN" value="+95">Myanmar (+95)</option>
+        <option data-countrycode="NA" value="+264">Namibia (+264)</option>
+        <option data-countrycode="NR" value="+674">Nauru (+674)</option>
+        <option data-countrycode="NP" value="+977">Nepal (+977)</option>
+        <option data-countrycode="NL" value="+31">Netherlands (+31)</option>
+        <option data-countrycode="NC" value="+687">New Caledonia (+687)</option>
+        <option data-countrycode="NZ" value="+64">New Zealand (+64)</option>
+        <option data-countrycode="NI" value="+505">Nicaragua (+505)</option>
+        <option data-countrycode="NE" value="+227">Niger (+227)</option>
+        <option data-countrycode="NG" value="+234">Nigeria (+234)</option>
+        <option data-countrycode="NU" value="+683">Niue (+683)</option>
+        <option data-countrycode="NF" value="+672">Norfolk Islands (+672)</option>
+        <option data-countrycode="NP" value="+670">Northern Marianas (+670)</option>
+        <option data-countrycode="NO" value="+47">Norway (+47)</option>
+        <option data-countrycode="OM" value="+968">Oman (+968)</option>
+        <option data-countrycode="PW" value="+680">Palau (+680)</option>
+        <option data-countrycode="PA" value="+507">Panama (+507)</option>
+        <option data-countrycode="PG" value="+675">Papua New Guinea (+675)</option>
+        <option data-countrycode="PY" value="+595">Paraguay (+595)</option>
+        <option data-countrycode="PE" value="+51">Peru (+51)</option>
+        <option data-countrycode="PH" value="+63">Philippines (+63)</option>
+        <option data-countrycode="PL" value="+48">Poland (+48)</option>
+        <option data-countrycode="PT" value="+351">Portugal (+351)</option>
+        <option data-countrycode="PR" value="+1787">Puerto Rico (+1787)</option>
+        <option data-countrycode="QA" value="+974">Qatar (+974)</option>
+        <option data-countrycode="RE" value="+262">Reunion (+262)</option>
+        <option data-countrycode="RO" value="+40">Romania (+40)</option>
+        <option data-countrycode="RU" value="+7">Russia (+7)</option>
+        <option data-countrycode="RW" value="+250">Rwanda (+250)</option>
+        <option data-countrycode="SM" value="+378">San Marino (+378)</option>
+        <option data-countrycode="ST" value="+239">Sao Tome &amp; Principe (+239)</option>
+        <option data-countrycode="SA" value="+966">Saudi Arabia (+966)</option>
+        <option data-countrycode="SN" value="+221">Senegal (+221)</option>
+        <option data-countrycode="CS" value="+381">Serbia (+381)</option>
+        <option data-countrycode="SC" value="+248">Seychelles (+248)</option>
+        <option data-countrycode="SL" value="+232">Sierra Leone (+232)</option>
+        <option data-countrycode="SG" value="+65">Singapore (+65)</option>
+        <option data-countrycode="SK" value="+421">Slovak Republic (+421)</option>
+        <option data-countrycode="SI" value="+386">Slovenia (+386)</option>
+        <option data-countrycode="SB" value="+677">Solomon Islands (+677)</option>
+        <option data-countrycode="SO" value="+252">Somalia (+252)</option>
+        <option data-countrycode="ZA" value="+27">South Africa (+27)</option>
+        <option data-countrycode="ES" value="+34">Spain (+34)</option>
+        <option data-countrycode="LK" value="+94">Sri Lanka (+94)</option>
+        <option data-countrycode="SH" value="+290">St. Helena (+290)</option>
+        <option data-countrycode="KN" value="+1869">St. Kitts (+1869)</option>
+        <option data-countrycode="SC" value="+1758">St. Lucia (+1758)</option>
+        <option data-countrycode="SD" value="+249">Sudan (+249)</option>
+        <option data-countrycode="SR" value="+597">Suriname (+597)</option>
+        <option data-countrycode="SZ" value="+268">Swaziland (+268)</option>
+        <option data-countrycode="SE" value="+46">Sweden (+46)</option>
+        <option data-countrycode="CH" value="+41">Switzerland (+41)</option>
+        <option data-countrycode="SI" value="+963">Syria (+963)</option>
+        <option data-countrycode="TW" value="+886">Taiwan (+886)</option>
+        <option data-countrycode="TJ" value="+7">Tajikstan (+7)</option>
+        <option data-countrycode="TH" value="+66">Thailand (+66)</option>
+        <option data-countrycode="TG" value="+228">Togo (+228)</option>
+        <option data-countrycode="TO" value="+676">Tonga (+676)</option>
+        <option data-countrycode="TT" value="+1868">Trinidad &amp; Tobago (+1868)</option>
+        <option data-countrycode="TN" value="+216">Tunisia (+216)</option>
+        <option data-countrycode="TR" value="+90">Turkey (+90)</option>
+        <option data-countrycode="TM" value="+7">Turkmenistan (+7)</option>
+        <option data-countrycode="TM" value="+993">Turkmenistan (+993)</option>
+        <option data-countrycode="TC" value="+1649">Turks &amp; Caicos Islands (+1649)</option>
+        <option data-countrycode="TV" value="+688">Tuvalu (+688)</option>
+        <option data-countrycode="UG" value="+256">Uganda (+256)</option>
+        <!-- <option data-countryCode="GB" value="+44">UK (+44)</option> -->
+        <option data-countrycode="UA" value="+380">Ukraine (+380)</option>
+        <option data-countrycode="AE" value="+971">United Arab Emirates (+971)</option>
+        <option data-countrycode="UY" value="+598">Uruguay (+598)</option>
+        <!-- <option data-countryCode="US" value="+1">USA (+1)</option> -->
+        <option data-countrycode="UZ" value="+7">Uzbekistan (+7)</option>
+        <option data-countrycode="VU" value="+678">Vanuatu (+678)</option>
+        <option data-countrycode="VA" value="+379">Vatican City (+379)</option>
+        <option data-countrycode="VE" value="+58">Venezuela (+58)</option>
+        <option data-countrycode="VN" value="+84">Vietnam (+84)</option>
+        <option data-countrycode="VG" value="+84">Virgin Islands - British (+1284)</option>
+        <option data-countrycode="VI" value="+84">Virgin Islands - US (+1340)</option>
+        <option data-countrycode="WF" value="+681">Wallis &amp; Futuna (+681)</option>
+        <option data-countrycode="YE" value="+969">Yemen (North)(+969)</option>
+        <option data-countrycode="YE" value="+967">Yemen (South)(+967)</option>
+        <option data-countrycode="ZM" value="+260">Zambia (+260)</option>
+        <option data-countrycode="ZW" value="+263">Zimbabwe (+263)</option>
+        
+    
+                                                            </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="9" style="width: 195.344px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-input_contry_code_mobile_postal-container"><span class="select2-selection__rendered" id="select2-input_contry_code_mobile_postal-container" role="textbox" aria-readonly="true" title="---Please Select---
+                                                                ">---Please Select---
+                                                                </span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                        </div>
+                                                        <div class="col-6" style="margin: unset;padding: unset;">
+                                                            <input type="text" class="form-control" id="input_mobile_number_postal" name="input_mobile_number_postal">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="hr-border">
+                                    <div class="row">
+                                                                                    <label for="is_in_thailand" class="col-sm-4 col-form-label">VISA Submission Place*</label>
+                                                                                    <input type="checkbox" class="col-form-label " id="is_in_thailand" name="is_in_thailand" style="margin-right: 10px;margin-top: 10px;">
+                                            <label for="is_in_thailand" class=" col-form-label">I'm in Thailand</label>
+                                    </div>
+                                    <div class="row m-t country_visa">
+                                        <div class="form-group col-4">
+                                            <div class="form-group row">
+                                                <label for="input_country_visa" class="col-sm-4 col-form-label  text-right">Country
+                                                    *</label>
+                                                <div class="col-sm-8">
+                                                    <select name="input_country_visa" class="countries order-alpha form-control select2-hidden-accessible" id="countryId" required="" data-select2-id="countryId" tabindex="-1" aria-hidden="true">
+                                                        <option value="0" selected="" disabled="" data-select2-id="2">---Select Country---</option>
+                                                                                                                    <option value="1">
+                                                                Afghanistan
+                                                            </option>
+                                                                                                                    <option value="37">
+                                                                Cambodia
+                                                            </option>
+                                                                                                                    <option value="219">
+                                                                Thailand
+                                                            </option>
+                                                                                                            </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="1" style="width: 326.953px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-countryId-container"><span class="select2-selection__rendered" id="select2-countryId-container" role="textbox" aria-readonly="true" title="---Select Country---">---Select Country---</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-4">
+                                            <div class="form-group row">
+                                                <label for="input_state_visa" class="col-sm-4 col-form-label text-right">State
+                                                    *</label>
+                                                <div class="col-sm-8">
+                                                    <select name="input_state_visa" class="states order-alpha form-control select2-hidden-accessible" id="stateId" required="" data-select2-id="stateId" tabindex="-1" aria-hidden="true">
+                                                        <option value="" selected="" disabled="" data-select2-id="4">---Select State---</option>
+                                                    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="3" style="width: 326.953px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-stateId-container"><span class="select2-selection__rendered" id="select2-stateId-container" role="textbox" aria-readonly="true" title="---Select State---">---Select State---</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-4">
+                                            <div class="form-group row">
+                                                <label for="input_city_visa" class="col-sm-4 col-form-label text-right">City
+                                                    *</label>
+                                                <div class="col-sm-8">
+                                                    <select name="input_city_visa" class="cities order-alpha form-control select2-hidden-accessible" id="cityId" required="" data-select2-id="cityId" tabindex="-1" aria-hidden="true">
+                                                        <option value="" selected="" disabled="" data-select2-id="6">---Select City---</option>
+                                                    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="5" style="width: 326.953px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-cityId-container"><span class="select2-selection__rendered" id="select2-cityId-container" role="textbox" aria-readonly="true" title="---Select City---">---Select City---</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    
+                                    <hr class="hr-border">
+                                    <div class="row">
+                                                                                    <label for="scholarship" class="col-sm-3 col-form-label">Do you  want  request Scholarship ?</label>
+                                                                                    <input type="checkbox" class="col-form-label " id="scholarship" name="scholarship" style="margin-right: 10px;margin-top: 10px;">
+                                            <label for="scholarship" class=" col-form-label">Scholarship Check</label>
+                                    </div>
+                                    
+                                        <hr class="hr-border">
+                                        <h2 style="color:black;">Education Information:</h2>
+                                        <div class="row m-t">
+                                            <div class="col-6">
+                                                <div class="form-group row">
+                                                    <label for="input_high_education" class="col-sm-4 text-right">Highest
+                                                        Education *</label>
+                                                    <div class="col-sm-8">
+                                                        <input type="text" class="form-control" id="input_high_education" name="input_high_education">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row m-t">
+                                            <div class="col-6">
+                                                <div class="form-group row">
+                                                    <label for="input_highschool_name" class="col-sm-4 col-form-label text-right">Insitiute Name *</label>
+                                                    <div class="col-sm-8">
+                                                        <input type="text" class="form-control" id="input_highschool_name" name="input_highschool_name">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-12">
+                                                <div class="form-group row">
+                                                    <label for="input_study_province" class="col-sm-4 col-form-label text-sm-right">City / Province *</label>
+                                                    <div class="col-sm-8">
+                                                        
+                                                        <input type="text" class="form-control" name="input_highschool_city" id="input_highschool_city_hidden">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="row m-t">
+                                            <div class="col-6">
+                                                <div class="form-group row">
+                                                    <label for="input_year_graduate" class="col-sm-4 col-form-label text-right">Year
+                                                        of graduate *</label>
+                                                    <div class="col-sm-5">
+                                                        <div class="input-daterange input-group" id="datepicker">
+                                                            <input type="text" class="input-sm form-control" id="input_year_graduate" name="input_year_graduate" value="" placeholder="yyyy">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group row">
+                                                    <label for="input_gpa" class="col-sm-6 col-form-label text-right">GPA / Average Percentage
+                                                        *</label>
+                                                    <div class="col-sm-4">
+                                                        
+                                                        <input type="text" class="form-control" name="input_gpa" id="input_gpa_text" maxlength="10">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                    <hr class="hr-border">
+                                    <h2 style="color:black;">English Proficiency :</h2>
+                                    <div class="row m-t">
+                                        <div class="col-4"><span>Do you have English Proficiency ?</span></div>
+                                        <div class="col-3">
+                                            <input type="radio" id="is_eng_proficiency_yes" name="is_eng_proficiency" value="yes" checked="" onclick="myFunction(1)">
+                                            <label for="is_eng_proficiency_yes">Yes</label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="radio" id="is_eng_proficiency_no" name="is_eng_proficiency" value="no" onclick="myFunction(0)">
+                                            <label for="is_eng_proficiency_no">No</label>
+                                        </div>
+                                    </div>
+                                    <div class="row m-t eng_proficiency">
+                                        <div class="col-6">
+                                            <div class="form-group row">
+                                                <label for="input_high_education" class="col-sm-4 text-right">English
+                                                    Certificate</label>
+                                                <div class="col-sm-8">
+                                                    <select id="type_exam_eng" name="type_exam_eng" class="form-control ">
+                                                        <option value="0" selected="" disabled="">---Please Select---</option>
+                                                                                                                    <option value="1">Toefl iBT</option>
+                                                                                                                    <option value="2">Toefl pBT</option>
+                                                                                                                    <option value="3">Toefl cBT</option>
+                                                                                                                    <option value="4">IELTS</option>
+                                                                                                                    <option value="5">CEFR</option>
+                                                                                                            </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-t eng_proficiency">
+                                        <div class="col-6">
+                                            <div class="form-group row">
+                                                <label for="input_score_eng" class="col-sm-4 col-form-label text-right">Score
+                                                </label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control" id="input_score_eng" name="input_score_eng">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 eng_proficiency">
+                                            <div class="form-group row">
+                                                <label for="input_date_exam" class="col-sm-4 col-form-label text-right">Date of Examination
+                                                </label>
+                                                <div class="col-sm-8">
+                                                    <div id="input_container">
+                                                        <input type="text" class="form-control date_search" id="input_date_exam" name="input_date_exam" placeholder="dd/mm/yyyy">
+                                                        <i class="fal fa-calendar-alt" id="img_icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-t eng_proficiency">
+                                        <div class="col-6">
+                                            <div class="form-group row">
+                                                <label for="input_place_exam" class="col-sm-4 text-right">Place of Examination
+                                                </label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control" id="input_place_exam" name="input_place_exam">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <button type="button" class="btn btn-secondary waves-effect waves-themed" style="width: 40%" onclick="add_new_row_eng()">Add</button>
+                                        </div>
+                                    </div>
+                                    <div class="row m-t eng_proficiency" id="table_add_eng_cer">
+                                        <div class="col-2 text-right">
+                                        </div>
+                                        <div class="panel-container collapse show col-10 offset-1">
+                                            <div class="panel-content table-responsive">
+                                                <table class="table table-bordered m-0 rowspanizer" id="table_row_eng">
+                                                    <thead class="thead-themed">
+                                                        <tr class="text-center">
+                                                            <th>No.</th>
+                                                            <th>English Certificate</th>
+                                                            <th>Score</th>
+                                                            <th>Date of Examination</th>
+                                                            <th>Place of Eamination</th>
+                                                            <th></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="TextBoxContainer_new_row_eng">
+                                                        
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center d-none" id="div1">
+                                        <label class="col-sm-12 col-form-label" style="color: red">Remark : If English
+                                            Proficiency is not available, you may require to take internal English Placement
+                                            Test at RSU.<label>
+                                    </label></label></div>
+
+                                    <hr class="hr-border">
+                                    <div class="row" style="justify-content: center;width:100%;margin-bottom: 10px;">
+                                        <a href="Register4.html"  class="btn btn-success btn-md waves-effect waves-themed">Next Step</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div class="modal fade bd-example-modal-lg confirm-submit" id="confirm-submit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: darkgrey;color: white;">
+                        <h2 class="modal-title text-center d-block">Review Program Selection</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" style="font-size: 24px;">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="font-size: 16px;">
+                        <h2 style="color:black;">Personal Information</h2>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">ID Card number</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_card_number"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Name :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_fullname_en"></span>
+                            </div>
+
+                        </div>
+                                                <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Gender :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_gender"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Nationality :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_nationality"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Date of birth :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_date_birth"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Age :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_age"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Email :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_email_personal"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Mobile Number :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_home_number"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Line ID :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_line"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">WeChat ID :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_wechat"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Whatsapp ID :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_whatsapp"></span>
+                            </div>
+                        </div>
+                        <hr class="hr-border">
+                        <h2 style="color:black;">Postal Address</h2>
+                        <div class="row mt-1">
+                            <div class="col-2 text-left font-size">Address :</div>
+                            <div class="col-8 text-left font-size">
+                                <span id="show_address_postal"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-3 text-left font-size">District :</div>
+                                    <div class="col-8 text-left font-size">
+                                        <span id="show_district_postal"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                 <div class="row">
+                                    <div class="col-5 text-left font-size">City/Province :</div>
+                                    <div class="col-7 text-left font-size">
+                                        <span id="show_city_postal"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-6">
+                                 <div class="row">
+                                    <div class="col-3 text-left font-size">Country :</div>
+                                    <div class="col-8 text-left font-size">
+                                        <span id="show_country_postal"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                 <div class="row">
+                                    <div class="col-4 text-left font-size">Postal Code :</div>
+                                    <div class="col-8 text-left font-size">
+                                        <span id="show_postal_postal"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-4 text-left font-size">Home Telephone number :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_home_phone_number_postal"></span>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-5 text-left font-size">Mobile Telephone number :</div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_mobile_phone_number_postal"></span>
+                            </div>
+                        </div>
+                        <hr class="hr-border">
+                        <div class="row mt-1">
+                            <div class="col-5 text-left font-size">
+                                                                    VISA Submission Place :
+                                                            </div>
+                            <div class="col-6 text-left font-size">
+                                <span id="show_visa"></span>
+                            </div>
+                        </div>
+                                                    <hr class="hr-border">
+                            <h2 style="color:black;">Education Information</h2>
+                            <div class="row mt-1">
+                                <div class="col-3 text-left font-size">Highest Education :</div>
+                                <div class="col-8 text-left font-size">
+                                    <span id="show_high_education"></span>
+                                </div>
+                            </div>
+                            <div class="row mt-1">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-4 text-left font-size">Insitiute Name :</div>
+                                            <div class="col-6 text-left font-size">
+                                                <span id="show_insitiute_name"></span>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-3 text-left font-size">City :</div>
+                                        <div class="col-8 text-left font-size">
+                                            <span id="show_highschool_city"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="row mt-1">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-4 text-left font-size">Year
+                                                    of graduate :</div>
+                                            <div class="col-6 text-left font-size">
+                                                <span id="show_year_graduate"></span>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-6 text-left font-size">GPA / Average Percentage :</div>
+                                        <div class="col-6 text-left font-size">
+                                            <span id="show_gpa"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        <hr class="hr-border">
+                        <h2 style="color:black;">English Proficiency</h2>
+                        <div class="row mt-1">
+                            <div class="col-10">
+                                <div class="row">
+                                    <div class="col-6 text-left font-size">Do you have English Proficiency ? :</div>
+                                    <div class="col-4 text-left font-size">
+                                        <span id="show_have_eng_proficiency"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="hr-border">
+
+                        <div class="row mb-3 mt-4">
+                            <div id="save_data" style="display: none;"></div>
+                            <div class="col-6 text-center button-hide">
+                                <button type="button" class="btn btn-default waves-effect waves-themed" data-dismiss="modal" style="width: auto;">Edit</button>
+                            </div>
+                            <div class="col-6 text-center button-hide">
+                                <a href="https://demo.aesystem.co.th/rsu_inter2/showPersonal?student=64&amp;register_type=#" id="submit" class="btn btn-success success waves-effect waves-themed">Save</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p id="js-color-profile" class="d-none">
+            <span class="color-primary-50"></span>
+            <span class="color-primary-100"></span>
+            <span class="color-primary-200"></span>
+            <span class="color-primary-300"></span>
+            <span class="color-primary-400"></span>
+            <span class="color-primary-500"></span>
+            <span class="color-primary-600"></span>
+            <span class="color-primary-700"></span>
+            <span class="color-primary-800"></span>
+            <span class="color-primary-900"></span>
+            <span class="color-info-50"></span>
+            <span class="color-info-100"></span>
+            <span class="color-info-200"></span>
+            <span class="color-info-300"></span>
+            <span class="color-info-400"></span>
+            <span class="color-info-500"></span>
+            <span class="color-info-600"></span>
+            <span class="color-info-700"></span>
+            <span class="color-info-800"></span>
+            <span class="color-info-900"></span>
+            <span class="color-danger-50"></span>
+            <span class="color-danger-100"></span>
+            <span class="color-danger-200"></span>
+            <span class="color-danger-300"></span>
+            <span class="color-danger-400"></span>
+            <span class="color-danger-500"></span>
+            <span class="color-danger-600"></span>
+            <span class="color-danger-700"></span>
+            <span class="color-danger-800"></span>
+            <span class="color-danger-900"></span>
+            <span class="color-warning-50"></span>
+            <span class="color-warning-100"></span>
+            <span class="color-warning-200"></span>
+            <span class="color-warning-300"></span>
+            <span class="color-warning-400"></span>
+            <span class="color-warning-500"></span>
+            <span class="color-warning-600"></span>
+            <span class="color-warning-700"></span>
+            <span class="color-warning-800"></span>
+            <span class="color-warning-900"></span>
+            <span class="color-success-50"></span>
+            <span class="color-success-100"></span>
+            <span class="color-success-200"></span>
+            <span class="color-success-300"></span>
+            <span class="color-success-400"></span>
+            <span class="color-success-500"></span>
+            <span class="color-success-600"></span>
+            <span class="color-success-700"></span>
+            <span class="color-success-800"></span>
+            <span class="color-success-900"></span>
+            <span class="color-fusion-50"></span>
+            <span class="color-fusion-100"></span>
+            <span class="color-fusion-200"></span>
+            <span class="color-fusion-300"></span>
+            <span class="color-fusion-400"></span>
+            <span class="color-fusion-500"></span>
+            <span class="color-fusion-600"></span>
+            <span class="color-fusion-700"></span>
+            <span class="color-fusion-800"></span>
+            <span class="color-fusion-900"></span>
+        </p>
+
+        <script src="./Register3_files/vendors.bundle.js.download"></script>
+        <script src="./Register3_files/jquery.validationEngine-en.js.download"></script>
+        <script src="./Register3_files/jquery.validationEngine.js.download"></script>
+        <script src="./Register3_files/sweetalert2.bundle.js.download"></script>
+        <script src="./Register3_files/app.bundle.js.download"></script>
+        <script src="./Register3_files/bootstrap-password-toggler.min.js.download"></script>
+        <script src="./Register3_files/inputmask.bundle.js.download"></script>
+        
+        <script src="./Register3_files/bootstrap-datepicker-thai.js.download"></script>
+        <script src="./Register3_files/bootstrap-datepicker.js.download"></script>
+        <script src="./Register3_files/select2.bundle.js.download"></script>
+        <script>
+            window.history.forward();
+            function noBack() {
+                window.history.forward();
+            }
+
+            $( document ).ready(function() {
+                $("#countryId,#stateId,#cityId,#input_home_university,#input_highschool_city").select2();
+                $("#countryId").change(function(){
+                    $.ajax({
+                    url: "https://demo.aesystem.co.th/rsu_inter2/getState?country_id=" + $(this).val(),
+                    method: 'GET',
+                    success: function(data) {
+                        $('#stateId').html(data.html);
+                        $('#cityId').html('<option value="">---Select City---</option>');
+                        }
+                    });
+                });
+                $("#stateId,#stateId_s").change(function(){
+                    $.ajax({
+                    url: "https://demo.aesystem.co.th/rsu_inter2/getCity?state_id=" + $(this).val(),
+                    method: 'GET',
+                    success: function(data) {
+                        $('#cityId').html(data.html);
+                        }
+                    });
+                });
+                $("#input_contry_code_postal,#input_contry_code_mobile_postal").select2();
+                var type_s = $('#register_type').val();
+                if(type_s != 'exchange'){
+                    function FormatGPA(gPAElementID) {
+                        re = /\D/g; // remove any characters that are not numbers
+                        gPAVal = document.getElementById(gPAElementID).value.replace(re,"");
+                        gPAValFirstCharacter = gPAVal.charAt(0);
+                        if ( ( gPAVal >= 0 ) &&  ( gPAValFirstCharacter < 5 ) ){
+                            console.log('gPAVal',gPAVal,gPAElementID)
+                                gPALen = gPAVal.length;
+                                if( gPALen > 1){
+                                        gPAa=gPAVal.slice(0,1);
+                                        gPAb=gPAVal.slice(1);
+                                        if(gPAVal.slice(0,1) == 4){
+                                            $('#'+gPAElementID).val(gPAa + "." + "00");
+                                        } else{
+                                            $('#'+gPAElementID).val(gPAa + "." + gPAb);
+                                        }
+                                }else{
+                                    $('#'+gPAElementID).val(gPAVal);
+                                };
+                                // $('#input_gpa_hidden').val(gPAElementID);
+                        }else{
+                            $('#'+gPAElementID).val("");
+                        };
+                    };
+
+                    document.getElementById('input_gpa').onblur = function (e) { FormatGPA(this.id); };
+                    document.getElementById('input_gpa').onfocus = function (e) { FormatGPA(this.id); };
+                    document.getElementById('input_gpa').onkeypress = function (e) { FormatGPA(this.id); };
+                    document.getElementById('input_gpa').oninput = function (e) { FormatGPA(this.id);  };
+                    document.getElementById('input_gpa').onchange = function (e) { FormatGPA(this.id); };
+                }
+
+                $("#input_listed_above").attr('disabled', 'disabled');
+                $("#is_listed_above").click(function () {
+                    if ($(this).is(":checked")) {
+                        $("#input_listed_above").removeAttr('disabled', 'disabled');
+                    } else {
+                        $("#input_listed_above").attr('disabled', 'disabled');
+                        $('#input_listed_above').val('');
+                    }
+                });
+
+                $("#input_explain_d1").attr("disabled", "disabled");
+                $("#input_explain_d2").attr("disabled", "disabled");
+                $("#input_explain_d3").attr("disabled", "disabled");
+
+                $("input[name='is_medical']").click(function () {
+                    if ($("#is_medical_y").is(":checked")) {
+                        $("#input_explain_d1").removeAttr("disabled");
+                    } else {
+                        $("#input_explain_d1").attr("disabled", "disabled");
+                        $('#input_explain_d1').val('');
+                    }
+                });
+                $("input[name='is_criminal']").click(function () {
+                    if ($("#is_criminal_y").is(":checked")) {
+                        $("#input_explain_d2").removeAttr("disabled");
+                    } else {
+                        $("#input_explain_d2").attr("disabled", "disabled");
+                        $('#input_explain_d2').val('');
+                    }
+                });
+                $("input[name='is_difficulty']").click(function () {
+                    if ($("#is_difficulty_y").is(":checked")) {
+                        $("#input_explain_d3").removeAttr("disabled");
+                    } else {
+                        $("#input_explain_d3").attr("disabled", "disabled");
+                        $('#input_explain_d3').val('');
+                    }
+                });
+            });
+        $(function(){
+            $("input[name='input_card_number'],input[name='input_postal_code_postal'],input[name='input_postal_code_exchange'],input[name='input_home_number'],input[name='input_moo_postal']").on('input', function (e) {
+                $(this).val($(this).val().replace(/[^0-9]/g, ''));
+            });
+        });
+
+        $("#is_in_thailand").click(function() {
+            if($(this).is(":checked")) {
+                $(".country_visa").hide();
+            } else {
+                $(".country_visa").show();
+                $("#countryId,#stateId,#cityId").val('');
+            }
+        });
+
+        var select = document.getElementById("prefix"),
+            showOption = document.querySelector('#option-selected');
+        select.addEventListener('change', function() {
+            var str_gender = "";
+            if (this.value == 1) {
+                str_gender = 'male';
+            } else {
+                str_gender = 'female';
+            }
+            showOption.textContent = str_gender;
+        });
+
+        function myFunction($e) {
+            if ($e == 0) {
+                $('#div1').removeClass("d-none");
+                $('.eng_proficiency').addClass("d-none");
+                $('#TextBoxContainer_new_row_eng tr').remove();
+            } else if ($e == 1) {
+                $('#div1').removeClass("d-none");
+                $('#div1').addClass("d-none");
+                $('.eng_proficiency').removeClass("d-none");
+            }
+        }
+
+        function add_new_row_eng() {
+            document.getElementById('table_add_eng_cer').style.display = 'block';
+            var numOfRows = document.querySelectorAll('#TextBoxContainer_new_row_eng > tr').length
+            var div = $("<tr />")
+            var type_exam_eng = $('#type_exam_eng').val();
+            var score_eng = $('#input_score_eng').val();
+            var date_exam = $('#input_date_exam').val();
+            var place_exam = $('#input_place_exam').val();
+
+            if(type_exam_eng != 0 && score_eng && date_exam && place_exam){
+                div.html(GetDynamicTextBox_new_row_eng(numOfRows, type_exam_eng, score_eng, date_exam, place_exam))
+                $("#TextBoxContainer_new_row_eng").append(div)
+            } else{
+                return alert('Please Set English Proficiency');
+            }
+
+            $('#type_exam_eng').val(0);
+            $('#input_score_eng').val('');
+            $('#input_date_exam').val('');
+            $('#input_place_exam').val('');
+        }
+
+        function GetDynamicTextBox_new_row_eng(value, type_exam_eng, score_eng, date_exam, place_exam) {
+            var s_type_exam_eng = "";
+            if (type_exam_eng == 1) {
+                s_type_exam_eng = "Toefl iBT";
+            } else if (type_exam_eng == 2) {
+                s_type_exam_eng = "Toefl pBT";
+            } else if (type_exam_eng == 3) {
+                s_type_exam_eng = "Toefl cBT";
+            } else if (type_exam_eng == 4) {
+                s_type_exam_eng = "IELTS";
+            } else if (type_exam_eng == 5) {
+                s_type_exam_eng = "CEFR";
+            }
+
+            return '' +
+                '<table>' +
+                '<tr class="tr_table">' +
+                '<td style="width:10px;">' +
+                '<input style="border: unset;" type="text" class="text-center" id="value_' + (value+1) + '"' +
+                'name="value[]' + '" value="' + (value+1) + '" readonly>' +
+                '</td>' +
+                '<td style="">' +
+                '<input style="border: unset;" type="text" class="" id="type_exam_eng_' + value + '"' +
+                'name="type_exam_eng[]' + '" value="' + s_type_exam_eng + '" readonly>' +
+                '</td>' +
+                '<td style="">' +
+                '<input style="border: unset;" type="text" class="" id="input_score_eng_' + value + '"' +
+                'name="input_score_eng[]' + '" value="' + score_eng + '" readonly>' +
+                '</td>' +
+                '<td style="">' +
+                '<input style="border: unset;" type="text" class="" id="input_date_exam_' + value + '"' +
+                'name="input_date_exam[]' + '" value="' + date_exam + '" readonly>' +
+                '</td>' +
+                '<td>' +
+                '<input style="border: unset;" type="text" class="" id="input_place_exam_' + value + '"' +
+                'name="input_place_exam[]' + '" value="' + place_exam + '" readonly>' +
+                '</td>' +
+                '<td class="remove_icon" id="remove_icon">' +
+                '<span class="remove"><i class="fa fa-trash" aria-hidden="true" style="color: red;margin-top: 15px;"></i></span>' +
+                '</td>' +
+                '</tr>' +
+                '</table>' +
+                ''
+        }
+
+        var form_data = new FormData()
+        let dateInput = document.getElementById('input_date_birth');
+        var d = new Date();
+        d.setFullYear(d.getFullYear() - 19);
+        $('#input_date_birth').val(d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear());
+
+        $('.input-daterange').datepicker({
+            format: 'yyyy',
+            startView: 2,
+            minViewMode: 2,
+            endDate: "2565",
+            defaultViewDate: {
+                year: '2565'
+            },
+            autoclose: true
+        });
+        $('#input_date_exam').datepicker({
+            format: 'dd/mm/yyyy',
+            autoclose: true,
+        });
+        $('#input_date_birth').datepicker({
+            format: 'dd/mm/yyyy',
+            endDate: "now",
+            autoclose: true,
+            defaultViewDate: {
+                year: d.getFullYear()
+            },
+        });
+        $( document ).ready(function() {
+            var d = new Date();
+            d.setFullYear(d.getFullYear() - 19);
+
+            var now = new Date(); //getting current date
+            var currentY = now.getFullYear(); //extracting year from the date
+            var currentM = now.getMonth(); //extracting month from the date
+            var prevY = d.getFullYear(); //extracting year from input date
+            var prevM = d.getMonth(); //extracting month from input date
+            var ageY = currentY - prevY;
+            var ageM = Math.abs(currentM - prevM);
+
+            $('#input_age').val(ageY);
+            $('#input_age_hidden').val(ageY);
+        });
+
+        function ageCount() {
+            var d = new Date();
+                d.setFullYear(d.getFullYear() - 19);
+
+            var now = new Date(); //getting current date
+            var currentY = now.getFullYear(); //extracting year from the date
+            var currentM = now.getMonth(); //extracting month from the date
+            var date_birth = $('#input_date_birth').val(); //formatting input as date
+            var aa = date_birth.split('/');
+            var prevY = d.getFullYear(); //extracting year from input date
+            var prevM = d.getMonth(); //extracting month from input date
+            var ageY = currentY-Number(aa[2]);
+            var ageM = Math.abs(currentM - prevM);
+
+            $('#input_age').val(ageY);
+            $('#input_age_hidden').val(ageY);
+        }
+
+    $(function() {
+        // $("#input_highschool_city").select2({
+        //     ajax: {
+        //         url: "https://demo.aesystem.co.th/rsu_inter2/getLocationEducation", //
+        //         dataType: 'json',
+        //         delay: 250,
+        //         data: function(params) {
+        //             q = params.term;
+        //             return {
+        //                 q: params.term,
+        //                 page: params.page
+        //             };
+        //         },
+        //         processResults: function(data, params) {
+        //             return {
+        //                 results: data.items
+        //             };
+        //         },
+        //         cache: true
+        //     },
+
+        //     escapeMarkup: function(markup) {
+        //         return markup;
+        //     },
+        //     allowClear: true,
+        //     minimumInputLength: 1,
+        //     templateResult: function(data) {
+        //         if (data.loading) return data.text;
+        //         return data.text.split(q).join("<b>" + q + "</b>");
+        //     },
+        //     templateSelection: function(data) {
+        //         if (data.selected) return data.text;
+        //         $('#input_highschool_city_hidden').val(data.text);
+        //         return data.text;
+        //     }
+        // });
+    });
+
+    $(function() {
+        $("#SelectSubdistrictprovince").select2({
+            ajax: {
+                url: "https://demo.aesystem.co.th/rsu_inter2/getLocation", //
+                dataType: 'json',
+                delay: 250,
+                data: function(params) {
+                    q = params.term;
+                    return {
+                        q: params.term,
+                        page: params.page
+                    };
+                },
+                processResults: function(data, params) {
+                    return {
+                        results: data.items
+                    };
+                },
+                cache: true
+            },
+
+            escapeMarkup: function(markup) {
+                return markup;
+            },
+            allowClear: true,
+            minimumInputLength: 3,
+            templateResult: function(data) {
+                if (data.loading) return data.text;
+                return data.text.split(q).join("<b>" + q + "</b>");
+            },
+            templateSelection: function(data) {
+                if (data.selected) return data.text;
+                $('#location_id').val(data.id);
+                $('#input_subdistrict').val(data.subdis);
+                $('#input_district_postal').val(data.dis);
+                $('#input_province_postal').val(data.pro);
+                $('#input_country_postal').val($('#input_district_postal').val() == '' ? '' : 'ประเทศไทย');
+                $('#input_postal_code_postal').val(data.zipcode);
+                return data.value_text;
+            }
+        });
+    });
+    $(function() {
+        $("#SelectSubdistrictprovince2").select2({
+            ajax: {
+                url: "https://demo.aesystem.co.th/rsu_inter2/getLocation", //
+                dataType: 'json',
+                delay: 250,
+                data: function(params) {
+                    q = params.term;
+                    return {
+                        q: params.term,
+                        page: params.page
+                    };
+                },
+                processResults: function(data, params) {
+                    return {
+                        results: data.items
+                    };
+                },
+                cache: true
+            },
+
+            escapeMarkup: function(markup) {
+                return markup;
+            },
+            allowClear: true,
+            minimumInputLength: 3,
+            templateResult: function(data) {
+                if (data.loading) return data.text;
+                return data.text.split(q).join("<b>" + q + "</b>");
+            },
+            templateSelection: function(data) {
+                if (data.selected) return data.text;
+                $('#location_id').val(data.id);
+                $('#input_subdistrict_exchange').val(data.subdis);
+                $('#input_district_exchange').val(data.dis);
+                $('#input_province_exchange').val(data.pro);
+                $('#input_country_exchange').val($('#input_district_exchange').val() == '' ? '' : 'ประเทศไทย');
+                $('#input_postal_code_exchange').val(data.zipcode);
+                return data.value_text;
+            }
+        });
+    });
+
+    $('#submitBtn').click(function() {
+        var prefix = $('select[name=prefix] option:selected');
+        var prefixTh = $('select[name=prefix] option:selected');
+        var d_birth = ($('input[name=input_date_birth]').val()) != null ? ($('input[name=input_date_birth]').val()).split('-') : '-';
+        var isSamePersonal = $('input[name=is_same_address]:checked').val();
+        var issueDate = ($('input[name=input_issue_date]').val()) != null ? ($('input[name=input_issue_date]').val()).split('-') : '-';
+        var expireDate = ($('input[name=input_expire_date]').val()) != null ? ($('input[name=input_expire_date]').val()).split('-') : '-';
+        var isSendDocLaterPassport = $('input[name=is_send_doc_later_passport]:checked').val();
+        var country = $('select[name=input_country] option:selected').text();
+        var state = $('select[name=input_state] option:selected').text();
+        var city = $('select[name=input_city] option:selected').text();
+        var isSendDocLaterTranscript = $('input[name=is_send_doc_later_transcript]:checked').val();
+        var isSendDocLaterOriginalCertificate = $('input[name=is_send_doc_later_original_certificate]:checked').val();
+        var isEngProficiency = $('input[name=is_eng_proficiency]:checked').val();
+        var isSendDocLaterCertificateEng = $('input[name=is_send_doc_later_certificate_eng]:checked').val();
+        var isSamePersonalAddressEmergency = $('input[name=is_same_personal_address]:checked').val();
+        var isSamePostalAddressEmergency = $('input[name=is_same_postal_address]:checked').val();
+        var relationship = $('select[name=input_relationship] option:selected').text();
+        var isCertify = $('input[name=is_certify]:checked').val();
+        var is_in_thailand = $('input[name=is_in_thailand]:checked').val();
+        var input_gpa = $('input[name=input_gpa]').val();
+console.log('input_gpa',input_gpa)
+        var input_home_university = $('select[name=input_home_university] option:selected');
+        var input_listed_above = $('textarea[name=input_listed_above]').val();
+        var input_year = $('select[name=input_year] option:selected');
+        var phone_number = $('select[name=input_contry_code_postal_exchange] option:selected');
+        var input_address_exchange = $('textarea[name=input_address_exchange]').val();
+        var is_medical = $('input[name=is_medical]:checked').val();
+        var is_criminal = $('input[name=is_criminal]:checked').val();
+        var is_difficulty = $('input[name=is_difficulty]:checked').val();
+        var input_explain_d1 = $('textarea[name=input_explain_d1]').val();
+        var input_explain_d2 = $('textarea[name=input_explain_d2]').val();
+        var input_explain_d3 = $('textarea[name=input_explain_d3]').val();
+
+            // Personal Infromation
+            $('#show_card_number').text($('input[name=input_card_number]').val());
+            $('#show_fullname_en').text(prefix.text() + ''+$('input[name=input_first_name]').val()+' '+$('input[name=input_middle_name]').val()+' '+$('input[name=input_last_name]').val());
+            $('#show_fullname_th').text(prefixTh.text()+''+$('input[name=input_first_name_th]').val()+' '+$('input[name=input_middle_name_th]').val()+' '+$('input[name=input_last_name_th]').val());
+            $('#show_gender').text(prefix.val() == 1 ? 'Male' : 'Female');
+            $('#show_nationality').text($('input[name=input_nationality]').val());
+            $('#show_date_birth').text($('input[name=input_date_birth]').val());
+            $('#show_age').text($('input[name=input_age_hidden]').val());
+            $('#show_email_personal').text($('input[name=input_email]').val());
+            $('#show_home_number').text($('input[name=input_home_number]').val());
+            $('#show_line').text($('input[name=input_line]').val());
+            $('#show_wechat').text($('input[name=input_wechat]').val());
+            $('#show_whatsapp').text($('input[name=input_whatapp]').val());
+            $('#show_address_personal').text($('textarea[name=input_address]').val());
+            $('#show_district_personal').text($('input[name=input_district]').val());
+            $('#show_city_personal').text($('input[name=input_province]').val());
+            $('#show_country_personal').text($('input[name=input_country]').val());
+            $('#show_postal_personal').text($('input[name=input_postal_code]').val());
+            $('#show_mobile_phone_number_postal').text($('select[name=input_contry_code_postal] option:selected').text()+'-'+$('input[name=input_cell_phone_number_postal]').val());
+            $('#show_home_phone_number_postal').text($('select[name=input_contry_code_mobile_postal] option:selected').text()+'-'+$('input[name=input_mobile_number_postal]').val());
+
+            // Postal Address
+            $('#show_same_personal_address').text(isSamePersonal == 'on' ? 'Yes' : 'No');
+            $('#show_address_postal').text($('textarea[name=input_address_postal]').val());
+            $('#show_district_postal').text($('input[name=input_district_postal]').val());
+            $('#show_city_postal').text($('input[name=input_province_postal]').val());
+            $('#show_country_postal').text($('input[name=input_country_postal]').val());
+            $('#show_postal_postal').text($('input[name=input_postal_code_postal]').val());
+
+            // Passport Information
+            $('#show_passport').text($('input[name=input_passport_no]').val());
+            $('#show_issue_date').text(issueDate == '' ? '-' : issueDate[2] + '-' + issueDate[1] + '-' + issueDate[0]);
+            $('#show_expiree_date').text(expireDate == '' ? '-' : expireDate[2] + '-' + expireDate[1] + '-' + expireDate[0]);
+            $('#show_visa').text(is_in_thailand == 'on' ? 'I am in Thailand' : ('Country' + ', ' + country + ' ' + 'State' + ', ' + state + ' ' + 'City' + ' ' + city));
+
+            // Education Information
+            $('#show_high_education').text($('input[name=input_high_education]').val());
+            $('#show_insitiute_name').text($('input[name=input_highschool_name]').val());
+            $('#show_highschool_city').text($('input[name=input_highschool_city_hidden]').val());
+            $('#show_year_graduate').text($('input[name=input_year_graduate]').val());
+            $('#show_gpa').text($('input[name=input_gpa]').val());
+
+            // Home institution information
+            $('#show_home_university_exchange').text(input_home_university == '' ? '-': input_home_university.text());
+            $('#show_specify_exchange').text(input_listed_above == null ? '-' : input_listed_above);
+            $('#show_year_exchange').text(input_year.text());
+            $('#show_name_exchange').text($('input[name=input_prefix_exchange]').val()+' '+$('input[name=input_firstname_exchange]').val()+' '+$('input[name=input_lastname_exchange]').val());
+            $('#show_title_exchange').text($('input[name=input_title_exchange]').val());
+            $('#show_fac_exchange').text($('input[name=input_office_exchange]').val());
+            $('#show_phone_number_exchange').text(phone_number.text()+'-'+$('input[name=input_cell_phone_number_postal_exchange]').val());
+            $('#show_email_exchange').text($('input[name=input_email_exchange]').val());
+            $('#show_address_exchange').text(input_address_exchange == null ? '-' : input_address_exchange);
+            $('#show_district_exchange').text($('input[name=input_title_exchange]').val());
+            $('#show_state_exchange').text($('input[name=input_province_exchange]').val());
+            $('#show_country_exchange').text($('input[name=input_country_exchange]').val());
+            $('#show_postal_exchange').text($('input[name=input_postal_code_exchange]').val());
+
+            // Medical and further information
+            $('#show_d1').text(is_medical == 'y' ? 'Yes' : 'No');
+            $('#show_explain_d1').text(input_explain_d1 == null ? '-' : input_explain_d1);
+            $('#show_d2').text(is_criminal == 'y' ? 'Yes' : 'No');
+            $('#show_explain_d2').text(input_explain_d2 == null ? '-' : input_explain_d2);
+            $('#show_d3').text(is_difficulty == 'y' ? 'Yes' : 'No');
+            $('#show_explain_d3').text(input_explain_d3 == null ? '-' : input_explain_d3);
+
+            // English Proficiency
+            $('#show_have_eng_proficiency').text(isEngProficiency == 'yes' ? 'Yes' : 'No');
+            $('#show_certify').text(isCertify == 'on' ? 'Yes' : 'No');
+        });
+
+        $('#submit').click(function(){
+            $('#formfield').submit();
+        });
+
+        $(document).on('click', '.remove', function() {
+            $(this).closest("tr").remove();
+            // check_remove_icon()
+        });
+
+        </script>
+    
+
+
+</body></html>

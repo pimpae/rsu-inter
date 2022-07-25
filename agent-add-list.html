@@ -81,11 +81,11 @@
                                     <i class="nav-icon fas fa-user-tie"></i>
                                     <p>โปรไฟล์</p>
                                 </a> 
-                                <a href="agent-add-list.html" class="nav-link">
+                                <a href="agent-add-list.html" class="nav-link active">
                                     <i class="nav-icon far fa-users"></i>
                                     <p>ลงทะเบียนนักศึกษา</p>
                                 </a> 
-                                <a href="agent-plus.html" class="nav-link active">
+                                <a href="agent-plus.html" class="nav-link ">
                                     <i class="nav-icon fas fa-user-plus"></i>
                                     <p>เพื่อนแนะนำเพื่อน</p>
                                 </a> 
@@ -100,11 +100,10 @@
                         <div class="row mb-2">
                             <div class="col-sm-6">
                                 <h1 class="m-0">
-                                    <strong>เพื่อนแนะนำเพื่อน</strong>  
-                                    
-                                    <button class="btn btn-success ml-2" data-toggle="modal" data-target="#myModal">
-                                        เพิ่มการแนะนำ <i class="fas fa-plus-circle"></i>
-                                    </button>
+                                    <strong>ลงทะเบียนนักศึกษา </strong>   
+                                    <a href="agent-add.html" class="btn btn-success ml-2">
+                                        ลงทะเบียนเพิ่ม <i class="fas fa-plus-circle"></i>
+                                    </a>
                                 </h1> 
                             </div>   
 
@@ -128,13 +127,17 @@
                                     <div class="col-12 search-label">
                                         <div class="row"> 
                                             <div class="col-xl-2">
-                                                <label for="">บัตรประจำตัวประชาชน</label>
+                                                <label for="">หลักสูตร</label>
                                                 <input type="text" class="form-control" >
                                             </div> 
                                             <div class="col-xl-2">
-                                                <label for="">สัญชาติ</label>
+                                                <label for="">ปีการศึกษา  </label>
                                                 <input type="text" class="form-control" >
-                                            </div>    
+                                            </div>   
+                                            <div class="col-xl-2">
+                                                <label for="">ชื่อ-นามสกุล </label>
+                                                <input type="text" class="form-control" >
+                                            </div>  
                                             <div class="col-xl-3"> 
                                                 <label class="col-12">&nbsp; </label>
                                                 <button href="#" class="btn btn-primary btn-sm pt-2  mr-3">  <i class="far fa-search"></i> ค้นหา
@@ -150,34 +153,42 @@
                                             <thead>
                                                 <tr>
                                                     <th>#</th> 
-                                                    <th>บัตรประจำตัวประชาชน</th>
-                                                    <th>สัญชาติ</th> 
-                                                    <th>วันที่เพิ่ม</th> 
+                                                    <th>หลักสูตร</th>
+                                                    <th>สาขา</th>
+                                                    <th>ปีการศึกษา </th> 
+                                                    <th>ชื่อ-นามสกุล </th> 
+                                                    <th>วันที่ลงทะเบียน</th> 
                                                     <th>สถานะ</th>  
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td>1</td>  
-                                                    <td>339909078391</td>
-                                                    <td>ไทย</td>
+                                                    <td>หลักสูตร Inter</td>
+                                                    <td>บริหารธุรกิจ</td>
+                                                    <td>2566</td>
+                                                    <td>อดิศร ศรีสุธรรม</td> 
                                                     <td>10/09/2565</td>
-                                                    <td class="text-primary">รอเพื่อนลงทะเบียน</td> 
-                                                </tr>    
+                                                    <td class="text-primary">รอตรวจเอกสาร </td> 
+                                                </tr>  
                                                 <tr>
                                                     <td>2</td>  
-                                                    <td>339909078391</td>
-                                                    <td>ไทย</td>
+                                                    <td>หลักสูตร Inter</td>
+                                                    <td>บริหารธุรกิจ</td>
+                                                    <td>2566</td>
+                                                    <td>อดิศร ศรีสุธรรม</td> 
                                                     <td>10/09/2565</td>
-                                                    <td class="text-success">อนุมัติ</td> 
+                                                    <td class="text-info">รอคณะพิจารณา </td> 
                                                 </tr>  
                                                 <tr>
                                                     <td>3</td>  
-                                                    <td>339909078391</td>
-                                                    <td>ไทย</td>
+                                                    <td>หลักสูตร Inter</td>
+                                                    <td>บริหารธุรกิจ</td>
+                                                    <td>2566</td>
+                                                    <td>อดิศร ศรีสุธรรม</td> 
                                                     <td>10/09/2565</td>
-                                                    <td class="text-danger">ไม่อนุมัติ</td> 
-                                                </tr>  
+                                                    <td class="text-danger">ไม่ผ่านการพิจารณา </td> 
+                                                </tr>   
                                             </tbody>
                                         </table>
                                     </div>
